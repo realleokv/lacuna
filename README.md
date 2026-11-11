@@ -4,6 +4,12 @@
 
 MVP de matemática com diagnóstico por regras, microaulas e um tutor personalizável: o Lumi. Desenvolvido em Python/Flask, HTML, CSS e JavaScript puro. Sem login e sem banco de dados. O histórico fica no `localStorage` do navegador.
 
+## Usar online
+
+**[Abrir o Lacuna](https://lacuna-40i2.onrender.com/)** — publicado no Render, plano Free, em 11/11/2026.
+
+Não precisa instalar nada ou criar conta. Histórico e personalização ficam neste navegador; não são sincronizados entre dispositivos.
+
 ## Começar no Windows
 
 1. Instale o **Python 3.12 ou superior**, pelo site oficial: https://www.python.org/downloads/windows/ . Inclua o Python Launcher (`py`) na instalação.
@@ -151,6 +157,8 @@ Exemplo de corpo para `/api/diagnose`:
 Para `/api/next`, use `{"records":[],"mode":"diagnostic","concept_id":"N1"}`. Modos adicionais: `practice` e `reassessment`. Para `/api/report`, envie `{"records":[...]}` com registros no formato acima. O servidor recalcula os acertos e não confia em campos `correct` enviados pelo cliente. Aceita até 500 registros por solicitação e corpo máximo de 256 KB. O frontend envia somente a resposta mais recente de cada questão conhecida: no máximo 34 registros nesta versão. O servidor aplica a janela de três por conceito, preservando contexto para a investigação de divisão.
 
 ## Publicar no Render
+
+A instância deste repositório já está publicada em [https://lacuna-40i2.onrender.com/](https://lacuna-40i2.onrender.com/). Serviço: `srv-dbq9huqjnfac73d96h7g`. As instruções abaixo servem para reproduzir a instalação em outro ambiente; não é necessário criar outro serviço para usar o endereço existente.
 
 O projeto precisa de um **Web Service Python**, pois a correção depende do Flask. Não deve ser publicado como site apenas estático.
 

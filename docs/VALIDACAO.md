@@ -64,9 +64,25 @@ Uma tentativa de capturar download dentro desse iframe expirou na ferramenta de 
 
 ## Limites desta validação
 
-Não foram realizados: execução real do `.bat` no Windows; teste em aparelho móvel físico, Safari ou Firefox; auditoria completa WCAG; teste com leitor de tela; carga/estresse; estudo pedagógico com estudantes; teste de eficácia; deploy público no Render. A exclusão real pela interface não foi acionada durante a navegação final; a função de exclusão e seu isolamento foram testados automaticamente.
+Não foram realizados: execução real do `.bat` no Windows; teste em aparelho móvel físico, Safari ou Firefox; auditoria completa WCAG; teste com leitor de tela; carga/estresse; estudo pedagógico com estudantes; teste de eficácia. A exclusão real pela interface não foi acionada durante a navegação final; a função de exclusão e seu isolamento foram testados automaticamente.
 
-A configuração de publicação foi validada, mas a publicação depende de repositório Git acessível e escolha do workspace. Sem um deploy efetivamente concluído não há URL pública a certificar.
+## Verificação da publicação — 11/11/2026
+
+O deploy `dep-dbq9hvajnfac73d96i2g` chegou ao estado **live** no Render. Commit da aplicação: `9ab70e7c4988d338b771170e71ba5dd0c7b7a01a`. Os 36 arquivos enviados ao GitHub foram comparados por hash com o pacote testado, sem divergências.
+
+| Verificação no endereço público | Resultado |
+| --- | --- |
+| [Página inicial](https://lacuna-40i2.onrender.com/) | HTML, estilos, fontes locais e Lumi renderizados |
+| [Saúde da API](https://lacuna-40i2.onrender.com/api/health) | `status: ok`, versão `1.0.0`, persistência `browser-localStorage` |
+| Personalização | Menta e óculos selecionados e salvos |
+| Investigação | Resposta 4 para `3x + 6 = 21` levou a `21 − 6` e depois `15 ÷ 3` |
+| Correção | Respostas 15 e 5 reconhecidas como corretas nas etapas correspondentes |
+| Persistência | Recarregar preservou a resposta corrigida, a etapa e o Lumi na cor escolhida |
+| Painel | Mostrou a sessão em andamento e os registros já finalizados; o rascunho ficou disponível para retomar |
+
+Essa checagem pública complementa os 81 testes automatizados e a revisão local descritos acima. Não foi uma nova bateria completa de testes nem um estudo com estudantes. As respostas usadas foram dados de teste neste navegador de revisão.
+
+Foi criado um único Web Service Python no plano Free, sem banco e sem disco. A criação direta manteve o health check TCP padrão do Render; o endpoint HTTP foi verificado manualmente. O `render.yaml` continua disponível para instalações por Blueprint com `/api/health` configurado.
 
 ## Lista de entrega
 
@@ -77,4 +93,4 @@ A configuração de publicação foi validada, mas a publicação depende de rep
 - [x] README com execução Windows e Linux.
 - [x] Decisões, rastreabilidade e roteiro de três minutos.
 - [x] Blueprint Render.
-- [ ] Publicação externa e verificação da URL atribuída pelo provedor.
+- [x] Publicação externa e verificação da URL atribuída pelo provedor.

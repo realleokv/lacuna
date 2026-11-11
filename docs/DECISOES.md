@@ -47,4 +47,6 @@ As transições duram de 180 a 280 ms. A opção Reduzir animações e `prefers-
 
 ## Ponto de publicação
 
-`render.yaml` está preparado para um serviço Python no plano Free e validado contra o schema oficial. A publicação depende de um repositório Git conectado e da escolha do workspace Render. A configuração pronta não deve ser confundida com um deploy concluído.
+Publicado em 11/11/2026 no endereço [https://lacuna-40i2.onrender.com/](https://lacuna-40i2.onrender.com/), a partir de `realleokv/lacuna`, branch `main`. O serviço `srv-dbq9huqjnfac73d96h7g` usa Python/Waitress no plano Free, sem banco de dados ou disco persistente. O deploy inicial chegou ao estado `live` e a navegação pública foi verificada; detalhes em [VALIDACAO.md](VALIDACAO.md).
+
+A criação foi direta pelo Render, mantendo o health check TCP padrão. O endpoint `/api/health` foi verificado manualmente. O `render.yaml`, validado contra o schema oficial, fica como configuração reproduzível por Blueprint com health check HTTP.

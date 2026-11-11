@@ -1,0 +1,149 @@
+{
+  "version": "1.0.0",
+  "mastery": {
+    "window": 3,
+    "required_independent": 2
+  },
+  "concepts": [
+    {
+      "id": "N1",
+      "name": "Operações",
+      "slug": "operacoes",
+      "description": "Somar, subtrair, multiplicar e dividir com sentido.",
+      "prerequisites": [],
+      "symbol": "÷",
+      "color": "mint",
+      "lesson": {
+        "title": "Dividir é repartir em partes iguais",
+        "intro": "Uma divisão responde quantos elementos ficam em cada grupo. Ela também pode ser conferida com uma multiplicação.",
+        "steps": [
+          {
+            "title": "Comece pelo total",
+            "text": "Há 15 peças para repartir igualmente entre 3 caixas. O total é 15 e a quantidade de grupos é 3.",
+            "math": "15 ÷ 3 = ?"
+          },
+          {
+            "title": "Distribua por igual",
+            "text": "Coloque uma peça por vez em cada caixa. Depois de cinco rodadas, as 15 peças foram distribuídas. Cada caixa recebeu 5.",
+            "math": "5 + 5 + 5 = 15"
+          },
+          {
+            "title": "Confira pela operação inversa",
+            "text": "Multiplique a quantidade de caixas pelas peças em cada uma. Se o total voltar a 15, a divisão faz sentido.",
+            "math": "3 × 5 = 15"
+          }
+        ],
+        "example": "Em 3x + 6 = 21, primeiro retiramos 6 de cada lado: 3x = 15. Depois dividimos os dois lados por 3: x = 5.",
+        "practice_id": "op_practice",
+        "visual": "groups"
+      }
+    },
+    {
+      "id": "N2",
+      "name": "Números negativos",
+      "slug": "negativos",
+      "description": "Entender os sinais e caminhar pela reta numérica.",
+      "prerequisites": [
+        "N1"
+      ],
+      "symbol": "−",
+      "color": "sky",
+      "lesson": {
+        "title": "O sinal mostra a direção",
+        "intro": "Na reta numérica, somar um valor positivo nos leva para a direita. Somar um negativo nos leva para a esquerda.",
+        "steps": [
+          {
+            "title": "Encontre o ponto de partida",
+            "text": "Para calcular −3 + 5, comece no −3. Ele está três unidades à esquerda do zero.",
+            "math": "−3 + 5"
+          },
+          {
+            "title": "Caminhe na direção certa",
+            "text": "Como você soma 5 positivo, avance cinco posições para a direita: −2, −1, 0, 1, 2.",
+            "math": "−3 + 5 = 2"
+          },
+          {
+            "title": "Cuide das operações diferentes",
+            "text": "Na multiplicação e na divisão, sinais iguais dão positivo e sinais diferentes dão negativo. Essa regra não substitui a reta na soma.",
+            "math": "(−4) × 2 = −8"
+          }
+        ],
+        "example": "Em x − 4 = −1, somamos 4 aos dois lados. Assim x = −1 + 4 = 3.",
+        "practice_id": "neg_practice",
+        "visual": "numberline"
+      }
+    },
+    {
+      "id": "N3",
+      "name": "Frações",
+      "slug": "fracoes",
+      "description": "Reconhecer partes, equivalências e operações simples.",
+      "prerequisites": [
+        "N1"
+      ],
+      "symbol": "½",
+      "color": "peach",
+      "lesson": {
+        "title": "Partes diferentes, mesmo inteiro",
+        "intro": "O denominador informa em quantas partes iguais o inteiro foi dividido. O numerador conta quantas dessas partes estamos considerando.",
+        "steps": [
+          {
+            "title": "Leia as partes",
+            "text": "Em 1/4, o inteiro tem quatro partes iguais e escolhemos uma delas.",
+            "math": "1/4"
+          },
+          {
+            "title": "Use partes do mesmo tamanho",
+            "text": "Para somar 1/2 + 1/4, represente a metade como 2/4. Agora todas as partes têm o mesmo tamanho.",
+            "math": "1/2 = 2/4"
+          },
+          {
+            "title": "Some as partes, mantenha o tamanho",
+            "text": "Duas partes mais uma parte são três quartos. Não somamos os denominadores.",
+            "math": "2/4 + 1/4 = 3/4"
+          }
+        ],
+        "example": "2/4 e 1/2 representam a mesma quantidade. Dividir numerador e denominador por 2 simplifica a fração sem mudar seu valor.",
+        "practice_id": "frac_practice",
+        "visual": "fractions"
+      }
+    },
+    {
+      "id": "N4",
+      "name": "Equações lineares",
+      "slug": "equacoes",
+      "description": "Manter o equilíbrio e descobrir o valor de x.",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "symbol": "x",
+      "color": "lavender",
+      "lesson": {
+        "title": "Uma equação é um equilíbrio",
+        "intro": "O sinal de igualdade diz que os dois lados têm o mesmo valor. Para encontrar x, faça a mesma operação nos dois lados.",
+        "steps": [
+          {
+            "title": "Retire o que foi somado",
+            "text": "Em 3x + 6 = 21, subtraia 6 dos dois lados. A igualdade continua verdadeira.",
+            "math": "3x + 6 − 6 = 21 − 6"
+          },
+          {
+            "title": "Separe os grupos de x",
+            "text": "Agora temos 3x = 15. Divida os dois lados por 3 para descobrir quanto vale um x.",
+            "math": "x = 15 ÷ 3 = 5"
+          },
+          {
+            "title": "Confira na equação inicial",
+            "text": "Substitua x por 5. Se os dois lados forem iguais, a resposta está conferida.",
+            "math": "3 × 5 + 6 = 21"
+          }
+        ],
+        "example": "Quando o coeficiente é negativo ou fracionário, a ideia de equilíbrio continua valendo. Por isso operações, negativos e frações ajudam a resolver equações.",
+        "practice_id": "eq_practice",
+        "visual": "balance"
+      }
+    }
+  ]
+}

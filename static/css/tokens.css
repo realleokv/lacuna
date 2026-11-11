@@ -1,0 +1,6 @@
+@font-face{font-family:Sora;src:url('/static/assets/fonts/Sora.ttf') format('truetype');font-weight:100 800;font-display:swap}
+@font-face{font-family:'Nunito Sans';src:url('/static/assets/fonts/NunitoSans.ttf') format('truetype');font-weight:200 900;font-display:swap}
+:root{--navy:#171C36;--lavender:#A78BFA;--sky:#60A5FA;--mint:#6EE7B7;--peach:#FDBA9A;--cream:#FFF8EF;--white:#FFFFFF;--error:#DC5265;--ink:#171C36;--muted:#565B70;--line:#E7E4E0;--accent:var(--lavender);--accent-soft:#EEE7FE;--space-1:8px;--space-2:16px;--space-3:24px;--space-4:32px;--space-5:40px;--space-6:48px;--radius-sm:16px;--radius:24px;--shadow:0 12px 40px #171c3608;--title-font:Sora,Arial,sans-serif;--body-font:'Nunito Sans',Arial,sans-serif;--ease:cubic-bezier(.22,.68,.24,1);--duration:240ms}
+body[data-color="sky"]{--accent:var(--sky);--accent-soft:#E8F2FF}
+body[data-color="mint"]{--accent:var(--mint);--accent-soft:#E4F9EF}
+body[data-color="peach"]{--accent:var(--peach);--accent-soft:#FFF0E6}

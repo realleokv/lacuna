@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: lacuna
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python serve.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: HOST
+        value: 0.0.0.0

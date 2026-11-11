@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FFF8EF">
+  <meta name="description" content="Encontre seu ponto de partida em matemática. Personalize o Lumi, descubra o que praticar e acompanhe seu progresso.">
+  <title>lacuna. — Aprender começa por entender.</title>
+  <link rel="icon" href="/static/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/static/assets/fonts/Sora.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/static/css/tokens.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <script type="module" src="/static/js/app.js"></script>
+</head>
+<body data-color="lavender">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header">
+    <a href="#/" class="brand" aria-label="Lacuna, início">lacuna<span>.</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#/" data-nav="home">Início</a>
+      <a href="#/painel" data-nav="dashboard">Meu progresso</a>
+      <a href="#/lumi" data-nav="lumi">Meu Lumi</a>
+    </nav>
+    <a href="#/configuracoes" class="icon-button" aria-label="Configurações" title="Configurações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 3h6l.6 3 2.4 1.4 2.9-.9 3 5.2-2.3 2.1V16l2.3 2.1-3 5.2-2.9-.9-2.4 1.4-.6 3H9l-.6-3L6 22.4l-2.9.9-3-5.2L2.4 16v-2.2L.1 11.7l3-5.2L6 7.4 8.4 6z" transform="translate(3 -1) scale(.75)"/><circle cx="12" cy="12" r="3"/></svg></a>
+  </header>
+  <div id="storage-warning" class="storage-warning" role="status" hidden></div>
+  <main id="main" tabindex="-1"><div class="loading-state"><span class="loading-dot"></span>Preparando seu ponto de partida…</div></main>
+  <footer class="site-footer"><a class="brand brand-small" href="#/">lacuna<span>.</span></a><p>Toda dúvida é um ponto de partida.</p><a href="#/configuracoes">Seus dados e privacidade</a><span>MVP · HackBrasil 2026</span></footer>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <dialog id="confirm-dialog" aria-labelledby="dialog-title"><form method="dialog"><span class="eyebrow">Seus dados</span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="button-row"><button value="cancel" class="button button-secondary">Cancelar</button><button value="confirm" class="button" id="dialog-confirm">Confirmar</button></div></form></dialog>
+  <noscript>Ative o JavaScript para personalizar o Lumi e realizar as atividades. O Lacuna utiliza JavaScript para guardar o progresso no seu navegador.</noscript>
+</body>
+</html>

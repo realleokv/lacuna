@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mastery": {
     "window": 3,
     "required_independent": 2
@@ -143,6 +143,585 @@
         "example": "Quando o coeficiente é negativo ou fracionário, a ideia de equilíbrio continua valendo. Por isso operações, negativos e frações ajudam a resolver equações.",
         "practice_id": "eq_practice",
         "visual": "balance"
+      }
+    },
+    {
+      "id": "N5",
+      "name": "Potenciação e radiciação",
+      "slug": "potencias-raizes",
+      "description": "Calcular potências, usar expoentes e encontrar raízes quadradas.",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "symbol": "√",
+      "color": "mint",
+      "lesson": {
+        "title": "Potências repetem fatores; raízes fazem o caminho de volta",
+        "intro": "Em 2³, o 2 é a base e o 3 informa quantas vezes ela aparece como fator. A raiz quadrada principal de um número não negativo é o número não negativo que, ao quadrado, resulta nele.",
+        "steps": [
+          {
+            "title": "Repita a multiplicação",
+            "text": "2³ significa 2 × 2 × 2. Os parênteses importam: (−2)² é 4, enquanto −2² é −4, pois a potência vem antes do sinal externo.",
+            "math": "2³ = 8; (−2)² = 4"
+          },
+          {
+            "title": "Combine potências de mesma base",
+            "text": "Ao multiplicar potências de mesma base, some os expoentes. Ao dividir, subtraia-os, com base diferente de zero. Na potência de potência, multiplique os expoentes. Uma base não nula elevada a zero vale 1; expoente negativo indica o inverso.",
+            "math": "2³ × 2² = 2⁵; (2³)² = 2⁶; 2⁻² = 1/4"
+          },
+          {
+            "title": "Encontre a raiz",
+            "text": "Como 7 × 7 = 49, a raiz quadrada principal de 49 é 7. A equação x² = 49 tem duas soluções, 7 e −7. Observe a diferença entre calcular a raiz principal e resolver a equação.",
+            "math": "√49 = 7; 7² = 49"
+          }
+        ],
+        "example": "Uma praça quadrada de área 81 m² tem lado √81 = 9 m. Potências e raízes também aparecem no teorema de Pitágoras.",
+        "practice_id": "pot_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N6",
+      "name": "Razão, proporção e regra de três",
+      "slug": "razao-proporcao",
+      "description": "Comparar quantidades e resolver proporções diretas e inversas.",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "symbol": "∝",
+      "color": "sky",
+      "lesson": {
+        "title": "Compare como as quantidades mudam juntas",
+        "intro": "Uma razão compara duas quantidades por divisão. Uma proporção afirma que duas razões são iguais. Antes da conta, verifique se a situação realmente é proporcional.",
+        "steps": [
+          {
+            "title": "Compare pela unidade",
+            "text": "Se 3 cadernos custam R$ 18 e todos têm o mesmo preço, um custa 18 ÷ 3 = R$ 6. Cinco custam cinco vezes esse valor.",
+            "math": "18/3 = 6; 5 × 6 = 30"
+          },
+          {
+            "title": "Reconheça a proporção inversa",
+            "text": "Para realizar a mesma tarefa, mais máquinas idênticas trabalhando no mesmo ritmo precisam de menos tempo. Se 2 máquinas levam 12 horas, 4 levam 6 horas, supondo trabalho divisível e produtividade constante.",
+            "math": "2 × 12 = 4 × 6"
+          },
+          {
+            "title": "Use a escala e conserve as unidades",
+            "text": "Uma escala 1:100 representa 1 cm no desenho para cada 100 cm reais. Converta as medidas para a mesma unidade antes de comparar. Assim, 3 cm representam 300 cm, ou 3 m.",
+            "math": "3 × 100 = 300 cm = 3 m"
+          }
+        ],
+        "example": "Uma receita para 4 pessoas usa 2 xícaras de arroz. Para 10 pessoas, mantendo a porção, são 2 × 10/4 = 5 xícaras.",
+        "practice_id": "prop_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N7",
+      "name": "Porcentagem",
+      "slug": "porcentagem",
+      "description": "Calcular partes percentuais, descontos e aumentos.",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "symbol": "%",
+      "color": "peach",
+      "lesson": {
+        "title": "Por cento é uma parte de cada cem",
+        "intro": "20% significa 20 de cada 100, ou 20/100 = 0,20. Sempre identifique o valor que representa o total de 100%.",
+        "steps": [
+          {
+            "title": "Calcule a parte",
+            "text": "Para encontrar 20% de 150, multiplique 150 por 20/100. O resultado é a parte correspondente à porcentagem.",
+            "math": "150 × 20/100 = 30"
+          },
+          {
+            "title": "Aplique desconto ou aumento",
+            "text": "Um desconto de 20% em R$ 150 retira R$ 30, deixando R$ 120. Um aumento de 20% acrescenta R$ 30, chegando a R$ 180.",
+            "math": "150 × 0,80 = 120; 150 × 1,20 = 180"
+          },
+          {
+            "title": "Descubra a taxa e confira a base",
+            "text": "Se 12 de 40 pessoas responderam, a taxa é 12/40 × 100 = 30%. Em mudanças sucessivas, a segunda porcentagem usa o valor já alterado como base.",
+            "math": "100 × 1,10 × 0,90 = 99"
+          }
+        ],
+        "example": "Aumentar 10% e depois descontar 10% leva R$ 100 a R$ 99, porque o desconto incide sobre R$ 110.",
+        "practice_id": "pct_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N8",
+      "name": "Expressões algébricas",
+      "slug": "expressoes-algebricas",
+      "description": "Distribuir fatores, reunir termos semelhantes e substituir valores.",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "symbol": "a+b",
+      "color": "lavender",
+      "lesson": {
+        "title": "Letras representam valores que podem variar",
+        "intro": "Em 3x + 2, a letra x representa um número. O termo 3x significa 3 multiplicado por x. Podemos simplificar a escrita antes de substituir um valor.",
+        "steps": [
+          {
+            "title": "Distribua para todos os termos",
+            "text": "Em 2(x + 3), o 2 multiplica tanto x quanto 3. Com um fator negativo, o sinal também deve ser aplicado a cada termo.",
+            "math": "2(x + 3) = 2x + 6"
+          },
+          {
+            "title": "Junte termos semelhantes",
+            "text": "3x e 2x têm a mesma parte literal. Somamos os coeficientes. Já x e x² têm partes literais diferentes e ficam separados.",
+            "math": "3x + 2x − 4 = 5x − 4"
+          },
+          {
+            "title": "Substitua e respeite a ordem",
+            "text": "Para x = 4 em 5x − 4, troque x por 4, multiplique e depois subtraia. Com valores negativos, use parênteses.",
+            "math": "5 × 4 − 4 = 16"
+          }
+        ],
+        "example": "O perímetro de um retângulo de lados x e x + 3 é 2x + 2(x + 3) = 4x + 6. Para x = 5, o perímetro é 26.",
+        "practice_id": "alg_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N9",
+      "name": "Inequações",
+      "slug": "inequacoes",
+      "description": "Resolver desigualdades e inverter o sinal ao dividir por um negativo.",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "symbol": "≤",
+      "color": "mint",
+      "lesson": {
+        "title": "Uma desigualdade pode ter muitas soluções",
+        "intro": "Os símbolos > e < indicam maior e menor. ≥ e ≤ também incluem a igualdade. Resolver uma inequação é encontrar todos os valores que tornam essa comparação verdadeira.",
+        "steps": [
+          {
+            "title": "Isole a incógnita",
+            "text": "Em x + 3 > 7, subtraia 3 dos dois lados. Qualquer número maior que 4 satisfaz a inequação, como 4,5 ou 6.",
+            "math": "x + 3 > 7 → x > 4"
+          },
+          {
+            "title": "Inverta ao multiplicar ou dividir por negativo",
+            "text": "Em −2x ≤ 6, divida os dois lados por −2 e inverta ≤ para ≥. Na reta, a multiplicação por um negativo inverte a ordem.",
+            "math": "−2x ≤ 6 → x ≥ −3"
+          },
+          {
+            "title": "Teste um valor e observe a igualdade",
+            "text": "Em x ≥ −3, o próprio −3 está incluído. Na reta, usamos ponto fechado quando a igualdade está incluída e aberto para < ou >. Substituir um valor ajuda a conferir.",
+            "math": "x = −2 → −2 × (−2) = 4 ≤ 6"
+          }
+        ],
+        "example": "Com R$ 30 e ingressos de R$ 8, a condição é 8n ≤ 30. Como n é uma quantidade inteira não negativa, cabem no máximo 3 ingressos.",
+        "practice_id": "ine_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N10",
+      "name": "Sistemas de equações",
+      "slug": "sistemas",
+      "description": "Encontrar valores que satisfazem duas equações ao mesmo tempo.",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "symbol": "{x,y}",
+      "color": "sky",
+      "lesson": {
+        "title": "Duas pistas para descobrir dois valores",
+        "intro": "Um sistema reúne equações que devem ser verdadeiras ao mesmo tempo. Em x + y = 10 e x − y = 2, buscamos um par de números que cumpra as duas condições.",
+        "steps": [
+          {
+            "title": "Some para eliminar uma incógnita",
+            "text": "Somando as duas equações, +y e −y se cancelam. Resta 2x = 12, então x = 6. Se os coeficientes não se cancelarem, podemos multiplicar uma equação inteira antes de somar.",
+            "math": "(x + y) + (x − y) = 10 + 2 → 2x = 12"
+          },
+          {
+            "title": "Substitua para encontrar a outra",
+            "text": "Com x = 6, a primeira equação fica 6 + y = 10, portanto y = 4. Também podemos começar isolando y = 10 − x e substituir essa expressão na segunda equação.",
+            "math": "x − (10 − x) = 2 → 2x = 12"
+          },
+          {
+            "title": "Confira nas duas condições",
+            "text": "O par (6, 4) soma 10 e tem diferença 2. Em outros sistemas, pode não existir solução ou podem existir infinitas soluções, dependendo das equações.",
+            "math": "6 + 4 = 10; 6 − 4 = 2"
+          }
+        ],
+        "example": "Dois lanches e um suco custam R$ 17, e um lanche com um suco custa R$ 10. Subtrair as equações revela que um lanche custa R$ 7 e o suco R$ 3.",
+        "practice_id": "sis_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N11",
+      "name": "Equações do 2º grau",
+      "slug": "segundo-grau",
+      "description": "Resolver equações quadráticas por fatoração e pela fórmula de Bhaskara.",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "symbol": "x²",
+      "color": "peach",
+      "lesson": {
+        "title": "Procure os valores que fazem a expressão valer zero",
+        "intro": "Uma equação do 2º grau pode ser escrita como ax² + bx + c = 0, com a diferente de zero. Os valores que a resolvem são chamados de raízes.",
+        "steps": [
+          {
+            "title": "Tente fatorar",
+            "text": "Em x² − 5x + 6 = 0, procure dois números cuja soma seja −5 e cujo produto seja 6. São −2 e −3. Um produto é zero quando pelo menos um fator é zero.",
+            "math": "(x − 2)(x − 3) = 0 → x = 2 ou x = 3"
+          },
+          {
+            "title": "Calcule o discriminante",
+            "text": "O discriminante é Δ = b² − 4ac. Se Δ > 0, há duas raízes reais distintas; se Δ = 0, há uma raiz real dupla; se Δ < 0, não há raízes reais.",
+            "math": "a = 1, b = −5, c = 6 → Δ = 25 − 24 = 1"
+          },
+          {
+            "title": "Use a fórmula e confira",
+            "text": "A fórmula x = (−b ± √Δ)/(2a) dá as duas possibilidades. Use o denominador 2a para todo o numerador e substitua as respostas na equação inicial.",
+            "math": "x = (5 ± 1)/2 → x = 3 ou x = 2"
+          }
+        ],
+        "example": "Em x² = 25, as raízes são 5 e −5. Ambas funcionam, pois o quadrado de cada uma é 25.",
+        "practice_id": "quad_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N12",
+      "name": "Funções do 1º grau",
+      "slug": "funcoes-primeiro-grau",
+      "description": "Relacionar variáveis, interpretar retas e encontrar interceptos.",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "symbol": "f(x)",
+      "color": "lavender",
+      "lesson": {
+        "title": "Uma regra transforma cada entrada em uma saída",
+        "intro": "Na função f(x) = ax + b, com a diferente de zero, cada entrada x produz uma saída. Seu gráfico é uma reta. O coeficiente a informa a variação da saída quando x aumenta uma unidade.",
+        "steps": [
+          {
+            "title": "Calcule pontos da reta",
+            "text": "Em f(x) = 2x + 3, substitua x por 0, 1 e 2. As saídas são 3, 5 e 7. No gráfico, x fica no eixo horizontal e f(x), no vertical.",
+            "math": "(0, 3), (1, 5), (2, 7)"
+          },
+          {
+            "title": "Leia a inclinação",
+            "text": "Como a = 2, cada aumento de 1 em x aumenta a saída em 2. Para a positivo a função cresce; para a negativo ela decresce. O coeficiente b é a saída quando x vale zero.",
+            "math": "a = 2; b = 3; f(0) = 3"
+          },
+          {
+            "title": "Encontre o encontro com o eixo x",
+            "text": "No eixo horizontal, a saída é zero. Resolva 2x + 3 = 0. O encontro com o eixo vertical é (0, 3), enquanto o encontro com o eixo horizontal é (−1,5, 0).",
+            "math": "2x + 3 = 0 → x = −3/2"
+          }
+        ],
+        "example": "Uma entrega que cobra R$ 5 fixos mais R$ 2 por quilômetro segue C(d) = 2d + 5. Para 4 km, o custo é R$ 13.",
+        "practice_id": "fun_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N13",
+      "name": "Geometria plana",
+      "slug": "geometria-plana",
+      "description": "Medir ângulos e calcular perímetros e áreas de figuras planas.",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "symbol": "△",
+      "color": "mint",
+      "lesson": {
+        "title": "Contorno, superfície e abertura medem coisas diferentes",
+        "intro": "Perímetro mede o contorno de uma figura. Área mede a superfície interna. Ângulo mede a abertura entre duas semirretas que partem de um mesmo ponto.",
+        "steps": [
+          {
+            "title": "Some os lados para o perímetro",
+            "text": "Um retângulo de lados 6 cm e 4 cm tem dois lados de cada medida. Somando todos, encontramos 20 cm de contorno.",
+            "math": "P = 2 × (6 + 4) = 20 cm"
+          },
+          {
+            "title": "Calcule a área com a fórmula da figura",
+            "text": "No retângulo, multiplique base por altura. No triângulo, divida esse produto por 2, usando altura perpendicular à base. No círculo, A = πr² e o comprimento da circunferência é 2πr.",
+            "math": "Aretângulo = 6 × 4 = 24 cm²; Atriângulo = (b × h)/2"
+          },
+          {
+            "title": "Use as relações entre ângulos",
+            "text": "Um ângulo reto mede 90° e uma volta completa mede 360°. Os ângulos internos de um triângulo somam 180°. Se dois medem 50° e 60°, o terceiro mede 70°.",
+            "math": "180° − 50° − 60° = 70°"
+          }
+        ],
+        "example": "Para um círculo de raio 2 cm, usando π = 3,14, a área é 12,56 cm² e a circunferência mede 12,56 cm. As unidades indicam o que cada valor mede.",
+        "practice_id": "geo_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N14",
+      "name": "Teorema de Pitágoras",
+      "slug": "pitagoras",
+      "description": "Relacionar os lados de um triângulo retângulo.",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "symbol": "a²",
+      "color": "sky",
+      "lesson": {
+        "title": "O quadrado da hipotenusa reúne os quadrados dos catetos",
+        "intro": "O teorema vale para triângulos retângulos, que têm um ângulo de 90°. A hipotenusa fica oposta ao ângulo reto e é o maior lado. Os outros dois lados são os catetos.",
+        "steps": [
+          {
+            "title": "Identifique os lados",
+            "text": "Se os catetos medem 3 e 4, chamamos a hipotenusa de c. Posicione c sozinho em um lado da igualdade.",
+            "math": "c² = 3² + 4²"
+          },
+          {
+            "title": "Calcule os quadrados e tire a raiz",
+            "text": "Os quadrados dos catetos são 9 e 16. A soma é 25. Como o comprimento é positivo, a hipotenusa mede √25 = 5.",
+            "math": "c² = 25 → c = 5"
+          },
+          {
+            "title": "Encontre um cateto por subtração",
+            "text": "Se a hipotenusa mede 13 e um cateto mede 5, o outro satisfaz b² = 13² − 5². A subtração aparece porque isolamos o termo desconhecido.",
+            "math": "b² = 169 − 25 = 144 → b = 12"
+          }
+        ],
+        "example": "A diagonal de um retângulo forma um triângulo retângulo com dois lados. Para lados 6 m e 8 m, a diagonal mede √(36 + 64) = 10 m.",
+        "practice_id": "pit_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N15",
+      "name": "Trigonometria básica",
+      "slug": "trigonometria",
+      "description": "Usar seno, cosseno e tangente em triângulos retângulos.",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "symbol": "sen θ",
+      "color": "peach",
+      "lesson": {
+        "title": "Escolha o ângulo antes de comparar os lados",
+        "intro": "Em um triângulo retângulo, seno, cosseno e tangente comparam lados em relação a um ângulo agudo θ. O cateto oposto fica diante dele; o adjacente toca o ângulo e não é a hipotenusa.",
+        "steps": [
+          {
+            "title": "Relacione seno e cosseno à hipotenusa",
+            "text": "Seno é cateto oposto dividido pela hipotenusa. Cosseno é cateto adjacente dividido pela hipotenusa. Num triângulo 3–4–5, se o lado oposto a θ é 3, então seno é 3/5 e cosseno é 4/5.",
+            "math": "sen θ = oposto/hipotenusa; cos θ = adjacente/hipotenusa"
+          },
+          {
+            "title": "Compare os catetos pela tangente",
+            "text": "Tangente é cateto oposto dividido pelo adjacente. Mantendo o mesmo ângulo do exemplo, a tangente vale 3/4. Ao escolher o outro ângulo agudo, os papéis dos catetos se trocam.",
+            "math": "tan θ = oposto/adjacente = 3/4"
+          },
+          {
+            "title": "Use uma razão conhecida para achar um lado",
+            "text": "Se sen 30° = 1/2 e a hipotenusa mede 10, o cateto oposto mede 5. Use o ângulo em graus quando trabalhar com valores como 30°, 45° e 60°.",
+            "math": "oposto/10 = 1/2 → oposto = 5"
+          }
+        ],
+        "example": "Se tan θ = 3/4 e o cateto adjacente mede 8 m, o oposto mede (3/4) × 8 = 6 m. Um desenho ajuda a identificar os lados.",
+        "practice_id": "trig_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N16",
+      "name": "Estatística",
+      "slug": "estatistica",
+      "description": "Calcular média, mediana e moda e interpretar dados.",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "symbol": "x̄",
+      "color": "lavender",
+      "lesson": {
+        "title": "Cada medida resume um aspecto dos dados",
+        "intro": "Considere os valores 2, 3, 3, 4 e 8. A média considera todos os valores, a mediana indica o centro da lista ordenada e a moda identifica o valor mais frequente.",
+        "steps": [
+          {
+            "title": "Some e divida para a média",
+            "text": "A soma dos cinco valores é 20. Dividimos pela quantidade de valores, mesmo quando algum se repete.",
+            "math": "média = (2 + 3 + 3 + 4 + 8)/5 = 4"
+          },
+          {
+            "title": "Ordene para achar a mediana",
+            "text": "Na lista ordenada, o valor central é 3. Quando há uma quantidade par de valores, faça a média dos dois valores centrais.",
+            "math": "2, 3, [3], 4, 8 → mediana = 3"
+          },
+          {
+            "title": "Conte frequências e leia os eixos",
+            "text": "O 3 aparece duas vezes, então é a moda. Um conjunto pode ter várias modas ou nenhuma moda. Ao ler um gráfico, verifique título, unidade, escala e a quantidade representada por cada barra.",
+            "math": "frequência do 3 = 2 → moda = 3"
+          }
+        ],
+        "example": "Se as vendas foram 4, 7 e 9 itens em três dias, o total foi 20 e a média foi 20/3. Uma escala que começa acima de zero pode ampliar visualmente diferenças entre barras.",
+        "practice_id": "est_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N17",
+      "name": "Probabilidade",
+      "slug": "probabilidade",
+      "description": "Contar resultados possíveis e calcular chances em situações simples.",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "symbol": "P(A)",
+      "color": "mint",
+      "lesson": {
+        "title": "Uma chance compara resultados favoráveis e possíveis",
+        "intro": "Quando os resultados elementares são igualmente prováveis, a probabilidade de um evento é a quantidade de resultados favoráveis dividida pela quantidade total de resultados possíveis.",
+        "steps": [
+          {
+            "title": "Liste o espaço de resultados",
+            "text": "Um dado comum honesto tem seis resultados igualmente prováveis. O evento sair um número par reúne 2, 4 e 6.",
+            "math": "possíveis = {1, 2, 3, 4, 5, 6}; favoráveis = {2, 4, 6}"
+          },
+          {
+            "title": "Divida e interprete",
+            "text": "São 3 resultados favoráveis entre 6 possíveis. A chance é 1/2, ou 50%. Uma chance de 50% não garante exatamente metade dos acertos em poucas tentativas.",
+            "math": "P(par) = 3/6 = 1/2"
+          },
+          {
+            "title": "Conte combinações e use o complemento",
+            "text": "Duas moedas honestas lançadas independentemente têm quatro resultados igualmente prováveis: CC, CK, KC e KK, com C = cara e K = coroa. A chance de pelo menos uma cara é 1 menos a chance de nenhuma cara.",
+            "math": "P(pelo menos uma cara) = 1 − 1/4 = 3/4"
+          }
+        ],
+        "example": "Numa sacola com 3 bolas azuis e 2 vermelhas, todas com a mesma chance de sair, P(azul) = 3/5. Ao retirar sem devolver, a composição muda para a próxima retirada.",
+        "practice_id": "prob_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N18",
+      "name": "Lógica de programação",
+      "slug": "logica-programacao",
+      "description": "Acompanhar variáveis, condições e repetições passo a passo.",
+      "prerequisites": [
+        "N1"
+      ],
+      "symbol": "{}",
+      "color": "sky",
+      "lesson": {
+        "title": "Siga o programa na ordem em que ele executa",
+        "intro": "Um algoritmo é uma sequência de instruções. Nos exemplos, usamos pseudocódigo: a seta ← guarda um valor em uma variável, e as instruções seguem de cima para baixo.",
+        "steps": [
+          {
+            "title": "Acompanhe o valor guardado",
+            "text": "A variável pontos começa com 2. Depois, pontos ← pontos + 3 lê o valor atual, soma 3 e guarda 5 no lugar do valor anterior.",
+            "math": "pontos ← 2; pontos ← pontos + 3 → 5"
+          },
+          {
+            "title": "Escolha o caminho pela condição",
+            "text": "Uma condição decide qual bloco executa. Se pontos ≥ 5, o programa define bônus como 10; caso contrário, como 0. Como pontos vale 5, o bônus será 10.",
+            "math": "se pontos ≥ 5: bônus ← 10; senão: bônus ← 0"
+          },
+          {
+            "title": "Repita com uma regra de parada",
+            "text": "Começando em total = 0, repetir 3 vezes a instrução total ← total + 2 produz 2, 4 e 6. Um laço enquanto continua apenas enquanto sua condição é verdadeira; atualize o valor para permitir que ele termine.",
+            "math": "total ← 0; repetir 3 vezes: total ← total + 2 → 6"
+          }
+        ],
+        "example": "Com n = 1, o laço enquanto n < 4, faça n ← n + 1 passa por 2, 3 e 4. Quando n chega a 4, a condição fica falsa e o laço termina.",
+        "practice_id": "log_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N19",
+      "name": "Física básica",
+      "slug": "fisica-basica",
+      "description": "Converter unidades e relacionar posição, deslocamento e velocidade média.",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "symbol": "v",
+      "color": "peach",
+      "lesson": {
+        "title": "Descreva o movimento usando posição e tempo",
+        "intro": "Para estudar movimento, escolhemos uma referência e medimos onde o objeto está em cada instante. No Sistema Internacional, posição é medida em metros e tempo em segundos.",
+        "steps": [
+          {
+            "title": "Converta antes de calcular",
+            "text": "Um quilômetro tem 1.000 metros e uma hora tem 3.600 segundos. Para converter km/h em m/s, divida por 3,6. Para converter m/s em km/h, multiplique por 3,6.",
+            "math": "72 km/h = 72 ÷ 3,6 = 20 m/s"
+          },
+          {
+            "title": "Calcule a velocidade média",
+            "text": "Em uma reta, o deslocamento é posição final menos posição inicial. Divida esse deslocamento pelo tempo decorrido. O sinal indica o sentido. A rapidez média usa a distância total percorrida.",
+            "math": "vm = Δs/Δt; (100 − 20)/4 = 20 m/s"
+          },
+          {
+            "title": "Use velocidade constante",
+            "text": "No movimento retilíneo uniforme, a velocidade permanece constante. Com posição inicial s₀ = 10 m e velocidade 3 m/s, após 4 s a posição será 10 + 3 × 4 = 22 m.",
+            "math": "s = s₀ + vt → s = 22 m"
+          }
+        ],
+        "example": "Quem anda 10 m para a frente e volta ao ponto inicial percorre 20 m, mas tem deslocamento zero. Nesse percurso completo, a velocidade média é zero, e a rapidez média é positiva.",
+        "practice_id": "fis_practice",
+        "visual": null
+      }
+    },
+    {
+      "id": "N20",
+      "name": "Química básica",
+      "slug": "quimica-basica",
+      "description": "Reconhecer partículas do átomo, organização da tabela e ligações químicas.",
+      "prerequisites": [
+        "N1"
+      ],
+      "symbol": "Z",
+      "color": "lavender",
+      "lesson": {
+        "title": "Dos átomos às ligações que formam os materiais",
+        "intro": "Átomos têm prótons positivos e nêutrons sem carga no núcleo, além de elétrons negativos na região ao redor. O número de prótons identifica o elemento químico.",
+        "steps": [
+          {
+            "title": "Conte as partículas",
+            "text": "O número atômico Z é a quantidade de prótons. O número de massa A é a soma de prótons e nêutrons. Num átomo neutro, a quantidade de elétrons é igual à de prótons.",
+            "math": "Z = prótons; A = prótons + nêutrons"
+          },
+          {
+            "title": "Localize o elemento e entenda íons",
+            "text": "A tabela periódica é organizada por número atômico crescente. As linhas são períodos e as colunas são grupos. Elementos do mesmo grupo frequentemente têm propriedades semelhantes. Perder elétrons forma um cátion positivo; ganhar elétrons forma um ânion negativo.",
+            "math": "11 prótons e 10 elétrons → carga +1"
+          },
+          {
+            "title": "Compare três tipos de ligação",
+            "text": "Na ligação iônica, íons de cargas opostas se atraem, como no NaCl. Na covalente, átomos compartilham pares de elétrons, como na água. Na metálica, elétrons deslocalizados ajudam a manter a estrutura unida e permitem condução elétrica.",
+            "math": "NaCl → iônica; H₂O → covalente; Cu → metálica"
+          }
+        ],
+        "example": "Um átomo com Z = 6 e A = 12 tem 6 prótons e 6 nêutrons. Se estiver neutro, também terá 6 elétrons. A massa atômica decimal da tabela não é o número de massa de um único átomo.",
+        "practice_id": "qui_practice",
+        "visual": null
       }
     }
   ]

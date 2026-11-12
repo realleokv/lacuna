@@ -1,0 +1,3069 @@
+{
+  "version": "1.1.0",
+  "questions": [
+    {
+      "id": "op_001",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Qual é o resultado desta soma?",
+      "expression": "18 + 7",
+      "expected": "25",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Separe o 7 para chegar primeiro a uma dezena.",
+        "Some 2 ao 18 e depois acrescente os 5 que faltam.",
+        "18 + 2 = 20. Depois, 20 + 5 = 25. Portanto, 18 + 7 = 25."
+      ],
+      "explanation": "18 + 2 = 20. Depois, 20 + 5 = 25. Portanto, 18 + 7 = 25."
+    },
+    {
+      "id": "op_002",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Calcule a multiplicação.",
+      "expression": "6 × 4",
+      "expected": "24",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Multiplicar pode ser entendido como somar parcelas iguais.",
+        "Some quatro grupos de 6: 6 + 6 + 6 + 6.",
+        "6 + 6 = 12 e 12 + 12 = 24. Então 6 × 4 = 24."
+      ],
+      "explanation": "6 + 6 = 12 e 12 + 12 = 24. Então 6 × 4 = 24."
+    },
+    {
+      "id": "op_003",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Quanto resta depois desta subtração?",
+      "expression": "32 − 14",
+      "expected": "18",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Retire primeiro uma dezena e depois as unidades.",
+        "32 − 10 = 22. Ainda falta retirar 4.",
+        "32 − 10 = 22 e 22 − 4 = 18. O resultado é 18."
+      ],
+      "explanation": "32 − 10 = 22 e 22 − 4 = 18. O resultado é 18."
+    },
+    {
+      "id": "op_004",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Reparta 24 peças igualmente em 6 grupos. Quantas ficam em cada grupo?",
+      "expression": "24 ÷ 6",
+      "expected": "4",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Pense na multiplicação que desfaz a divisão.",
+        "Qual número multiplicado por 6 resulta em 24?",
+        "6 × 4 = 24. Por isso 24 ÷ 6 = 4."
+      ],
+      "explanation": "6 × 4 = 24. Por isso 24 ÷ 6 = 4."
+    },
+    {
+      "id": "op_sub_probe",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Vamos conferir uma etapa: quanto é 21 menos 6?",
+      "expression": "21 − 6",
+      "expected": "15",
+      "difficulty": 1,
+      "purpose": "probe",
+      "hints": [
+        "A ideia é retirar 6 do total de 21.",
+        "Retire primeiro 1 para chegar a 20. Depois retire os outros 5.",
+        "21 − 1 = 20 e 20 − 5 = 15. Portanto, 21 − 6 = 15."
+      ],
+      "explanation": "21 − 1 = 20 e 20 − 5 = 15. Portanto, 21 − 6 = 15."
+    },
+    {
+      "id": "op_div_probe",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Agora, quanto é 15 dividido por 3?",
+      "expression": "15 ÷ 3",
+      "expected": "5",
+      "difficulty": 1,
+      "purpose": "probe",
+      "hints": [
+        "Imagine repartir 15 peças entre 3 caixas iguais.",
+        "Qual número, repetido três vezes, soma 15?",
+        "5 + 5 + 5 = 15. Cada caixa fica com 5 peças: 15 ÷ 3 = 5."
+      ],
+      "explanation": "5 + 5 + 5 = 15. Cada caixa fica com 5 peças: 15 ÷ 3 = 5."
+    },
+    {
+      "id": "op_practice",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Você tem 20 peças e 4 caixas. Quantas peças vão em cada caixa?",
+      "expression": "20 ÷ 4",
+      "expected": "5",
+      "difficulty": 1,
+      "purpose": "practice",
+      "hints": [
+        "Reparta as peças igualmente.",
+        "Procure um número que, multiplicado por 4, dê 20.",
+        "4 × 5 = 20. Cada caixa recebe 5 peças."
+      ],
+      "explanation": "4 × 5 = 20. Cada caixa recebe 5 peças."
+    },
+    {
+      "id": "op_re_001",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Reparta 18 igualmente em 3 grupos.",
+      "expression": "18 ÷ 3",
+      "expected": "6",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Use a multiplicação para conferir.",
+        "Pense: 3 vezes qual número é igual a 18?",
+        "3 × 6 = 18. Portanto, 18 ÷ 3 = 6."
+      ],
+      "explanation": "3 × 6 = 18. Portanto, 18 ÷ 3 = 6."
+    },
+    {
+      "id": "op_re_002",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Resolva a subtração.",
+      "expression": "28 − 8",
+      "expected": "20",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Retire as oito unidades do número.",
+        "28 é 20 + 8. Retire a parcela 8.",
+        "28 − 8 = 20."
+      ],
+      "explanation": "28 − 8 = 20."
+    },
+    {
+      "id": "op_re_003",
+      "concept_id": "N1",
+      "prerequisites": [],
+      "prompt": "Quanto fica em cada grupo?",
+      "expression": "35 ÷ 5",
+      "expected": "7",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Dividir é repartir igualmente.",
+        "Procure o número que, multiplicado por 5, chega a 35.",
+        "5 × 7 = 35. Então 35 ÷ 5 = 7."
+      ],
+      "explanation": "5 × 7 = 35. Então 35 ÷ 5 = 7."
+    },
+    {
+      "id": "neg_001",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Comece no −3 e avance 5 na reta. Onde você chega?",
+      "expression": "−3 + 5",
+      "expected": "2",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Somar um positivo significa avançar para a direita.",
+        "Do −3 ao zero são 3 passos. Ainda restam 2.",
+        "−3 + 3 = 0. Avançando os 2 passos restantes, chegamos a 2."
+      ],
+      "explanation": "−3 + 3 = 0. Avançando os 2 passos restantes, chegamos a 2."
+    },
+    {
+      "id": "neg_002",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Calcule o produto com atenção aos sinais.",
+      "expression": "(−4) × 3",
+      "expected": "-12",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Na multiplicação, sinais diferentes resultam em negativo.",
+        "Multiplique 4 por 3 e depois aplique o sinal negativo.",
+        "4 × 3 = 12. Os sinais são diferentes, então (−4) × 3 = −12."
+      ],
+      "explanation": "4 × 3 = 12. Os sinais são diferentes, então (−4) × 3 = −12."
+    },
+    {
+      "id": "neg_003",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Resolva a soma.",
+      "expression": "−8 + 3",
+      "expected": "-5",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Somar 3 faz você avançar três posições.",
+        "Comece no −8: depois vêm −7, −6 e −5.",
+        "Avançando 3 posições a partir de −8, chegamos a −5."
+      ],
+      "explanation": "Avançando 3 posições a partir de −8, chegamos a −5."
+    },
+    {
+      "id": "neg_004",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Divida e observe os sinais.",
+      "expression": "(−12) ÷ (−3)",
+      "expected": "4",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Na divisão, sinais iguais resultam em positivo.",
+        "Calcule 12 ÷ 3. Os dois sinais negativos se compensam.",
+        "12 ÷ 3 = 4 e os sinais são iguais. O resultado é +4."
+      ],
+      "explanation": "12 ÷ 3 = 4 e os sinais são iguais. O resultado é +4."
+    },
+    {
+      "id": "neg_practice",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Comece no −5 e avance 8 posições.",
+      "expression": "−5 + 8",
+      "expected": "3",
+      "difficulty": 1,
+      "purpose": "practice",
+      "hints": [
+        "Avance para a direita ao somar um positivo.",
+        "São 5 passos até o zero. Dos 8, quantos faltam?",
+        "−5 + 5 = 0 e ainda faltam 3 passos. O resultado é 3."
+      ],
+      "explanation": "−5 + 5 = 0 e ainda faltam 3 passos. O resultado é 3."
+    },
+    {
+      "id": "neg_re_001",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Resolva a soma.",
+      "expression": "−7 + 10",
+      "expected": "3",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Caminhe para a direita.",
+        "Use 7 dos 10 passos para chegar ao zero.",
+        "−7 + 7 = 0. Restam 3 passos: resultado 3."
+      ],
+      "explanation": "−7 + 7 = 0. Restam 3 passos: resultado 3."
+    },
+    {
+      "id": "neg_re_002",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Calcule o produto.",
+      "expression": "(−3) × 5",
+      "expected": "-15",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Sinais diferentes na multiplicação dão negativo.",
+        "Calcule 3 × 5 e aplique o sinal.",
+        "3 × 5 = 15. Como os sinais são diferentes, o resultado é −15."
+      ],
+      "explanation": "3 × 5 = 15. Como os sinais são diferentes, o resultado é −15."
+    },
+    {
+      "id": "neg_re_003",
+      "concept_id": "N2",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Resolva a divisão.",
+      "expression": "(−20) ÷ (−4)",
+      "expected": "5",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Sinais iguais na divisão dão positivo.",
+        "Calcule 20 dividido por 4.",
+        "20 ÷ 4 = 5. Os sinais iguais tornam o resultado positivo: 5."
+      ],
+      "explanation": "20 ÷ 4 = 5. Os sinais iguais tornam o resultado positivo: 5."
+    },
+    {
+      "id": "frac_001",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Some as frações. Responda com uma fração ou decimal exato.",
+      "expression": "1/2 + 1/4",
+      "expected": "3/4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Para somar, represente as partes com o mesmo denominador.",
+        "Troque 1/2 por 2/4. Agora some 2/4 + 1/4.",
+        "2/4 + 1/4 = 3/4. Também vale 0,75."
+      ],
+      "explanation": "2/4 + 1/4 = 3/4. Também vale 0,75."
+    },
+    {
+      "id": "frac_002",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor desta fração? Você pode escrever uma forma simplificada.",
+      "expression": "2/6",
+      "expected": "1/3",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Divida numerador e denominador pelo mesmo número.",
+        "Os números 2 e 6 podem ser divididos por 2.",
+        "2 ÷ 2 = 1 e 6 ÷ 2 = 3. Portanto, 2/6 = 1/3. Frações equivalentes são aceitas."
+      ],
+      "explanation": "2 ÷ 2 = 1 e 6 ÷ 2 = 3. Portanto, 2/6 = 1/3. Frações equivalentes são aceitas."
+    },
+    {
+      "id": "frac_003",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Subtraia as partes de mesmo tamanho.",
+      "expression": "5/6 − 1/6",
+      "expected": "2/3",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Os denominadores já são iguais.",
+        "Subtraia os numeradores: 5 − 1. Mantenha o 6.",
+        "5/6 − 1/6 = 4/6. Simplificando por 2, temos 2/3."
+      ],
+      "explanation": "5/6 − 1/6 = 4/6. Simplificando por 2, temos 2/3."
+    },
+    {
+      "id": "frac_004",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é a metade de 10?",
+      "expression": "(1/2) × 10",
+      "expected": "5",
+      "difficulty": 1,
+      "purpose": "diagnostic",
+      "hints": [
+        "Encontrar a metade é dividir por 2.",
+        "Reparta 10 em dois grupos iguais.",
+        "10 ÷ 2 = 5. Logo, (1/2) × 10 = 5."
+      ],
+      "explanation": "10 ÷ 2 = 5. Logo, (1/2) × 10 = 5."
+    },
+    {
+      "id": "frac_practice",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Use partes do mesmo tamanho para somar.",
+      "expression": "1/3 + 1/6",
+      "expected": "1/2",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Transforme os terços em sextos.",
+        "1/3 = 2/6. Some 2/6 + 1/6.",
+        "2/6 + 1/6 = 3/6 = 1/2. Também vale 0,5."
+      ],
+      "explanation": "2/6 + 1/6 = 3/6 = 1/2. Também vale 0,5."
+    },
+    {
+      "id": "frac_re_001",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Some estas duas frações.",
+      "expression": "1/2 + 1/6",
+      "expected": "2/3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Use o denominador 6.",
+        "1/2 = 3/6. Depois some mais 1/6.",
+        "3/6 + 1/6 = 4/6 = 2/3."
+      ],
+      "explanation": "3/6 + 1/6 = 4/6 = 2/3."
+    },
+    {
+      "id": "frac_re_002",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Escreva o valor desta fração. Uma forma simplificada também vale.",
+      "expression": "6/8",
+      "expected": "3/4",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "Divida os dois termos pelo mesmo número.",
+        "6 e 8 podem ser divididos por 2.",
+        "6 ÷ 2 = 3 e 8 ÷ 2 = 4. Portanto, 6/8 = 3/4."
+      ],
+      "explanation": "6 ÷ 2 = 3 e 8 ÷ 2 = 4. Portanto, 6/8 = 3/4."
+    },
+    {
+      "id": "frac_re_003",
+      "concept_id": "N3",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Subtraia as frações.",
+      "expression": "7/8 − 3/8",
+      "expected": "1/2",
+      "difficulty": 1,
+      "purpose": "reassessment",
+      "hints": [
+        "As partes já têm o mesmo tamanho.",
+        "Subtraia 3 de 7, mantendo o denominador 8.",
+        "7/8 − 3/8 = 4/8 = 1/2."
+      ],
+      "explanation": "7/8 − 3/8 = 4/8 = 1/2."
+    },
+    {
+      "id": "eq_001",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Qual valor de x mantém esta igualdade?",
+      "expression": "3x + 6 = 21",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Faça a mesma operação nos dois lados para deixar x sozinho.",
+        "Subtraia 6 dos dois lados. Você fica com 3x = 15.",
+        "3x + 6 = 21 → 3x = 15 → x = 15 ÷ 3 = 5. Conferindo: 3 × 5 + 6 = 21."
+      ],
+      "explanation": "3x + 6 = 21 → 3x = 15 → x = 15 ÷ 3 = 5. Conferindo: 3 × 5 + 6 = 21."
+    },
+    {
+      "id": "eq_002",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Encontre o valor de x.",
+      "expression": "2x − 4 = 10",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Desfaça primeiro a subtração e depois a multiplicação.",
+        "Some 4 aos dois lados: 2x = 14.",
+        "2x = 14. Dividindo ambos os lados por 2, x = 7."
+      ],
+      "explanation": "2x = 14. Dividindo ambos os lados por 2, x = 7."
+    },
+    {
+      "id": "eq_003",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Qual é o valor de x?",
+      "expression": "−2x + 3 = 11",
+      "expected": "-4",
+      "difficulty": 3,
+      "purpose": "diagnostic",
+      "hints": [
+        "Isole o termo com x e cuide do sinal ao dividir.",
+        "Subtraia 3 dos dois lados: −2x = 8.",
+        "−2x = 8. Divida por −2: x = −4. Confira: −2 × (−4) + 3 = 11."
+      ],
+      "explanation": "−2x = 8. Divida por −2: x = −4. Confira: −2 × (−4) + 3 = 11."
+    },
+    {
+      "id": "eq_004",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Resolva a equação com uma fração.",
+      "expression": "x/2 + 1 = 4",
+      "expected": "6",
+      "difficulty": 3,
+      "purpose": "diagnostic",
+      "hints": [
+        "Retire o 1 antes de desfazer a divisão por 2.",
+        "Subtraia 1 dos dois lados: x/2 = 3.",
+        "x/2 = 3. Multiplique ambos os lados por 2: x = 6."
+      ],
+      "explanation": "x/2 = 3. Multiplique ambos os lados por 2: x = 6."
+    },
+    {
+      "id": "eq_practice",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Agora aplique a ideia de equilíbrio.",
+      "expression": "4x + 3 = 23",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Primeiro desfaça a soma. Depois desfaça a multiplicação.",
+        "Subtraia 3 de cada lado: 4x = 20.",
+        "4x = 20. Dividindo por 4, x = 5. Confira: 4 × 5 + 3 = 23."
+      ],
+      "explanation": "4x = 20. Dividindo por 4, x = 5. Confira: 4 × 5 + 3 = 23."
+    },
+    {
+      "id": "eq_re_001",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Encontre x nesta nova equação.",
+      "expression": "4x + 4 = 28",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Mantenha os dois lados equilibrados.",
+        "Subtraia 4: 4x = 24.",
+        "4x = 24. Dividindo por 4, x = 6."
+      ],
+      "explanation": "4x = 24. Dividindo por 4, x = 6."
+    },
+    {
+      "id": "eq_re_002",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Resolva a equação.",
+      "expression": "−3x + 2 = 14",
+      "expected": "-4",
+      "difficulty": 3,
+      "purpose": "reassessment",
+      "hints": [
+        "Desfaça a soma antes de dividir pelo coeficiente negativo.",
+        "Subtraia 2: −3x = 12.",
+        "−3x = 12. Divida por −3: x = −4."
+      ],
+      "explanation": "−3x = 12. Divida por −3: x = −4."
+    },
+    {
+      "id": "eq_re_003",
+      "concept_id": "N4",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Qual é o valor de x?",
+      "expression": "x/3 + 2 = 5",
+      "expected": "9",
+      "difficulty": 3,
+      "purpose": "reassessment",
+      "hints": [
+        "Primeiro retire o 2 dos dois lados.",
+        "x/3 = 3. Agora desfaça a divisão por 3.",
+        "Multiplicando os dois lados por 3, x = 9."
+      ],
+      "explanation": "Multiplicando os dois lados por 3, x = 9."
+    },
+    {
+      "id": "pot_001",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Calcule a potência.",
+      "expression": "3³",
+      "expected": "27",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A base aparece três vezes como fator.",
+        "Multiplique 3 × 3 × 3.",
+        "3 × 3 = 9 e 9 × 3 = 27."
+      ],
+      "explanation": "3 × 3 = 9 e 9 × 3 = 27."
+    },
+    {
+      "id": "pot_002",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Calcule o resultado numérico.",
+      "expression": "2³ × 2²",
+      "expected": "32",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "As bases são iguais.",
+        "Some os expoentes e calcule 2⁵.",
+        "2³ × 2² = 2⁵ = 32."
+      ],
+      "explanation": "2³ × 2² = 2⁵ = 32."
+    },
+    {
+      "id": "pot_003",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Encontre a raiz quadrada principal.",
+      "expression": "√64",
+      "expected": "8",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Procure um número não negativo cujo quadrado seja 64.",
+        "8 × 8 chega a 64.",
+        "A raiz quadrada principal de 64 é 8."
+      ],
+      "explanation": "A raiz quadrada principal de 64 é 8."
+    },
+    {
+      "id": "pot_004",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Escreva o valor como fração ou decimal exato.",
+      "expression": "2⁻³",
+      "expected": "1/8",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Expoente negativo indica o inverso.",
+        "Calcule 1 dividido por 2³.",
+        "2⁻³ = 1/8 = 0,125."
+      ],
+      "explanation": "2⁻³ = 1/8 = 0,125."
+    },
+    {
+      "id": "pot_practice",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Calcule a raiz quadrada principal.",
+      "expression": "√144",
+      "expected": "12",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Procure dois fatores iguais que produzam 144.",
+        "Teste 12 × 12.",
+        "12 × 12 = 144. Portanto, √144 = 12."
+      ],
+      "explanation": "12 × 12 = 144. Portanto, √144 = 12."
+    },
+    {
+      "id": "pot_re_001",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Observe os parênteses e calcule.",
+      "expression": "(−3)²",
+      "expected": "9",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "O sinal negativo está dentro da base.",
+        "Multiplique (−3) por (−3).",
+        "Dois fatores negativos produzem positivo: (−3)² = 9."
+      ],
+      "explanation": "Dois fatores negativos produzem positivo: (−3)² = 9."
+    },
+    {
+      "id": "pot_re_002",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Calcule o resultado numérico.",
+      "expression": "5³ ÷ 5²",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Na divisão de potências de mesma base, subtraia os expoentes.",
+        "Calcule 5 elevado a 3 − 2.",
+        "5³ ÷ 5² = 5¹ = 5."
+      ],
+      "explanation": "5³ ÷ 5² = 5¹ = 5."
+    },
+    {
+      "id": "pot_re_003",
+      "concept_id": "N5",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "prompt": "Calcule a potência de potência.",
+      "expression": "(2²)³",
+      "expected": "64",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Multiplique os expoentes.",
+        "Calcule 2⁶.",
+        "(2²)³ = 2⁶ = 64."
+      ],
+      "explanation": "(2²)³ = 2⁶ = 64."
+    },
+    {
+      "id": "prop_001",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Três cadernos custam R$ 18. Quanto custam cinco pelo mesmo preço unitário? Responda em reais.",
+      "expression": "3 → 18; 5 → ?",
+      "expected": "30",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Encontre o preço de um caderno.",
+        "Divida 18 por 3 e multiplique por 5.",
+        "Cada caderno custa 6 reais. Cinco custam 5 × 6 = 30 reais."
+      ],
+      "explanation": "Cada caderno custa 6 reais. Cinco custam 5 × 6 = 30 reais."
+    },
+    {
+      "id": "prop_002",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Uma receita para 4 pessoas usa 2 xícaras. Quantas xícaras são necessárias para 10 pessoas, mantendo a porção?",
+      "expression": "2 × (10/4)",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A quantidade cresce na mesma proporção que as pessoas.",
+        "Multiplique 2 por 10 e divida por 4.",
+        "20 ÷ 4 = 5 xícaras."
+      ],
+      "explanation": "20 ÷ 4 = 5 xícaras."
+    },
+    {
+      "id": "prop_003",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Duas máquinas idênticas fazem uma tarefa em 12 horas. Quatro máquinas, no mesmo ritmo e dividindo a tarefa, levam quantas horas?",
+      "expression": "2 × 12 = 4 × t",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Mais máquinas reduzem o tempo dessa mesma tarefa.",
+        "Divida 24 horas-máquina por 4.",
+        "2 × 12 ÷ 4 = 6 horas."
+      ],
+      "explanation": "2 × 12 ÷ 4 = 6 horas."
+    },
+    {
+      "id": "prop_004",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Na escala 1:100, um comprimento de 4 cm no desenho representa quantos metros reais?",
+      "expression": "4 cm × 100",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Calcule primeiro o tamanho real em centímetros.",
+        "400 cm correspondem a quantos metros?",
+        "4 × 100 = 400 cm. Como 100 cm = 1 m, são 4 m."
+      ],
+      "explanation": "4 × 100 = 400 cm. Como 100 cm = 1 m, são 4 m."
+    },
+    {
+      "id": "prop_practice",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Se 2 kg de fruta custam R$ 14, quanto custam 5 kg pelo mesmo preço por quilo? Responda em reais.",
+      "expression": "14 ÷ 2 × 5",
+      "expected": "35",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Descubra o preço por quilo.",
+        "Um quilo custa 7 reais.",
+        "14 ÷ 2 = 7 e 7 × 5 = 35 reais."
+      ],
+      "explanation": "14 ÷ 2 = 7 e 7 × 5 = 35 reais."
+    },
+    {
+      "id": "prop_re_001",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Se 6 ingressos iguais custam R$ 90, quanto custam 4? Responda em reais.",
+      "expression": "90 ÷ 6 × 4",
+      "expected": "60",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Encontre o preço de um ingresso.",
+        "Cada ingresso custa 15 reais.",
+        "90 ÷ 6 = 15 e 15 × 4 = 60 reais."
+      ],
+      "explanation": "90 ÷ 6 = 15 e 15 × 4 = 60 reais."
+    },
+    {
+      "id": "prop_re_002",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Três torneiras iguais enchem um tanque em 8 horas. Seis torneiras, com a mesma vazão individual, levam quantas horas?",
+      "expression": "3 × 8 = 6 × t",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Dobrar o número de torneiras reduz o tempo à metade.",
+        "Divida 24 por 6.",
+        "3 × 8 ÷ 6 = 4 horas."
+      ],
+      "explanation": "3 × 8 ÷ 6 = 4 horas."
+    },
+    {
+      "id": "prop_re_003",
+      "concept_id": "N6",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Na escala 1:50, uma parede mede 6 cm no desenho. Qual é seu comprimento real em metros?",
+      "expression": "6 × 50 cm",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Multiplique a medida do desenho por 50.",
+        "Converta 300 cm para metros.",
+        "6 × 50 = 300 cm = 3 m."
+      ],
+      "explanation": "6 × 50 = 300 cm = 3 m."
+    },
+    {
+      "id": "pct_001",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Quanto é 20% de 150?",
+      "expression": "150 × 20/100",
+      "expected": "30",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Transforme a porcentagem em fração.",
+        "Multiplique 150 por 0,20.",
+        "150 × 0,20 = 30."
+      ],
+      "explanation": "150 × 0,20 = 30."
+    },
+    {
+      "id": "pct_002",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Um produto de R$ 200 tem desconto de 15%. Qual é o preço final em reais?",
+      "expression": "200 × (1 − 15/100)",
+      "expected": "170",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Encontre o desconto e retire do preço.",
+        "15% de 200 são 30.",
+        "200 − 30 = 170 reais."
+      ],
+      "explanation": "200 − 30 = 170 reais."
+    },
+    {
+      "id": "pct_003",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Um preço de R$ 80 aumenta 25%. Qual é o novo valor em reais?",
+      "expression": "80 × 1,25",
+      "expected": "100",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some o aumento ao preço original.",
+        "25% de 80 são 20.",
+        "80 + 20 = 100 reais."
+      ],
+      "explanation": "80 + 20 = 100 reais."
+    },
+    {
+      "id": "pct_004",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "12 de 40 pessoas participaram. Qual é a porcentagem? Digite apenas o número, sem o símbolo %.",
+      "expression": "(12/40) × 100",
+      "expected": "30",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Divida a parte pelo total.",
+        "12 ÷ 40 = 0,3. Multiplique por 100.",
+        "0,3 × 100 = 30, portanto 30%."
+      ],
+      "explanation": "0,3 × 100 = 30, portanto 30%."
+    },
+    {
+      "id": "pct_practice",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Uma camiseta de R$ 120 recebe 25% de desconto. Qual é o preço final em reais?",
+      "expression": "120 × 0,75",
+      "expected": "90",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "25% correspondem a um quarto.",
+        "Um quarto de 120 é 30.",
+        "120 − 30 = 90 reais."
+      ],
+      "explanation": "120 − 30 = 90 reais."
+    },
+    {
+      "id": "pct_re_001",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Quanto é 12% de 250?",
+      "expression": "250 × 12/100",
+      "expected": "30",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Escreva 12% como 0,12.",
+        "Some 10% de 250 e 2% de 250.",
+        "25 + 5 = 30."
+      ],
+      "explanation": "25 + 5 = 30."
+    },
+    {
+      "id": "pct_re_002",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Um preço de R$ 100 aumenta 10% e depois cai 10%. Qual é o preço final em reais?",
+      "expression": "100 × 1,10 × 0,90",
+      "expected": "99",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "O segundo percentual usa o preço já aumentado.",
+        "Após o aumento são 110 reais; o desconto é 11.",
+        "110 − 11 = 99 reais."
+      ],
+      "explanation": "110 − 11 = 99 reais."
+    },
+    {
+      "id": "pct_re_003",
+      "concept_id": "N7",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Um preço passou de R$ 50 para R$ 60. Qual foi o aumento percentual? Digite apenas o número.",
+      "expression": "((60 − 50)/50) × 100",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Compare o aumento com o preço original.",
+        "O aumento foi 10 sobre uma base de 50.",
+        "10/50 × 100 = 20, portanto 20%."
+      ],
+      "explanation": "10/50 × 100 = 20, portanto 20%."
+    },
+    {
+      "id": "alg_001",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Calcule o valor da expressão para x = 4.",
+      "expression": "3x + 2",
+      "expected": "14",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Substitua a letra pelo valor informado.",
+        "Calcule 3 × 4 e acrescente 2.",
+        "3 × 4 + 2 = 12 + 2 = 14."
+      ],
+      "explanation": "3 × 4 + 2 = 12 + 2 = 14."
+    },
+    {
+      "id": "alg_002",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Depois de distribuir, qual é o termo constante em 2(x + 5)?",
+      "expression": "2(x + 5) = 2x + ?",
+      "expected": "10",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "O 2 multiplica os dois termos.",
+        "Calcule 2 × 5.",
+        "2(x + 5) = 2x + 10. O termo constante é 10."
+      ],
+      "explanation": "2(x + 5) = 2x + 10. O termo constante é 10."
+    },
+    {
+      "id": "alg_003",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Qual é o coeficiente de x após juntar os termos?",
+      "expression": "3x + 4x − 2x",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Todos os termos têm a mesma parte literal.",
+        "Faça 3 + 4 − 2.",
+        "3 + 4 − 2 = 5, então a expressão é 5x."
+      ],
+      "explanation": "3 + 4 − 2 = 5, então a expressão é 5x."
+    },
+    {
+      "id": "alg_004",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Calcule o valor para x = −2.",
+      "expression": "x² + 3x",
+      "expected": "-2",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Substitua x por −2 usando parênteses.",
+        "Calcule (−2)² + 3 × (−2).",
+        "4 − 6 = −2."
+      ],
+      "explanation": "4 − 6 = −2."
+    },
+    {
+      "id": "alg_practice",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Calcule o valor para x = 3.",
+      "expression": "2(x + 4)",
+      "expected": "14",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Resolva o parêntese primeiro.",
+        "Some 3 + 4 e multiplique por 2.",
+        "2 × 7 = 14."
+      ],
+      "explanation": "2 × 7 = 14."
+    },
+    {
+      "id": "alg_re_001",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Qual é o coeficiente de x na expressão simplificada?",
+      "expression": "5x − 2x + x",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "O coeficiente de x sozinho é 1.",
+        "Calcule 5 − 2 + 1.",
+        "5 − 2 + 1 = 4. A expressão é 4x."
+      ],
+      "explanation": "5 − 2 + 1 = 4. A expressão é 4x."
+    },
+    {
+      "id": "alg_re_002",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Qual é o termo constante após distribuir?",
+      "expression": "−3(x − 2) = −3x + ?",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Multiplique −3 por cada termo.",
+        "O termo constante é (−3) × (−2).",
+        "(−3) × (−2) = 6. A expressão é −3x + 6."
+      ],
+      "explanation": "(−3) × (−2) = 6. A expressão é −3x + 6."
+    },
+    {
+      "id": "alg_re_003",
+      "concept_id": "N8",
+      "prerequisites": [
+        "N1",
+        "N2",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Calcule para a = 2 e b = 5.",
+      "expression": "2a + b",
+      "expected": "9",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Substitua as duas letras.",
+        "Calcule 2 × 2 + 5.",
+        "4 + 5 = 9."
+      ],
+      "explanation": "4 + 5 = 9."
+    },
+    {
+      "id": "ine_001",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o menor número inteiro que satisfaz a inequação?",
+      "expression": "x + 3 > 7",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Subtraia 3 dos dois lados.",
+        "A solução é x > 4; procure o primeiro inteiro acima de 4.",
+        "x > 4. O menor inteiro permitido é 5."
+      ],
+      "explanation": "x > 4. O menor inteiro permitido é 5."
+    },
+    {
+      "id": "ine_002",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o maior número inteiro permitido?",
+      "expression": "2x ≤ 10",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Divida os lados por 2.",
+        "A igualdade está incluída.",
+        "x ≤ 5. O maior inteiro permitido é 5."
+      ],
+      "explanation": "x ≤ 5. O maior inteiro permitido é 5."
+    },
+    {
+      "id": "ine_003",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Escolha a solução. Digite 1 para x ≤ −3, 2 para x ≥ −3 ou 3 para x ≥ 3.",
+      "expression": "−2x ≤ 6",
+      "expected": "2",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Dividir por um negativo inverte a desigualdade.",
+        "Divida 6 por −2 e troque ≤ por ≥.",
+        "x ≥ −3 corresponde à opção 2."
+      ],
+      "explanation": "x ≥ −3 corresponde à opção 2."
+    },
+    {
+      "id": "ine_004",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o maior número inteiro que satisfaz a inequação?",
+      "expression": "3x − 1 < 8",
+      "expected": "2",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some 1 e depois divida por 3.",
+        "A solução é x < 3.",
+        "x < 3. O maior inteiro menor que 3 é 2."
+      ],
+      "explanation": "x < 3. O maior inteiro menor que 3 é 2."
+    },
+    {
+      "id": "ine_practice",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o menor número inteiro permitido?",
+      "expression": "2x + 1 ≥ 9",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Retire 1 dos dois lados.",
+        "2x ≥ 8; divida por 2.",
+        "x ≥ 4. O menor inteiro permitido é 4."
+      ],
+      "explanation": "x ≥ 4. O menor inteiro permitido é 4."
+    },
+    {
+      "id": "ine_re_001",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o maior número inteiro permitido?",
+      "expression": "x − 5 ≤ 2",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Some 5 aos dois lados.",
+        "A solução inclui o valor da fronteira.",
+        "x ≤ 7. O maior inteiro permitido é 7."
+      ],
+      "explanation": "x ≤ 7. O maior inteiro permitido é 7."
+    },
+    {
+      "id": "ine_re_002",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Escolha a solução. Digite 1 para x < −2, 2 para x > −2 ou 3 para x < 2.",
+      "expression": "−3x > 6",
+      "expected": "1",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Divida por −3 e inverta o símbolo.",
+        "6 ÷ (−3) = −2.",
+        "x < −2 corresponde à opção 1."
+      ],
+      "explanation": "x < −2 corresponde à opção 1."
+    },
+    {
+      "id": "ine_re_003",
+      "concept_id": "N9",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Você tem R$ 30. Cada ingresso custa R$ 8. Qual é o maior número inteiro de ingressos que pode comprar?",
+      "expression": "8n ≤ 30",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "A quantidade precisa ser inteira e caber no orçamento.",
+        "30 ÷ 8 = 3,75.",
+        "Três ingressos custam 24; quatro custam 32. O máximo é 3."
+      ],
+      "explanation": "Três ingressos custam 24; quatro custam 32. O máximo é 3."
+    },
+    {
+      "id": "sis_001",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas o valor de x no sistema.",
+      "expression": "x + y = 10; x − y = 2",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some as equações para eliminar y.",
+        "2x = 12.",
+        "Somando as equações, 2x = 12. Logo x = 6."
+      ],
+      "explanation": "Somando as equações, 2x = 12. Logo x = 6."
+    },
+    {
+      "id": "sis_002",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas o valor de y no sistema.",
+      "expression": "x + y = 12; x = 2y",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Substitua x por 2y na primeira equação.",
+        "2y + y = 12.",
+        "3y = 12, então y = 4 e x = 8."
+      ],
+      "explanation": "3y = 12, então y = 4 e x = 8."
+    },
+    {
+      "id": "sis_003",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas x.",
+      "expression": "2x + y = 11; x + y = 7",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Subtraia a segunda equação da primeira.",
+        "2x − x = 11 − 7.",
+        "x = 4. Substituindo, y = 3."
+      ],
+      "explanation": "x = 4. Substituindo, y = 3."
+    },
+    {
+      "id": "sis_004",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas y.",
+      "expression": "x + y = 9; x − y = 3",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some as equações e encontre x.",
+        "2x = 12, então x = 6.",
+        "6 + y = 9, logo y = 3."
+      ],
+      "explanation": "6 + y = 9, logo y = 3."
+    },
+    {
+      "id": "sis_practice",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas x.",
+      "expression": "x + y = 14; x − y = 4",
+      "expected": "9",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Somar as equações elimina y.",
+        "2x = 18.",
+        "x = 18 ÷ 2 = 9; y = 5."
+      ],
+      "explanation": "x = 18 ÷ 2 = 9; y = 5."
+    },
+    {
+      "id": "sis_re_001",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas x.",
+      "expression": "x + y = 15; x − y = 5",
+      "expected": "10",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Some as equações.",
+        "2x = 20.",
+        "x = 10 e y = 5."
+      ],
+      "explanation": "x = 10 e y = 5."
+    },
+    {
+      "id": "sis_re_002",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Encontre apenas y.",
+      "expression": "x + y = 15; x = 2y",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Troque x por 2y.",
+        "3y = 15.",
+        "y = 5 e x = 10."
+      ],
+      "explanation": "y = 5 e x = 10."
+    },
+    {
+      "id": "sis_re_003",
+      "concept_id": "N10",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Dois lanches e um suco custam R$ 17. Um lanche e um suco custam R$ 10. Qual é o preço do lanche em reais?",
+      "expression": "2L + S = 17; L + S = 10",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Compare as duas compras.",
+        "A diferença é um lanche.",
+        "17 − 10 = 7 reais por lanche; o suco custa 3 reais."
+      ],
+      "explanation": "17 − 10 = 7 reais por lanche; o suco custa 3 reais."
+    },
+    {
+      "id": "quad_001",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Qual é a maior raiz real?",
+      "expression": "x² − 5x + 6 = 0",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Procure dois números com soma 5 e produto 6.",
+        "Fatore em (x − 2)(x − 3).",
+        "As raízes são 2 e 3. A maior é 3."
+      ],
+      "explanation": "As raízes são 2 e 3. A maior é 3."
+    },
+    {
+      "id": "quad_002",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Qual é a menor raiz real?",
+      "expression": "x² = 25",
+      "expected": "-5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Um número negativo também pode ter quadrado positivo.",
+        "As duas possibilidades são 5 e −5.",
+        "A menor raiz é −5, pois (−5)² = 25."
+      ],
+      "explanation": "A menor raiz é −5, pois (−5)² = 25."
+    },
+    {
+      "id": "quad_003",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Calcule o discriminante Δ.",
+      "expression": "x² − 4x + 4 = 0",
+      "expected": "0",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Use b² − 4ac.",
+        "Calcule (−4)² − 4 × 1 × 4.",
+        "Δ = 16 − 16 = 0."
+      ],
+      "explanation": "Δ = 16 − 16 = 0."
+    },
+    {
+      "id": "quad_004",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Quantas raízes reais distintas essa equação possui?",
+      "expression": "x² + 1 = 0",
+      "expected": "0",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Observe o sinal do discriminante.",
+        "Δ = 0² − 4 × 1 × 1 = −4.",
+        "Como Δ < 0, a equação possui 0 raízes reais."
+      ],
+      "explanation": "Como Δ < 0, a equação possui 0 raízes reais."
+    },
+    {
+      "id": "quad_practice",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Qual é a maior raiz real?",
+      "expression": "x² − 7x + 12 = 0",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Procure fatores de 12 cuja soma seja 7.",
+        "Use 3 e 4.",
+        "(x − 3)(x − 4) = 0. A maior raiz é 4."
+      ],
+      "explanation": "(x − 3)(x − 4) = 0. A maior raiz é 4."
+    },
+    {
+      "id": "quad_re_001",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Qual é a menor raiz real?",
+      "expression": "x² − 9 = 0",
+      "expected": "-3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Reescreva como x² = 9.",
+        "As raízes são 3 e −3.",
+        "A menor raiz é −3."
+      ],
+      "explanation": "A menor raiz é −3."
+    },
+    {
+      "id": "quad_re_002",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Calcule o discriminante Δ.",
+      "expression": "2x² − 5x + 2 = 0",
+      "expected": "9",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Identifique a = 2, b = −5 e c = 2.",
+        "Calcule 25 − 4 × 2 × 2.",
+        "Δ = 25 − 16 = 9."
+      ],
+      "explanation": "Δ = 25 − 16 = 9."
+    },
+    {
+      "id": "quad_re_003",
+      "concept_id": "N11",
+      "prerequisites": [
+        "N4",
+        "N5",
+        "N8"
+      ],
+      "prompt": "Use a fórmula de Bhaskara e encontre a menor raiz.",
+      "expression": "2x² − 7x + 3 = 0",
+      "expected": "1/2",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Calcule Δ = 49 − 24.",
+        "√25 = 5. Use (7 − 5)/(2 × 2).",
+        "A menor raiz é 2/4 = 1/2. A outra é (7 + 5)/4 = 3."
+      ],
+      "explanation": "A menor raiz é 2/4 = 1/2. A outra é (7 + 5)/4 = 3."
+    },
+    {
+      "id": "fun_001",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Calcule f(4).",
+      "expression": "f(x) = 2x + 3",
+      "expected": "11",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Troque x por 4.",
+        "Calcule 2 × 4 + 3.",
+        "f(4) = 8 + 3 = 11."
+      ],
+      "explanation": "f(4) = 8 + 3 = 11."
+    },
+    {
+      "id": "fun_002",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é a coordenada y no encontro da reta com o eixo vertical?",
+      "expression": "y = −3x + 7",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "No eixo vertical, x vale zero.",
+        "Substitua x por 0.",
+        "y = −3 × 0 + 7 = 7."
+      ],
+      "explanation": "y = −3 × 0 + 7 = 7."
+    },
+    {
+      "id": "fun_003",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o valor de x quando a função vale zero?",
+      "expression": "f(x) = 2x − 8",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Iguale a expressão a zero.",
+        "Resolva 2x = 8.",
+        "2x − 8 = 0 dá x = 4."
+      ],
+      "explanation": "2x − 8 = 0 dá x = 4."
+    },
+    {
+      "id": "fun_004",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Uma reta passa por (0, 1) e (2, 5). Qual é seu coeficiente de inclinação a?",
+      "expression": "a = (5 − 1)/(2 − 0)",
+      "expected": "2",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Divida a variação vertical pela horizontal.",
+        "A saída varia 4 enquanto a entrada varia 2.",
+        "a = 4/2 = 2."
+      ],
+      "explanation": "a = 4/2 = 2."
+    },
+    {
+      "id": "fun_practice",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Uma entrega custa R$ 5 fixos mais R$ 2 por km. Quanto custa percorrer 4 km? Responda em reais.",
+      "expression": "C(d) = 2d + 5",
+      "expected": "13",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Substitua d por 4.",
+        "Some 5 ao produto 2 × 4.",
+        "C(4) = 8 + 5 = 13 reais."
+      ],
+      "explanation": "C(4) = 8 + 5 = 13 reais."
+    },
+    {
+      "id": "fun_re_001",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Calcule f(3).",
+      "expression": "f(x) = −2x + 10",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Substitua x por 3.",
+        "Calcule −6 + 10.",
+        "f(3) = −2 × 3 + 10 = 4."
+      ],
+      "explanation": "f(3) = −2 × 3 + 10 = 4."
+    },
+    {
+      "id": "fun_re_002",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Qual é o valor de x no encontro com o eixo horizontal?",
+      "expression": "f(x) = 3x − 9",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "No eixo horizontal, f(x) = 0.",
+        "Resolva 3x = 9.",
+        "x = 3."
+      ],
+      "explanation": "x = 3."
+    },
+    {
+      "id": "fun_re_003",
+      "concept_id": "N12",
+      "prerequisites": [
+        "N4",
+        "N8"
+      ],
+      "prompt": "Uma reta passa por (1, 5) e (3, 1). Qual é a inclinação a?",
+      "expression": "a = (1 − 5)/(3 − 1)",
+      "expected": "-2",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Calcule a diferença das saídas e a das entradas na mesma ordem.",
+        "Divida −4 por 2.",
+        "a = −4/2 = −2. A função é decrescente."
+      ],
+      "explanation": "a = −4/2 = −2. A função é decrescente."
+    },
+    {
+      "id": "geo_001",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um retângulo tem lados 8 cm e 3 cm. Qual é o perímetro em centímetros?",
+      "expression": "P = 2(8 + 3)",
+      "expected": "22",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some todos os quatro lados.",
+        "Calcule duas vezes 11.",
+        "8 + 3 + 8 + 3 = 22 cm."
+      ],
+      "explanation": "8 + 3 + 8 + 3 = 22 cm."
+    },
+    {
+      "id": "geo_002",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um retângulo tem base 7 cm e altura 4 cm. Qual é a área em cm²? Digite apenas o número.",
+      "expression": "A = 7 × 4",
+      "expected": "28",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Multiplique base por altura.",
+        "Calcule 7 × 4.",
+        "A área é 28 cm²."
+      ],
+      "explanation": "A área é 28 cm²."
+    },
+    {
+      "id": "geo_003",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Dois ângulos internos de um triângulo medem 50° e 60°. Qual é o terceiro, em graus?",
+      "expression": "180 − 50 − 60",
+      "expected": "70",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Os três ângulos somam 180°.",
+        "Subtraia 110° de 180°.",
+        "180° − 110° = 70°."
+      ],
+      "explanation": "180° − 110° = 70°."
+    },
+    {
+      "id": "geo_004",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um triângulo tem base 10 cm e altura perpendicular 6 cm. Qual é a área em cm²?",
+      "expression": "A = (10 × 6)/2",
+      "expected": "30",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A área do triângulo é metade do produto base × altura.",
+        "Divida 60 por 2.",
+        "A = 60/2 = 30 cm²."
+      ],
+      "explanation": "A = 60/2 = 30 cm²."
+    },
+    {
+      "id": "geo_practice",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um retângulo mede 9 m por 5 m. Qual é sua área em m²?",
+      "expression": "A = 9 × 5",
+      "expected": "45",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Multiplique os lados perpendiculares.",
+        "Calcule 9 × 5.",
+        "A = 45 m²."
+      ],
+      "explanation": "A = 45 m²."
+    },
+    {
+      "id": "geo_re_001",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um quadrado tem lado 6 cm. Qual é seu perímetro em centímetros?",
+      "expression": "P = 4 × 6",
+      "expected": "24",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "O quadrado tem quatro lados iguais.",
+        "Some 6 quatro vezes.",
+        "4 × 6 = 24 cm."
+      ],
+      "explanation": "4 × 6 = 24 cm."
+    },
+    {
+      "id": "geo_re_002",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Um círculo tem raio 3 cm. Use π = 3,14. Qual é sua área em cm²?",
+      "expression": "A = 3,14 × 3²",
+      "expected": "28.26",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Eleve o raio ao quadrado antes de multiplicar por π.",
+        "3² = 9.",
+        "3,14 × 9 = 28,26 cm²."
+      ],
+      "explanation": "3,14 × 9 = 28,26 cm²."
+    },
+    {
+      "id": "geo_re_003",
+      "concept_id": "N13",
+      "prerequisites": [
+        "N1",
+        "N3",
+        "N5"
+      ],
+      "prompt": "Uma circunferência tem raio 5 cm. Use π = 3,14. Qual é seu comprimento em centímetros?",
+      "expression": "C = 2 × 3,14 × 5",
+      "expected": "31.4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Use duas vezes π vezes o raio.",
+        "2 × 5 = 10.",
+        "3,14 × 10 = 31,4 cm."
+      ],
+      "explanation": "3,14 × 10 = 31,4 cm."
+    },
+    {
+      "id": "pit_001",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Um triângulo retângulo tem catetos 3 cm e 4 cm. Qual é a hipotenusa em centímetros?",
+      "expression": "c² = 3² + 4²",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some os quadrados dos catetos.",
+        "9 + 16 = 25. Tire a raiz.",
+        "c = √25 = 5 cm."
+      ],
+      "explanation": "c = √25 = 5 cm."
+    },
+    {
+      "id": "pit_002",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "A hipotenusa mede 13 cm e um cateto mede 5 cm. Quanto mede o outro cateto em centímetros?",
+      "expression": "b² = 13² − 5²",
+      "expected": "12",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Subtraia o quadrado do cateto do quadrado da hipotenusa.",
+        "169 − 25 = 144.",
+        "b = √144 = 12 cm."
+      ],
+      "explanation": "b = √144 = 12 cm."
+    },
+    {
+      "id": "pit_003",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Um retângulo tem lados 6 m e 8 m. Qual é sua diagonal em metros?",
+      "expression": "d² = 6² + 8²",
+      "expected": "10",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A diagonal é a hipotenusa.",
+        "36 + 64 = 100.",
+        "d = √100 = 10 m."
+      ],
+      "explanation": "d = √100 = 10 m."
+    },
+    {
+      "id": "pit_004",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Catetos medem 5 cm e 12 cm. Qual é a hipotenusa em centímetros?",
+      "expression": "c² = 5² + 12²",
+      "expected": "13",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some os quadrados.",
+        "25 + 144 = 169.",
+        "c = √169 = 13 cm."
+      ],
+      "explanation": "c = √169 = 13 cm."
+    },
+    {
+      "id": "pit_practice",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Catetos medem 9 m e 12 m. Qual é a hipotenusa em metros?",
+      "expression": "c² = 9² + 12²",
+      "expected": "15",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Calcule cada quadrado.",
+        "81 + 144 = 225.",
+        "c = √225 = 15 m."
+      ],
+      "explanation": "c = √225 = 15 m."
+    },
+    {
+      "id": "pit_re_001",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Catetos medem 8 cm e 15 cm. Qual é a hipotenusa em centímetros?",
+      "expression": "c² = 8² + 15²",
+      "expected": "17",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Some 64 e 225.",
+        "A raiz de 289 é o comprimento procurado.",
+        "c = √289 = 17 cm."
+      ],
+      "explanation": "c = √289 = 17 cm."
+    },
+    {
+      "id": "pit_re_002",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "A hipotenusa mede 10 m e um cateto mede 6 m. Quanto mede o outro cateto em metros?",
+      "expression": "b² = 10² − 6²",
+      "expected": "8",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Isole o quadrado do cateto desconhecido.",
+        "100 − 36 = 64.",
+        "b = √64 = 8 m."
+      ],
+      "explanation": "b = √64 = 8 m."
+    },
+    {
+      "id": "pit_re_003",
+      "concept_id": "N14",
+      "prerequisites": [
+        "N5",
+        "N13"
+      ],
+      "prompt": "Um triângulo retângulo tem hipotenusa 25 cm e um cateto 7 cm. Qual é o outro cateto em centímetros?",
+      "expression": "b² = 25² − 7²",
+      "expected": "24",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Subtraia os quadrados.",
+        "625 − 49 = 576.",
+        "b = √576 = 24 cm."
+      ],
+      "explanation": "b = √576 = 24 cm."
+    },
+    {
+      "id": "trig_001",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "O cateto oposto a θ mede 3 e a hipotenusa mede 5. Qual é sen θ? Use fração ou decimal exato.",
+      "expression": "sen θ = 3/5",
+      "expected": "3/5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Seno compara oposto com hipotenusa.",
+        "Divida 3 por 5.",
+        "sen θ = 3/5 = 0,6."
+      ],
+      "explanation": "sen θ = 3/5 = 0,6."
+    },
+    {
+      "id": "trig_002",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "O cateto adjacente a θ mede 4 e a hipotenusa mede 5. Qual é cos θ?",
+      "expression": "cos θ = 4/5",
+      "expected": "4/5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Cosseno usa o cateto adjacente.",
+        "Divida 4 por 5.",
+        "cos θ = 4/5 = 0,8."
+      ],
+      "explanation": "cos θ = 4/5 = 0,8."
+    },
+    {
+      "id": "trig_003",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "Os catetos oposto e adjacente a θ medem 3 e 4. Qual é tan θ?",
+      "expression": "tan θ = 3/4",
+      "expected": "3/4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Tangente compara os catetos.",
+        "Divida o oposto pelo adjacente.",
+        "tan θ = 3/4 = 0,75."
+      ],
+      "explanation": "tan θ = 3/4 = 0,75."
+    },
+    {
+      "id": "trig_004",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "Sabendo que sen 30° = 1/2 e que a hipotenusa mede 12 cm, qual é o cateto oposto em centímetros?",
+      "expression": "oposto/12 = 1/2",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Multiplique a hipotenusa pelo seno.",
+        "Calcule 12 × 1/2.",
+        "Oposto = 6 cm."
+      ],
+      "explanation": "Oposto = 6 cm."
+    },
+    {
+      "id": "trig_practice",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "Se tan θ = 3/4 e o cateto adjacente mede 8 m, quanto mede o oposto em metros?",
+      "expression": "oposto = (3/4) × 8",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Tangente é oposto dividido por adjacente.",
+        "Multiplique 8 por 3 e divida por 4.",
+        "Oposto = 24/4 = 6 m."
+      ],
+      "explanation": "Oposto = 24/4 = 6 m."
+    },
+    {
+      "id": "trig_re_001",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "O cateto oposto mede 5 e a hipotenusa mede 13. Qual é sen θ? Responda com uma fração exata.",
+      "expression": "sen θ = oposto/hipotenusa",
+      "expected": "5/13",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Use o cateto oposto no numerador.",
+        "Use a hipotenusa no denominador.",
+        "sen θ = 5/13."
+      ],
+      "explanation": "sen θ = 5/13."
+    },
+    {
+      "id": "trig_re_002",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "Sabendo que cos 60° = 1/2 e que a hipotenusa mede 18 cm, qual é o cateto adjacente em centímetros?",
+      "expression": "adjacente/18 = 1/2",
+      "expected": "9",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Multiplique a hipotenusa pelo cosseno.",
+        "Calcule metade de 18.",
+        "Adjacente = 18 × 1/2 = 9 cm."
+      ],
+      "explanation": "Adjacente = 18 × 1/2 = 9 cm."
+    },
+    {
+      "id": "trig_re_003",
+      "concept_id": "N15",
+      "prerequisites": [
+        "N6",
+        "N14"
+      ],
+      "prompt": "Se tan 45° = 1 e o cateto adjacente mede 7 m, qual é o cateto oposto em metros?",
+      "expression": "oposto/7 = 1",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Tangente 1 indica catetos iguais.",
+        "Multiplique 7 por 1.",
+        "O cateto oposto mede 7 m."
+      ],
+      "explanation": "O cateto oposto mede 7 m."
+    },
+    {
+      "id": "est_001",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a média dos valores?",
+      "expression": "4, 6, 8",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some todos os valores e divida pela quantidade.",
+        "A soma é 18 e há 3 valores.",
+        "18/3 = 6."
+      ],
+      "explanation": "18/3 = 6."
+    },
+    {
+      "id": "est_002",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a mediana?",
+      "expression": "9, 1, 5",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Ordene os valores.",
+        "A lista ordenada é 1, 5, 9.",
+        "O valor central é 5."
+      ],
+      "explanation": "O valor central é 5."
+    },
+    {
+      "id": "est_003",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a moda?",
+      "expression": "2, 3, 3, 5, 7",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Conte quantas vezes cada valor aparece.",
+        "Um dos valores aparece duas vezes.",
+        "3 aparece duas vezes e os outros uma. A moda é 3."
+      ],
+      "explanation": "3 aparece duas vezes e os outros uma. A moda é 3."
+    },
+    {
+      "id": "est_004",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Um gráfico mostra vendas de 4 itens na segunda, 7 na terça e 9 na quarta. Quantos itens foram vendidos no total?",
+      "expression": "segunda = 4; terça = 7; quarta = 9",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "O total é a soma das quantidades.",
+        "Some 4 + 7 + 9.",
+        "4 + 7 + 9 = 20 itens."
+      ],
+      "explanation": "4 + 7 + 9 = 20 itens."
+    },
+    {
+      "id": "est_practice",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a média das notas?",
+      "expression": "5, 7, 8, 8",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Conte os dois valores 8 separadamente.",
+        "A soma é 28 e há 4 notas.",
+        "28/4 = 7."
+      ],
+      "explanation": "28/4 = 7."
+    },
+    {
+      "id": "est_re_001",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a mediana?",
+      "expression": "2, 4, 6, 10",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Há uma quantidade par de valores.",
+        "Faça a média dos dois centrais, 4 e 6.",
+        "(4 + 6)/2 = 5."
+      ],
+      "explanation": "(4 + 6)/2 = 5."
+    },
+    {
+      "id": "est_re_002",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Qual é a moda?",
+      "expression": "1, 4, 4, 4, 7, 7",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Encontre o valor com maior frequência.",
+        "4 aparece três vezes; 7 aparece duas.",
+        "A moda é 4."
+      ],
+      "explanation": "A moda é 4."
+    },
+    {
+      "id": "est_re_003",
+      "concept_id": "N16",
+      "prerequisites": [
+        "N1",
+        "N3"
+      ],
+      "prompt": "Em um gráfico de barras, a turma A leu 12 livros e a turma B leu 8. Quantos livros a mais a turma A leu?",
+      "expression": "A = 12; B = 8",
+      "expected": "4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Compare as alturas das barras em livros.",
+        "Subtraia 8 de 12.",
+        "12 − 8 = 4 livros a mais."
+      ],
+      "explanation": "12 − 8 = 4 livros a mais."
+    },
+    {
+      "id": "prob_001",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Qual é a probabilidade de sair um número par em um dado honesto de seis faces? Responda como fração ou decimal exato.",
+      "expression": "favoráveis = 3; possíveis = 6",
+      "expected": "1/2",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Os pares são 2, 4 e 6.",
+        "Divida 3 por 6.",
+        "P(par) = 3/6 = 1/2."
+      ],
+      "explanation": "P(par) = 3/6 = 1/2."
+    },
+    {
+      "id": "prob_002",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Uma sacola tem 3 bolas azuis e 2 vermelhas, igualmente prováveis. Qual é a chance de retirar uma azul?",
+      "expression": "3 azuis; 2 vermelhas",
+      "expected": "3/5",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Conte o total de bolas.",
+        "Há 5 bolas e 3 são azuis.",
+        "P(azul) = 3/5."
+      ],
+      "explanation": "P(azul) = 3/5."
+    },
+    {
+      "id": "prob_003",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Duas moedas honestas são lançadas independentemente. Qual é a chance de sair cara nas duas?",
+      "expression": "CC, CK, KC, KK",
+      "expected": "1/4",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Liste os quatro resultados igualmente prováveis.",
+        "Apenas CC tem duas caras.",
+        "Há 1 resultado favorável entre 4. A chance é 1/4."
+      ],
+      "explanation": "Há 1 resultado favorável entre 4. A chance é 1/4."
+    },
+    {
+      "id": "prob_004",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Em um dado honesto de seis faces, qual é a chance de sair um número menor que 5? Use uma fração exata.",
+      "expression": "1, 2, 3, 4, 5, 6",
+      "expected": "2/3",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Os números favoráveis são 1, 2, 3 e 4.",
+        "Divida 4 por 6 e simplifique.",
+        "4/6 = 2/3."
+      ],
+      "explanation": "4/6 = 2/3."
+    },
+    {
+      "id": "prob_practice",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Uma sacola tem 4 bolas verdes e 6 amarelas, igualmente prováveis. Qual é a chance de sair verde?",
+      "expression": "4 verdes; 6 amarelas",
+      "expected": "2/5",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Conte o total.",
+        "São 4 favoráveis entre 10.",
+        "4/10 = 2/5 = 0,4."
+      ],
+      "explanation": "4/10 = 2/5 = 0,4."
+    },
+    {
+      "id": "prob_re_001",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Qual é a chance de sair um número maior que 4 num dado honesto de seis faces? Use uma fração exata.",
+      "expression": "1, 2, 3, 4, 5, 6",
+      "expected": "1/3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Os resultados favoráveis são 5 e 6.",
+        "Divida 2 por 6.",
+        "2/6 = 1/3."
+      ],
+      "explanation": "2/6 = 1/3."
+    },
+    {
+      "id": "prob_re_002",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Duas moedas honestas são lançadas independentemente. Qual é a chance de sair exatamente uma cara?",
+      "expression": "CC, CK, KC, KK",
+      "expected": "1/2",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Exatamente uma cara ocorre em CK ou KC.",
+        "Há 2 resultados favoráveis de 4.",
+        "2/4 = 1/2."
+      ],
+      "explanation": "2/4 = 1/2."
+    },
+    {
+      "id": "prob_re_003",
+      "concept_id": "N17",
+      "prerequisites": [
+        "N3",
+        "N6"
+      ],
+      "prompt": "Duas moedas honestas são lançadas independentemente. Qual é a chance de sair pelo menos uma cara?",
+      "expression": "CC, CK, KC, KK",
+      "expected": "3/4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Conte todos os resultados que incluem cara.",
+        "Só KK fica de fora.",
+        "CC, CK e KC são favoráveis. A chance é 3/4."
+      ],
+      "explanation": "CC, CK e KC são favoráveis. A chance é 3/4."
+    },
+    {
+      "id": "log_001",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor final de x? A seta significa atribuição.",
+      "expression": "x ← 4; x ← x + 3",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Siga a ordem das instruções.",
+        "O segundo comando lê o valor 4.",
+        "x passa de 4 para 4 + 3 = 7."
+      ],
+      "explanation": "x passa de 4 para 4 + 3 = 7."
+    },
+    {
+      "id": "log_002",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Com nota = 7, qual é o valor final de resultado?",
+      "expression": "se nota ≥ 6: resultado ← 1; senão: resultado ← 0",
+      "expected": "1",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Confira se a condição é verdadeira.",
+        "7 é maior ou igual a 6.",
+        "O primeiro caminho executa e resultado recebe 1."
+      ],
+      "explanation": "O primeiro caminho executa e resultado recebe 1."
+    },
+    {
+      "id": "log_003",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor final de total?",
+      "expression": "total ← 0; repetir 4 vezes: total ← total + 2",
+      "expected": "8",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Acrescente 2 a cada repetição.",
+        "Os valores são 2, 4, 6 e 8.",
+        "Quatro acréscimos de 2 produzem total = 8."
+      ],
+      "explanation": "Quatro acréscimos de 2 produzem total = 8."
+    },
+    {
+      "id": "log_004",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Quantas vezes o corpo do laço executa?",
+      "expression": "n ← 1; enquanto n < 4: n ← n + 1",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A condição é testada antes de cada execução.",
+        "O corpo executa com n igual a 1, 2 e 3.",
+        "São 3 execuções. Ao chegar a 4, o laço para."
+      ],
+      "explanation": "São 3 execuções. Ao chegar a 4, o laço para."
+    },
+    {
+      "id": "log_practice",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor final de pontos?",
+      "expression": "pontos ← 5; pontos ← pontos × 2; pontos ← pontos − 3",
+      "expected": "7",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Execute as três instruções em ordem.",
+        "Depois da multiplicação, pontos vale 10.",
+        "5 × 2 = 10 e 10 − 3 = 7."
+      ],
+      "explanation": "5 × 2 = 10 e 10 − 3 = 7."
+    },
+    {
+      "id": "log_re_001",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor final de b?",
+      "expression": "a ← 3; b ← a + 2; a ← 9",
+      "expected": "5",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "b recebe o resultado calculado no momento da atribuição.",
+        "Na segunda instrução, a ainda vale 3.",
+        "b recebe 3 + 2 = 5. Alterar a depois não recalcula b."
+      ],
+      "explanation": "b recebe 3 + 2 = 5. Alterar a depois não recalcula b."
+    },
+    {
+      "id": "log_re_002",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Com n = 3, qual é o valor final de r?",
+      "expression": "se n > 5: r ← 10; senão: r ← 20",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Teste a comparação 3 > 5.",
+        "Ela é falsa, então execute o senão.",
+        "O bloco senão atribui 20 a r."
+      ],
+      "explanation": "O bloco senão atribui 20 a r."
+    },
+    {
+      "id": "log_re_003",
+      "concept_id": "N18",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o valor final de soma? O laço inclui i = 1, 2 e 3.",
+      "expression": "soma ← 0; para i de 1 até 3: soma ← soma + i",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Acumule os valores de i.",
+        "Some 1 + 2 + 3.",
+        "soma termina em 6."
+      ],
+      "explanation": "soma termina em 6."
+    },
+    {
+      "id": "fis_001",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Converta 2,5 quilômetros para metros. Digite apenas o número.",
+      "expression": "2,5 km × 1.000",
+      "expected": "2500",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Cada quilômetro tem 1.000 metros.",
+        "Multiplique 2,5 por 1.000.",
+        "2,5 km = 2.500 m."
+      ],
+      "explanation": "2,5 km = 2.500 m."
+    },
+    {
+      "id": "fis_002",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Um móvel vai da posição 0 m à posição 120 m em 6 s. Qual é sua velocidade média em m/s?",
+      "expression": "vm = (120 − 0)/6",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Divida o deslocamento pelo tempo.",
+        "Calcule 120 ÷ 6.",
+        "vm = 20 m/s."
+      ],
+      "explanation": "vm = 20 m/s."
+    },
+    {
+      "id": "fis_003",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Converta 72 km/h para m/s.",
+      "expression": "72 ÷ 3,6",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Para passar de km/h a m/s, divida por 3,6.",
+        "Calcule 72/3,6.",
+        "72 km/h = 20 m/s."
+      ],
+      "explanation": "72 km/h = 20 m/s."
+    },
+    {
+      "id": "fis_004",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Com velocidade constante de 3 m/s e posição inicial 10 m, qual é a posição após 4 s, em metros?",
+      "expression": "s = 10 + 3 × 4",
+      "expected": "22",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Some o deslocamento à posição inicial.",
+        "O deslocamento é 12 m.",
+        "s = 10 + 12 = 22 m."
+      ],
+      "explanation": "s = 10 + 12 = 22 m."
+    },
+    {
+      "id": "fis_practice",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Um móvel vai de 20 m a 100 m em 4 s. Qual é a velocidade média em m/s?",
+      "expression": "vm = (100 − 20)/4",
+      "expected": "20",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Calcule primeiro o deslocamento.",
+        "100 − 20 = 80 m.",
+        "80/4 = 20 m/s."
+      ],
+      "explanation": "80/4 = 20 m/s."
+    },
+    {
+      "id": "fis_re_001",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Converta 10 m/s para km/h.",
+      "expression": "10 × 3,6",
+      "expected": "36",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Multiplique por 3,6.",
+        "Calcule 10 × 3,6.",
+        "10 m/s = 36 km/h."
+      ],
+      "explanation": "10 m/s = 36 km/h."
+    },
+    {
+      "id": "fis_re_002",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Uma pessoa anda 10 m para a frente e retorna ao ponto inicial em um total de 5 s. Qual é a velocidade média do percurso completo, em m/s?",
+      "expression": "vm = deslocamento/tempo",
+      "expected": "0",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Use a diferença entre posição final e inicial.",
+        "As posições inicial e final são iguais.",
+        "O deslocamento é zero. vm = 0/5 = 0 m/s."
+      ],
+      "explanation": "O deslocamento é zero. vm = 0/5 = 0 m/s."
+    },
+    {
+      "id": "fis_re_003",
+      "concept_id": "N19",
+      "prerequisites": [
+        "N6",
+        "N12"
+      ],
+      "prompt": "Um móvel vai da posição 30 m à posição 10 m em 5 s. Qual é sua velocidade média em m/s?",
+      "expression": "vm = (10 − 30)/5",
+      "expected": "-4",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "O deslocamento pode ser negativo.",
+        "10 − 30 = −20 m.",
+        "vm = −20/5 = −4 m/s, no sentido negativo do eixo."
+      ],
+      "explanation": "vm = −20/5 = −4 m/s, no sentido negativo do eixo."
+    },
+    {
+      "id": "qui_001",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Um átomo tem número atômico Z = 8. Quantos prótons ele possui?",
+      "expression": "Z = 8",
+      "expected": "8",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "O número atômico identifica a quantidade de prótons.",
+        "Use diretamente o valor de Z.",
+        "Z = 8 significa 8 prótons."
+      ],
+      "explanation": "Z = 8 significa 8 prótons."
+    },
+    {
+      "id": "qui_002",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Um átomo tem número de massa A = 23 e número atômico Z = 11. Quantos nêutrons possui?",
+      "expression": "n = A − Z",
+      "expected": "12",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A massa reúne prótons e nêutrons.",
+        "Subtraia 11 de 23.",
+        "23 − 11 = 12 nêutrons."
+      ],
+      "explanation": "23 − 11 = 12 nêutrons."
+    },
+    {
+      "id": "qui_003",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Um átomo neutro tem 6 prótons. Quantos elétrons ele possui?",
+      "expression": "carga total = 0",
+      "expected": "6",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "Neutralidade exige igual quantidade de cargas positivas e negativas.",
+        "Cada próton tem uma carga oposta à de um elétron.",
+        "São 6 elétrons para equilibrar os 6 prótons."
+      ],
+      "explanation": "São 6 elétrons para equilibrar os 6 prótons."
+    },
+    {
+      "id": "qui_004",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual propriedade determina a ordem crescente dos elementos na tabela periódica? Digite 1 para número atômico, 2 para número de nêutrons ou 3 para ordem alfabética.",
+      "expression": "Organização da tabela periódica",
+      "expected": "1",
+      "difficulty": 2,
+      "purpose": "diagnostic",
+      "hints": [
+        "A propriedade identifica o elemento químico.",
+        "Ela corresponde ao número de prótons.",
+        "A tabela é organizada por número atômico crescente. Opção 1."
+      ],
+      "explanation": "A tabela é organizada por número atômico crescente. Opção 1."
+    },
+    {
+      "id": "qui_practice",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Um átomo tem Z = 17 e A = 35. Quantos nêutrons possui?",
+      "expression": "n = 35 − 17",
+      "expected": "18",
+      "difficulty": 2,
+      "purpose": "practice",
+      "hints": [
+        "Retire os prótons do número de massa.",
+        "Calcule 35 − 17.",
+        "O átomo possui 18 nêutrons."
+      ],
+      "explanation": "O átomo possui 18 nêutrons."
+    },
+    {
+      "id": "qui_re_001",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Um íon tem 11 prótons e 10 elétrons. Qual é sua carga em unidades de carga elementar? Digite um número com sinal, se necessário.",
+      "expression": "carga = 11 − 10",
+      "expected": "1",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Cada próton contribui +1 e cada elétron −1.",
+        "Há uma carga positiva a mais.",
+        "A carga líquida é +1, portanto responda 1 ou +1."
+      ],
+      "explanation": "A carga líquida é +1, portanto responda 1 ou +1."
+    },
+    {
+      "id": "qui_re_002",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Qual é o tipo de ligação entre os íons de sódio e cloreto no NaCl? Digite 1 para iônica, 2 para covalente ou 3 para metálica.",
+      "expression": "Na⁺ e Cl⁻",
+      "expected": "1",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Considere a atração entre cargas opostas.",
+        "Sódio e cloreto estão na forma de íons.",
+        "A atração entre os íons caracteriza ligação iônica. Opção 1."
+      ],
+      "explanation": "A atração entre os íons caracteriza ligação iônica. Opção 1."
+    },
+    {
+      "id": "qui_re_003",
+      "concept_id": "N20",
+      "prerequisites": [
+        "N1"
+      ],
+      "prompt": "Na água, os átomos compartilham pares de elétrons. Qual é o tipo de ligação entre H e O? Digite 1 para metálica, 2 para iônica ou 3 para covalente.",
+      "expression": "H₂O",
+      "expected": "3",
+      "difficulty": 2,
+      "purpose": "reassessment",
+      "hints": [
+        "Observe a palavra compartilham.",
+        "Compartilhar pares de elétrons caracteriza ligação covalente.",
+        "As ligações entre H e O são covalentes. Opção 3."
+      ],
+      "explanation": "As ligações entre H e O são covalentes. Opção 3."
+    }
+  ]
+}

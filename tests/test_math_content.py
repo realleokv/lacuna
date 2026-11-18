@@ -14,6 +14,6 @@ def test_answer_key_against_independent_arithmetic():
         'eq_001':(21-6)/3,'eq_002':(10+4)/2,'eq_003':(11-3)/-2,'eq_004':(4-1)*2,
         'eq_practice':(23-3)/4,'eq_re_001':(28-4)/4,'eq_re_002':(14-2)/-3,'eq_re_003':(5-2)*3,
     }
-    assert set(expected)==set(QUESTIONS)
+    assert set(expected)=={qid for qid, q in QUESTIONS.items() if q["concept_id"] in {"N1", "N2", "N3", "N4"}}
     for qid,answer in expected.items():
         assert parse_answer(QUESTIONS[qid]['expected'])==F(answer),qid

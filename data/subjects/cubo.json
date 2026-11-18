@@ -1,0 +1,989 @@
+{
+  "schema_version": 1,
+  "id": "cubo",
+  "title": "Cubo mágico",
+  "symbol": "▦",
+  "tracks": [
+    {
+      "id": "cub-notacao",
+      "title": "Peças, cores e notação",
+      "goal": "Identificar peças do 3×3 e ler movimentos pela face correta.",
+      "lessons": [
+        {
+          "id": "cub-pecas",
+          "title": "Centros, arestas e cantos",
+          "objective": "Classificar uma peça pelo número de adesivos visíveis.",
+          "prerequisites": [],
+          "steps": [
+            "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+            "Observe a peça inteira: um quadradinho isolado é só uma de suas faces visíveis."
+          ],
+          "example": "Peça com branco e azul → duas cores → aresta.",
+          "questions": [
+            {
+              "id": "cub-pecas.1",
+              "concept_id": "cub-pecas",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe uma peça com três cores visíveis ao tipo correto.",
+              "difficulty": 1,
+              "validator": "Canto",
+              "options": [
+                "Aresta",
+                "Centro",
+                "Canto"
+              ],
+              "feedback": "Três faces do cubo se encontram em um canto.",
+              "hints": [
+                "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+                "Três faces do cubo se encontram em um canto."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-pecas.2",
+              "concept_id": "cub-pecas",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Quantas arestas há em um cubo 3×3 completo?",
+              "difficulty": 2,
+              "validator": "12",
+              "options": [],
+              "feedback": "Há quatro na camada superior, quatro na intermediária e quatro na inferior.",
+              "hints": [
+                "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+                "Há quatro na camada superior, quatro na intermediária e quatro na inferior."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-pecas.3",
+              "concept_id": "cub-pecas",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual peça indica a cor de referência de uma face em um 3×3 usual?",
+              "difficulty": 3,
+              "validator": "Centro",
+              "options": [
+                "Qualquer aresta",
+                "Qualquer canto",
+                "Centro"
+              ],
+              "feedback": "Os centros definem as cores de referência das faces.",
+              "hints": [
+                "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+                "Os centros definem as cores de referência das faces."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-pecas.4",
+              "concept_id": "cub-pecas",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Quantos cantos existem no 3×3?",
+              "difficulty": 2,
+              "validator": "8",
+              "options": [],
+              "feedback": "Há quatro cantos na camada superior e quatro na inferior.",
+              "hints": [
+                "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+                "Há quatro cantos na camada superior e quatro na inferior."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-pecas.5",
+              "concept_id": "cub-pecas",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "Uma peça de aresta pode virar uma peça de canto após vários giros legais.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Os giros movimentam peças entre posições do mesmo tipo.",
+              "hints": [
+                "Num cubo 3×3 usual, cada centro expõe uma cor, cada aresta duas e cada canto três.",
+                "Os giros movimentam peças entre posições do mesmo tipo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-pecas.r2",
+              "concept_id": "cub-pecas",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Quantos centros visíveis de uma cor há ao todo em um cubo 3×3 de seis faces, contando um centro por face?",
+              "difficulty": 3,
+              "validator": "6",
+              "options": [],
+              "feedback": "Cada uma das seis faces tem um centro.",
+              "hints": [
+                "Observe a peça inteira: um quadradinho isolado é só uma de suas faces visíveis.",
+                "Cada uma das seis faces tem um centro."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma peça tem exatamente duas cores. Ela ocupa…",
+            "options": [
+              "Um centro",
+              "Uma posição de aresta"
+            ],
+            "solution": "Uma posição de aresta",
+            "explanation": "No 3×3 usual cada aresta tem dois adesivos visíveis."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cub-face",
+          "title": "Nomear as faces",
+          "objective": "Relacionar letras de notação internacional à orientação atual.",
+          "prerequisites": [
+            "cub-pecas"
+          ],
+          "steps": [
+            "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+            "Ao girar o cubo inteiro na mão, o nome espacial de uma face pode mudar."
+          ],
+          "example": "Com a mesma pegada, R corresponde à face direita independentemente da sua cor.",
+          "questions": [
+            {
+              "id": "cub-face.1",
+              "concept_id": "cub-face",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Qual letra representa a face superior na notação internacional?",
+              "difficulty": 1,
+              "validator": "U",
+              "options": [],
+              "feedback": "U vem de up.",
+              "hints": [
+                "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+                "U vem de up."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-face.2",
+              "concept_id": "cub-face",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe a letra F à posição correspondente.",
+              "difficulty": 2,
+              "validator": "Frente",
+              "options": [
+                "Frente",
+                "Trás",
+                "Direita"
+              ],
+              "feedback": "F vem de front.",
+              "hints": [
+                "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+                "F vem de front."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-face.3",
+              "concept_id": "cub-face",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Você gira o cubo inteiro e outra cor fica à direita. A que R passa a se referir?",
+              "difficulty": 3,
+              "validator": "À atual face direita",
+              "options": [
+                "Sempre à face vermelha",
+                "Sempre à antiga frente",
+                "À atual face direita"
+              ],
+              "feedback": "As letras descrevem posições no referencial usado.",
+              "hints": [
+                "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+                "As letras descrevem posições no referencial usado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-face.4",
+              "concept_id": "cub-face",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "Qual letra representa a face inferior?",
+              "difficulty": 2,
+              "validator": "D",
+              "options": [],
+              "feedback": "D vem de down.",
+              "hints": [
+                "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+                "D vem de down."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-face.5",
+              "concept_id": "cub-face",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Mantendo a pegada, qual par corresponde a faces opostas?",
+              "difficulty": 2,
+              "validator": "F e B",
+              "options": [
+                "L e F",
+                "F e B",
+                "U e R"
+              ],
+              "feedback": "Frente e trás são opostas.",
+              "hints": [
+                "Segure uma orientação fixa: U é cima, D baixo, F frente, B trás, R direita e L esquerda.",
+                "Frente e trás são opostas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-face.r2",
+              "concept_id": "cub-face",
+              "role": "review",
+              "format": "typed",
+              "prompt": "Qual é a letra da face esquerda segundo a notação internacional?",
+              "difficulty": 3,
+              "validator": "L",
+              "options": [],
+              "feedback": "L vem de left.",
+              "hints": [
+                "Ao girar o cubo inteiro na mão, o nome espacial de uma face pode mudar.",
+                "L vem de left."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Mantendo a pegada, a face oposta a U chama-se…",
+            "options": [
+              "B",
+              "D"
+            ],
+            "solution": "D",
+            "explanation": "U é a face superior e D a inferior."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cub-giro",
+          "title": "Ler um quarto de volta",
+          "objective": "Interpretar sentido e magnitude de um movimento olhando a face girada.",
+          "prerequisites": [
+            "cub-face"
+          ],
+          "steps": [
+            "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+            "O sufixo 2 indica meia volta e independe do sentido escolhido."
+          ],
+          "example": "R → quarto de volta horário olhando a direita; R' → desfaz R.",
+          "questions": [
+            {
+              "id": "cub-giro.1",
+              "concept_id": "cub-giro",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O que significa U2?",
+              "difficulty": 1,
+              "validator": "Meia volta da face de cima",
+              "options": [
+                "Meia volta da face de cima",
+                "Um giro da face de baixo",
+                "Duas voltas completas em cima"
+              ],
+              "feedback": "Dois quartos de volta equivalem a 180°.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "Dois quartos de volta equivalem a 180°."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.2",
+              "concept_id": "cub-giro",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Para interpretar o sentido de B, imagine olhar diretamente para a face de trás.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A convenção é relativa à face girada.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "A convenção é relativa à face girada."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.3",
+              "concept_id": "cub-giro",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Quantos graus há em um único movimento F sem sufixo?",
+              "difficulty": 3,
+              "validator": "90",
+              "options": [],
+              "feedback": "Uma letra simples indica um quarto de volta.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "Uma letra simples indica um quarto de volta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.4",
+              "concept_id": "cub-giro",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "Qual sufixo numérico transforma R em meia volta?",
+              "difficulty": 2,
+              "validator": "2",
+              "options": [],
+              "feedback": "R2 significa duas vezes um quarto de volta.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "R2 significa duas vezes um quarto de volta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.5",
+              "concept_id": "cub-giro",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual movimento desfaz F em uma única jogada?",
+              "difficulty": 2,
+              "validator": "F'",
+              "options": [
+                "U'",
+                "R2",
+                "F'"
+              ],
+              "feedback": "A inversa gira a mesma face no sentido contrário.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "A inversa gira a mesma face no sentido contrário."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.6",
+              "concept_id": "cub-giro",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Que sequência preserva a orientação das outras camadas e equivale a U2?",
+              "difficulty": 3,
+              "validator": "U U",
+              "options": [
+                "U D",
+                "R R",
+                "U U"
+              ],
+              "feedback": "Dois quartos seguidos na mesma face dão meia volta.",
+              "hints": [
+                "Uma letra sozinha indica 90° no sentido horário visto de frente para aquela face. O apóstrofo indica o sentido contrário.",
+                "Dois quartos seguidos na mesma face dão meia volta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-giro.r2",
+              "concept_id": "cub-giro",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Quantos graus representa B2?",
+              "difficulty": 3,
+              "validator": "180",
+              "options": [],
+              "feedback": "Uma meia volta equivale a 180 graus.",
+              "hints": [
+                "O sufixo 2 indica meia volta e independe do sentido escolhido.",
+                "Uma meia volta equivale a 180 graus."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Vendo a face diretamente, um giro com apóstrofo é…",
+            "options": [
+              "Horário",
+              "Anti-horário"
+            ],
+            "solution": "Anti-horário",
+            "explanation": "O apóstrofo representa a inversa do giro simples."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cub-sequencias",
+      "title": "Primeiras sequências e resolução",
+      "goal": "Desfazer sequências, alinhar uma cruz e verificar a primeira camada.",
+      "lessons": [
+        {
+          "id": "cub-inversa",
+          "title": "Desfazer uma sequência",
+          "objective": "Construir a inversa de uma sequência curta.",
+          "prerequisites": [],
+          "steps": [
+            "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+            "Uma meia volta é sua própria inversa."
+          ],
+          "example": "R U → primeiro U' → depois R'.",
+          "questions": [
+            {
+              "id": "cub-inversa.1",
+              "concept_id": "cub-inversa",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual sequência desfaz F R, mantendo a mesma pegada?",
+              "difficulty": 1,
+              "validator": "R' F'",
+              "options": [
+                "R' F'",
+                "F' R'",
+                "F R'"
+              ],
+              "feedback": "Primeiro desfaça R e depois F.",
+              "hints": [
+                "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+                "Primeiro desfaça R e depois F."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-inversa.2",
+              "concept_id": "cub-inversa",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Qual movimento de uma só jogada desfaz U2? Use a notação internacional.",
+              "difficulty": 2,
+              "validator": "U2",
+              "options": [],
+              "feedback": "Uma segunda meia volta completa 360°.",
+              "hints": [
+                "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+                "Uma segunda meia volta completa 360°."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-inversa.3",
+              "concept_id": "cub-inversa",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "R U e U R sempre deixam o cubo no mesmo estado.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Giros em faces adjacentes normalmente não comutam.",
+              "hints": [
+                "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+                "Giros em faces adjacentes normalmente não comutam."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-inversa.4",
+              "concept_id": "cub-inversa",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual sequência é a inversa de R U F?",
+              "difficulty": 2,
+              "validator": "F' U' R'",
+              "options": [
+                "F U R",
+                "R' U' F'",
+                "F' U' R'"
+              ],
+              "feedback": "A ordem se inverte e cada giro recebe o sentido oposto.",
+              "hints": [
+                "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+                "A ordem se inverte e cada giro recebe o sentido oposto."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-inversa.5",
+              "concept_id": "cub-inversa",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Partindo do cubo resolvido, quantos giros R simples consecutivos são necessários para a primeira volta completa?",
+              "difficulty": 2,
+              "validator": "4",
+              "options": [],
+              "feedback": "Quatro quartos de volta restauram a posição inicial.",
+              "hints": [
+                "Desfaça primeiro o último movimento. Inverta o sentido de cada movimento enquanto volta pela sequência.",
+                "Quatro quartos de volta restauram a posição inicial."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-inversa.r2",
+              "concept_id": "cub-inversa",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual sequência desfaz R2 F' mantendo a pegada?",
+              "difficulty": 3,
+              "validator": "F R2",
+              "options": [
+                "F R2",
+                "F' R2",
+                "R2 F"
+              ],
+              "feedback": "A inversa de F' é F e a inversa de R2 é R2.",
+              "hints": [
+                "Uma meia volta é sua própria inversa.",
+                "A inversa de F' é F e a inversa de R2 é R2."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Ao desfazer R U, o primeiro movimento deve desfazer…",
+            "options": [
+              "R",
+              "U"
+            ],
+            "solution": "U",
+            "explanation": "O último giro feito é o primeiro a ser revertido."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cub-cruz",
+          "title": "Conferir a cruz inicial",
+          "objective": "Verificar as cores laterais das quatro arestas ao montar uma cruz.",
+          "prerequisites": [
+            "cub-inversa"
+          ],
+          "steps": [
+            "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+            "Um sinal de mais de uma só cor pode esconder arestas trocadas nas laterais."
+          ],
+          "example": "Aresta branco–azul → adesivo branco na base e azul ao lado do centro azul.",
+          "questions": [
+            {
+              "id": "cub-cruz.1",
+              "concept_id": "cub-cruz",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "A cruz branca parece pronta por cima. O que conferir em seguida?",
+              "difficulty": 1,
+              "validator": "Cores laterais das arestas com seus centros",
+              "options": [
+                "A marca comercial do cubo",
+                "Somente a cor dos cantos",
+                "Cores laterais das arestas com seus centros"
+              ],
+              "feedback": "Cada aresta tem uma segunda cor que precisa estar alinhada.",
+              "hints": [
+                "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+                "Cada aresta tem uma segunda cor que precisa estar alinhada."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-cruz.2",
+              "concept_id": "cub-cruz",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Quantas peças de aresta são necessárias para formar a cruz de uma face?",
+              "difficulty": 2,
+              "validator": "4",
+              "options": [],
+              "feedback": "Há uma posição de aresta em cada lado do centro.",
+              "hints": [
+                "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+                "Há uma posição de aresta em cada lado do centro."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-cruz.3",
+              "concept_id": "cub-cruz",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "A aresta branco–verde pode estar corretamente resolvida entre os centros branco e azul.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "As duas cores da aresta devem corresponder aos centros vizinhos.",
+              "hints": [
+                "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+                "As duas cores da aresta devem corresponder aos centros vizinhos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-cruz.4",
+              "concept_id": "cub-cruz",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe a peça branco–vermelho à posição correta na cruz branca.",
+              "difficulty": 2,
+              "validator": "Entre os centros branco e vermelho",
+              "options": [
+                "Entre vermelho e verde",
+                "Entre branco e azul",
+                "Entre os centros branco e vermelho"
+              ],
+              "feedback": "A identidade da aresta vem das duas cores.",
+              "hints": [
+                "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+                "A identidade da aresta vem das duas cores."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-cruz.5",
+              "concept_id": "cub-cruz",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual inspeção distingue uma cruz alinhada de outra apenas branca por cima?",
+              "difficulty": 2,
+              "validator": "Examinar as quatro laterais junto aos centros",
+              "options": [
+                "Olhar só o centro branco",
+                "Examinar as quatro laterais junto aos centros",
+                "Contar somente os quatro adesivos brancos"
+              ],
+              "feedback": "Os quatro pares laterais confirmam a posição de cada aresta.",
+              "hints": [
+                "Escolha uma cor-base. Além de aparecerem nessa face, as quatro arestas devem combinar com os centros laterais.",
+                "Os quatro pares laterais confirmam a posição de cada aresta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-cruz.r2",
+              "concept_id": "cub-cruz",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Aresta branco–laranja com branco em cima. Qual centro deve tocar o adesivo laranja ao alinhar a cruz?",
+              "difficulty": 3,
+              "validator": "Laranja",
+              "options": [
+                "Branco",
+                "Azul",
+                "Laranja"
+              ],
+              "feedback": "Ambas as cores precisam coincidir com suas respectivas faces.",
+              "hints": [
+                "Um sinal de mais de uma só cor pode esconder arestas trocadas nas laterais.",
+                "Ambas as cores precisam coincidir com suas respectivas faces."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se uma lateral da cruz não combina com o centro, a cruz está…",
+            "options": [
+              "Ainda desalinhada",
+              "Totalmente resolvida"
+            ],
+            "solution": "Ainda desalinhada",
+            "explanation": "A segunda cor da aresta também precisa corresponder ao centro."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cub-camada",
+          "title": "Resolver uma primeira camada simples",
+          "objective": "Restaurar uma camada em um caso de treino e conferir as peças vizinhas.",
+          "prerequisites": [
+            "cub-cruz"
+          ],
+          "steps": [
+            "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+            "Num embaralhamento livre, localizar o canto pelas três cores ajuda a escolher a posição de destino. Este caso de treino tem uma preparação conhecida."
+          ],
+          "example": "Caso de treino R U → U' R' → compare a face de base e as quatro fileiras laterais.",
+          "questions": [
+            {
+              "id": "cub-camada.1",
+              "concept_id": "cub-camada",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual é o destino do canto branco–azul–vermelho?",
+              "difficulty": 1,
+              "validator": "Encontro dos centros branco, azul e vermelho",
+              "options": [
+                "Qualquer posição com branco",
+                "Encontro dos centros branco, azul e vermelho",
+                "Meio da face azul"
+              ],
+              "feedback": "As três cores identificam o encontro de faces.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "As três cores identificam o encontro de faces."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.2",
+              "concept_id": "cub-camada",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Uma face toda branca garante sozinha que a primeira camada inteira está resolvida.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "As fileiras laterais podem conter peças permutadas.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "As fileiras laterais podem conter peças permutadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.3",
+              "concept_id": "cub-camada",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O cubo resolvido recebeu R U. Qual tentativa deve restaurar essa camada e o restante nesse caso?",
+              "difficulty": 3,
+              "validator": "U' R'",
+              "options": [
+                "R' U'",
+                "U' R'",
+                "R U2"
+              ],
+              "feedback": "Desfazendo a preparação na ordem inversa, o estado inicial retorna.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "Desfazendo a preparação na ordem inversa, o estado inicial retorna."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.4",
+              "concept_id": "cub-camada",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Além do centro e das quatro arestas, quantos cantos pertencem a uma camada externa do 3×3?",
+              "difficulty": 2,
+              "validator": "4",
+              "options": [],
+              "feedback": "Cada uma das quatro extremidades da camada corresponde a um canto.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "Cada uma das quatro extremidades da camada corresponde a um canto."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.5",
+              "concept_id": "cub-camada",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Depois de encaixar um canto, que verificação ajuda a preservar o trabalho?",
+              "difficulty": 2,
+              "validator": "Reexaminar a cruz e os cantos já alinhados",
+              "options": [
+                "Reexaminar a cruz e os cantos já alinhados",
+                "Ignorar todas as arestas",
+                "Conferir só a nova cor superior"
+              ],
+              "feedback": "Uma sequência pode deslocar peças que já estavam bem posicionadas.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "Uma sequência pode deslocar peças que já estavam bem posicionadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.6",
+              "concept_id": "cub-camada",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Em um treino o cubo recebeu F U2. Qual sequência restaura o estado inicial?",
+              "difficulty": 3,
+              "validator": "U2 F'",
+              "options": [
+                "U F'",
+                "U2 F'",
+                "F' U2"
+              ],
+              "feedback": "Desfaça primeiro U2 com outra meia volta, depois reverta F.",
+              "hints": [
+                "Comece o laboratório com o cubo resolvido e aplique R U. Acompanhe o canto que saiu da camada e desfaça a sequência na ordem inversa.",
+                "Desfaça primeiro U2 com outra meia volta, depois reverta F."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cub-camada.r2",
+              "concept_id": "cub-camada",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual evidência indica que uma primeira camada está resolvida?",
+              "difficulty": 3,
+              "validator": "Face-base completa e cores das quatro fileiras laterais alinhadas",
+              "options": [
+                "Somente a cruz branca visível",
+                "Apenas o adesivo central correto",
+                "Face-base completa e cores das quatro fileiras laterais alinhadas"
+              ],
+              "feedback": "A condição inclui posição e orientação das arestas e dos cantos.",
+              "hints": [
+                "Num embaralhamento livre, localizar o canto pelas três cores ajuda a escolher a posição de destino. Este caso de treino tem uma preparação conhecida.",
+                "A condição inclui posição e orientação das arestas e dos cantos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "No treino R U, a sequência de retorno mais curta entre estas duas é…",
+            "options": [
+              "R U R U",
+              "U' R'"
+            ],
+            "solution": "U' R'",
+            "explanation": "A inversa desfaz exatamente a preparação."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

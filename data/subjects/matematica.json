@@ -113,7 +113,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-grupos.r2",
+              "concept_id": "mat-grupos",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Quantos pacotes completos de nove folhas cabem em 74 folhas?",
+              "difficulty": 3,
+              "validator": "8",
+              "options": [],
+              "feedback": "Oito pacotes usam 72 folhas e sobram duas.",
+              "hints": [
+                "Confira multiplicando o número de grupos pelo tamanho de cada grupo.",
+                "Oito pacotes usam 72 folhas e sobram duas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "Você dobrou o total e manteve os mesmos grupos. O tamanho de cada grupo…",
+            "options": [
+              "Fica igual",
+              "Dobra"
+            ],
+            "solution": "Dobra",
+            "explanation": "Cada grupo recebe o dobro de elementos."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         },
         {
@@ -225,7 +260,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-sinais.r2",
+              "concept_id": "mat-sinais",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Você começa no piso +3 e desce oito andares. Em que piso para?",
+              "difficulty": 3,
+              "validator": "−5",
+              "options": [],
+              "feedback": "Três andares levam ao zero e outros cinco ao piso −5.",
+              "hints": [
+                "Verifique se o resultado está do lado esperado em relação ao ponto de partida.",
+                "Três andares levam ao zero e outros cinco ao piso −5."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "Na reta, partindo de −1 e andando para a esquerda, o valor…",
+            "options": [
+              "Aumenta",
+              "Diminui"
+            ],
+            "solution": "Diminui",
+            "explanation": "Para a esquerda ficam os valores menores."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         },
         {
@@ -352,7 +422,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-fracoes.r2",
+              "concept_id": "mat-fracoes",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Em uma garrafa cheia, bebeu-se 1/6 pela manhã e 1/3 à tarde. Que fração sobrou?",
+              "difficulty": 3,
+              "validator": "1/2",
+              "options": [],
+              "feedback": "Um terço são dois sextos. Sobram três sextos.",
+              "hints": [
+                "Some os numeradores depois de igualar os denominadores.",
+                "Um terço são dois sextos. Sobram três sextos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "Para comparar 1/3 de duas barras, o tamanho das barras importa?",
+            "options": [
+              "Sim",
+              "Não"
+            ],
+            "solution": "Sim",
+            "explanation": "O mesmo número fracionário pode representar quantidades concretas diferentes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         }
       ]
@@ -466,7 +571,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-equacao.r2",
+              "concept_id": "mat-equacao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Qual valor de x satisfaz 5x − 4 = 16?",
+              "difficulty": 3,
+              "validator": "4",
+              "options": [],
+              "feedback": "Some quatro e divida 20 por cinco.",
+              "hints": [
+                "Substitua a resposta na equação original e confira a igualdade.",
+                "Some quatro e divida 20 por cinco."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "Uma balança está em equilíbrio. Tirar a mesma massa dos dois pratos…",
+            "options": [
+              "Dobra a diferença",
+              "Mantém o equilíbrio"
+            ],
+            "solution": "Mantém o equilíbrio",
+            "explanation": "A diferença entre os dois lados continua zero."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         },
         {
@@ -575,7 +715,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-proporcao.r2",
+              "concept_id": "mat-proporcao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Cinco metros de tecido custam 45 reais. Quanto custam oito metros ao mesmo preço por metro?",
+              "difficulty": 3,
+              "validator": "72",
+              "options": [],
+              "feedback": "Cada metro custa nove reais.",
+              "hints": [
+                "Para porções fracionadas, calcule antes a quantidade por unidade.",
+                "Cada metro custa nove reais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "A receita triplicou em porções. A quantidade de cada ingrediente deve…",
+            "options": [
+              "Aumentar em três unidades",
+              "Triplicar"
+            ],
+            "solution": "Triplicar",
+            "explanation": "Preservar a receita significa conservar as proporções entre os ingredientes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         },
         {
@@ -702,7 +877,42 @@
               "source_or_author": "Lacuna • material autoral",
               "accessibility": "Texto e teclado",
               "version": 1
+            },
+            {
+              "id": "mat-percentual.r2",
+              "concept_id": "mat-percentual",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma taxa de 5% incide sobre 240 reais. De quantos reais é a taxa?",
+              "difficulty": 3,
+              "validator": "12",
+              "options": [],
+              "feedback": "Dez por cento são 24 reais e cinco por cento são a metade.",
+              "hints": [
+                "Em alterações sucessivas, recalcule a base a cada etapa.",
+                "Dez por cento são 24 reais e cinco por cento são a metade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
             }
+          ],
+          "mini": {
+            "prompt": "Metade do preço é um desconto de…",
+            "options": [
+              "5%",
+              "50%"
+            ],
+            "solution": "50%",
+            "explanation": "Cinquenta centésimos equivalem a metade."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
           ]
         }
       ]

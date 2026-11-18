@@ -1,0 +1,957 @@
+{
+  "schema_version": 1,
+  "id": "fisica",
+  "title": "Física",
+  "symbol": "↗",
+  "tracks": [
+    {
+      "id": "fis-mov",
+      "title": "Movimento e medidas",
+      "goal": "Escolher unidades, calcular velocidade média e interpretar gráficos.",
+      "lessons": [
+        {
+          "id": "fis-unidade",
+          "title": "Uma medida precisa de unidade",
+          "objective": "Converter distâncias e intervalos antes de comparar medidas.",
+          "prerequisites": [],
+          "steps": [
+            "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+            "Antes de calcular velocidade, deixe distância e tempo nas unidades pedidas."
+          ],
+          "example": "1,5 km → 1,5 × 1.000 m → 1.500 m.",
+          "questions": [
+            {
+              "id": "fis-unidade.1",
+              "concept_id": "fis-unidade",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma pista mede 0,4 km. Quantos metros são?",
+              "difficulty": 1,
+              "validator": "400",
+              "options": [],
+              "feedback": "Um quilômetro equivale a mil metros.",
+              "hints": [
+                "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+                "Um quilômetro equivale a mil metros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-unidade.2",
+              "concept_id": "fis-unidade",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma caminhada dura 2,5 minutos. Quantos segundos são?",
+              "difficulty": 2,
+              "validator": "150",
+              "options": [],
+              "feedback": "Dois minutos são 120 s e meio minuto são 30 s.",
+              "hints": [
+                "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+                "Dois minutos são 120 s e meio minuto são 30 s."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-unidade.3",
+              "concept_id": "fis-unidade",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual par mede a mesma grandeza?",
+              "difficulty": 3,
+              "validator": "Metro e centímetro",
+              "options": [
+                "Metro e centímetro",
+                "Metro e segundo",
+                "Quilograma e minuto"
+              ],
+              "feedback": "As duas primeiras unidades medem comprimento.",
+              "hints": [
+                "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+                "As duas primeiras unidades medem comprimento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-unidade.4",
+              "concept_id": "fis-unidade",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Uma régua marca 35 mm. Quantos centímetros são?",
+              "difficulty": 2,
+              "validator": "3,5",
+              "options": [],
+              "feedback": "Cada centímetro contém dez milímetros.",
+              "hints": [
+                "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+                "Cada centímetro contém dez milímetros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-unidade.5",
+              "concept_id": "fis-unidade",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um percurso soma 250 m e 0,75 km. Qual é o total em metros?",
+              "difficulty": 2,
+              "validator": "1000",
+              "options": [],
+              "feedback": "Converta 0,75 km em 750 m antes de somar.",
+              "hints": [
+                "Identifique a grandeza. Multiplique ou divida por uma razão entre unidades da mesma grandeza.",
+                "Converta 0,75 km em 750 m antes de somar."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-unidade.r2",
+              "concept_id": "fis-unidade",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma volta dura 90 segundos. Quantos minutos são?",
+              "difficulty": 3,
+              "validator": "1,5",
+              "options": [],
+              "feedback": "Divida 90 por 60.",
+              "hints": [
+                "Antes de calcular velocidade, deixe distância e tempo nas unidades pedidas.",
+                "Divida 90 por 60."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Para somar 3 m e 20 cm, o primeiro cuidado é…",
+            "options": [
+              "Usar a mesma unidade",
+              "Somar 3 e 20 diretamente"
+            ],
+            "solution": "Usar a mesma unidade",
+            "explanation": "Vinte centímetros são 0,20 metro."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "fis-velocidade",
+          "title": "Distância por intervalo de tempo",
+          "objective": "Calcular rapidez média incluindo pausas no intervalo.",
+          "prerequisites": [
+            "fis-unidade"
+          ],
+          "steps": [
+            "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+            "A rapidez média não descreve todas as variações ao longo do trajeto."
+          ],
+          "example": "120 m em 30 s → 120 ÷ 30 → 4 m/s.",
+          "questions": [
+            {
+              "id": "fis-velocidade.1",
+              "concept_id": "fis-velocidade",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma pessoa percorre 90 m em 30 s. Qual sua rapidez média em m/s?",
+              "difficulty": 1,
+              "validator": "3",
+              "options": [],
+              "feedback": "Divida 90 por 30.",
+              "hints": [
+                "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+                "Divida 90 por 30."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-velocidade.2",
+              "concept_id": "fis-velocidade",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Percorrer 60 km em uma hora prova que o veículo esteve a 60 km/h o tempo todo.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A média admite diferentes velocidades instantâneas.",
+              "hints": [
+                "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+                "A média admite diferentes velocidades instantâneas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-velocidade.3",
+              "concept_id": "fis-velocidade",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma ciclista percorre 12 km em 30 min e para mais 30 min. Qual é a rapidez média em km/h nessa hora completa?",
+              "difficulty": 3,
+              "validator": "12",
+              "options": [],
+              "feedback": "A distância total é 12 km e o intervalo total é uma hora.",
+              "hints": [
+                "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+                "A distância total é 12 km e o intervalo total é uma hora."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-velocidade.4",
+              "concept_id": "fis-velocidade",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual unidade expressa rapidez?",
+              "difficulty": 2,
+              "validator": "m/s",
+              "options": [
+                "m²",
+                "kg",
+                "m/s"
+              ],
+              "feedback": "Rapidez relaciona comprimento e tempo.",
+              "hints": [
+                "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+                "Rapidez relaciona comprimento e tempo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-velocidade.5",
+              "concept_id": "fis-velocidade",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um carrinho mantém 2,5 m/s por 8 s. Quantos metros percorre?",
+              "difficulty": 2,
+              "validator": "20",
+              "options": [],
+              "feedback": "Em movimento uniforme a distância é rapidez vezes tempo.",
+              "hints": [
+                "Divida a distância total pelo tempo decorrido. Inclua as pausas que ocorreram dentro do intervalo analisado.",
+                "Em movimento uniforme a distância é rapidez vezes tempo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-velocidade.r2",
+              "concept_id": "fis-velocidade",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um barco percorre 18 km em 45 minutos. Qual a rapidez média em km/h?",
+              "difficulty": 3,
+              "validator": "24",
+              "options": [],
+              "feedback": "Quarenta e cinco minutos são 0,75 h. Divida 18 por 0,75.",
+              "hints": [
+                "A rapidez média não descreve todas as variações ao longo do trajeto.",
+                "Quarenta e cinco minutos são 0,75 h. Divida 18 por 0,75."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Para a mesma distância, dobrar o tempo total faz a rapidez média…",
+            "options": [
+              "Dobrar",
+              "Cair pela metade"
+            ],
+            "solution": "Cair pela metade",
+            "explanation": "A distância fica no numerador e o tempo no denominador."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "fis-grafico",
+          "title": "Ler posição ao longo do tempo",
+          "objective": "Relacionar inclinação de um gráfico posição–tempo à velocidade.",
+          "prerequisites": [
+            "fis-velocidade"
+          ],
+          "steps": [
+            "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+            "Uma posição constante corresponde a uma linha horizontal neste gráfico."
+          ],
+          "example": "Posição 2 m em 0 s e 8 m em 3 s → variação de 6 m → velocidade média de +2 m/s.",
+          "questions": [
+            {
+              "id": "fis-grafico.1",
+              "concept_id": "fis-grafico",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Num gráfico posição × tempo, um trecho horizontal indica o quê?",
+              "difficulty": 1,
+              "validator": "Posição constante",
+              "options": [
+                "Queda livre obrigatória",
+                "Aumento constante de rapidez",
+                "Posição constante"
+              ],
+              "feedback": "A posição não varia durante esse intervalo.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "A posição não varia durante esse intervalo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.2",
+              "concept_id": "fis-grafico",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "A posição passa de 10 m a 4 m em 3 s. Qual é a velocidade média em m/s?",
+              "difficulty": 2,
+              "validator": "−2",
+              "options": [],
+              "feedback": "O deslocamento é −6 m. Divida por três segundos.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "O deslocamento é −6 m. Divida por três segundos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.3",
+              "concept_id": "fis-grafico",
+              "role": "practice",
+              "format": "visual",
+              "prompt": "Qual sequência representa repouso nas leituras de posição a cada segundo?",
+              "difficulty": 3,
+              "validator": "4, 4, 4 m",
+              "options": [
+                "1, 2, 3 m",
+                "4, 4, 4 m",
+                "3, 2, 1 m"
+              ],
+              "feedback": "No referencial escolhido, a posição se mantém.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "No referencial escolhido, a posição se mantém."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.4",
+              "concept_id": "fis-grafico",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Uma reta crescente no gráfico posição × tempo indica qual sinal da velocidade?",
+              "difficulty": 2,
+              "validator": "Positivo",
+              "options": [
+                "Positivo",
+                "Sempre zero",
+                "Negativo"
+              ],
+              "feedback": "A posição aumenta quando o tempo avança.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "A posição aumenta quando o tempo avança."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.5",
+              "concept_id": "fis-grafico",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "As posições em t = 1 s e t = 5 s são 3 m e 15 m. Qual é a inclinação média em m/s?",
+              "difficulty": 2,
+              "validator": "3",
+              "options": [],
+              "feedback": "O deslocamento é 12 m em quatro segundos.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "O deslocamento é 12 m em quatro segundos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.6",
+              "concept_id": "fis-grafico",
+              "role": "checkpoint",
+              "format": "numeric",
+              "prompt": "Um objeto vai de −3 m a +5 m em quatro segundos. Qual é a velocidade média em m/s?",
+              "difficulty": 3,
+              "validator": "2",
+              "options": [],
+              "feedback": "O deslocamento é oito metros no sentido positivo. Divida por quatro.",
+              "hints": [
+                "Escolha dois pontos e calcule a variação de posição dividida pela variação de tempo.",
+                "O deslocamento é oito metros no sentido positivo. Divida por quatro."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-grafico.r2",
+              "concept_id": "fis-grafico",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um móvel passa de 5 m a 5 m em 10 s. Qual é sua velocidade média em m/s nesse intervalo?",
+              "difficulty": 3,
+              "validator": "0",
+              "options": [],
+              "feedback": "A posição final coincide com a inicial e o deslocamento total é zero.",
+              "hints": [
+                "Uma posição constante corresponde a uma linha horizontal neste gráfico.",
+                "A posição final coincide com a inicial e o deslocamento total é zero."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "A posição muda de −2 m para +2 m. O deslocamento é…",
+            "options": [
+              "Negativo",
+              "Positivo"
+            ],
+            "solution": "Positivo",
+            "explanation": "A posição final menos a inicial vale +4 m."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fis-forca",
+      "title": "Forças e energia",
+      "goal": "Somar forças em uma dimensão, relacioná-las à aceleração e acompanhar energia.",
+      "lessons": [
+        {
+          "id": "fis-resultante",
+          "title": "Somar forças com direção",
+          "objective": "Determinar a força resultante em uma linha.",
+          "prerequisites": [],
+          "steps": [
+            "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+            "Forças equilibradas somam zero, inclusive quando o corpo já está em movimento uniforme."
+          ],
+          "example": "8 N à direita e 3 N à esquerda → resultante de 5 N à direita.",
+          "questions": [
+            {
+              "id": "fis-resultante.1",
+              "concept_id": "fis-resultante",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Adote direita positiva. Atuam 9 N à direita e 4 N à esquerda. Qual é a resultante em N?",
+              "difficulty": 1,
+              "validator": "5",
+              "options": [],
+              "feedback": "A soma com sinais é 9 − 4.",
+              "hints": [
+                "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+                "A soma com sinais é 9 − 4."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-resultante.2",
+              "concept_id": "fis-resultante",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Resultante nula obriga um objeto que já se move a parar imediatamente.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Com resultante nula a velocidade permanece constante em um referencial inercial.",
+              "hints": [
+                "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+                "Com resultante nula a velocidade permanece constante em um referencial inercial."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-resultante.3",
+              "concept_id": "fis-resultante",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Duas forças de 6 N atuam para o mesmo lado. Qual é a intensidade da resultante?",
+              "difficulty": 3,
+              "validator": "12 N",
+              "options": [
+                "12 N",
+                "0 N",
+                "3 N"
+              ],
+              "feedback": "No mesmo sentido as intensidades se somam.",
+              "hints": [
+                "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+                "No mesmo sentido as intensidades se somam."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-resultante.4",
+              "concept_id": "fis-resultante",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Adote leste positivo. Uma força de 5 N aponta a leste e outra de 8 N a oeste. Qual é a resultante em N?",
+              "difficulty": 2,
+              "validator": "−3",
+              "options": [],
+              "feedback": "Cinco menos oito dá −3 N, sentido oeste.",
+              "hints": [
+                "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+                "Cinco menos oito dá −3 N, sentido oeste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-resultante.5",
+              "concept_id": "fis-resultante",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual par pode se equilibrar agindo no mesmo corpo?",
+              "difficulty": 2,
+              "validator": "4 N à esquerda e 4 N à direita",
+              "options": [
+                "4 N e 4 N à direita",
+                "4 N à esquerda e 4 N à direita",
+                "2 N e 5 N à esquerda"
+              ],
+              "feedback": "Forças de mesma intensidade e sentidos opostos se cancelam.",
+              "hints": [
+                "Escolha um sentido positivo. Some forças a favor e subtraia forças no sentido contrário.",
+                "Forças de mesma intensidade e sentidos opostos se cancelam."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-resultante.r2",
+              "concept_id": "fis-resultante",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Três forças em linha valem +3, −7 e +2 N. Qual é a resultante em N?",
+              "difficulty": 3,
+              "validator": "−2",
+              "options": [],
+              "feedback": "As forças positivas somam cinco. Cinco menos sete dá −2.",
+              "hints": [
+                "Forças equilibradas somam zero, inclusive quando o corpo já está em movimento uniforme.",
+                "As forças positivas somam cinco. Cinco menos sete dá −2."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Duas mãos empurram em sentidos opostos. Para somar as forças, é preciso…",
+            "options": [
+              "Ignorar os sentidos",
+              "Escolher um sentido positivo"
+            ],
+            "solution": "Escolher um sentido positivo",
+            "explanation": "Os sinais distinguem forças de mesma direção e sentidos diferentes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "fis-aceleracao",
+          "title": "Prever a aceleração",
+          "objective": "Usar força resultante e massa para obter aceleração.",
+          "prerequisites": [
+            "fis-resultante"
+          ],
+          "steps": [
+            "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+            "Mantida a força, aumentar a massa diminui a aceleração."
+          ],
+          "example": "6 N sobre 2 kg → 6 ÷ 2 → 3 m/s².",
+          "questions": [
+            {
+              "id": "fis-aceleracao.1",
+              "concept_id": "fis-aceleracao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um carrinho de 4 kg recebe força resultante de 12 N. Qual a intensidade da aceleração em m/s²?",
+              "difficulty": 1,
+              "validator": "3",
+              "options": [],
+              "feedback": "Divida a resultante de 12 N pela massa de 4 kg.",
+              "hints": [
+                "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+                "Divida a resultante de 12 N pela massa de 4 kg."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-aceleracao.2",
+              "concept_id": "fis-aceleracao",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Com a mesma força resultante, dobrar a massa faz a aceleração ficar como?",
+              "difficulty": 2,
+              "validator": "Metade",
+              "options": [
+                "Quatro vezes maior",
+                "Dobro",
+                "Metade"
+              ],
+              "feedback": "A aceleração é inversamente proporcional à massa nessas condições.",
+              "hints": [
+                "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+                "A aceleração é inversamente proporcional à massa nessas condições."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-aceleracao.3",
+              "concept_id": "fis-aceleracao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um corpo de 3 kg acelera a 2 m/s². Qual é a intensidade da resultante em N?",
+              "difficulty": 3,
+              "validator": "6",
+              "options": [],
+              "feedback": "Multiplique três quilogramas por dois metros por segundo ao quadrado.",
+              "hints": [
+                "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+                "Multiplique três quilogramas por dois metros por segundo ao quadrado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-aceleracao.4",
+              "concept_id": "fis-aceleracao",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "A aceleração pode ter sentido oposto ao da velocidade.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um corpo pode perder rapidez quando a aceleração aponta contra seu movimento.",
+              "hints": [
+                "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+                "Um corpo pode perder rapidez quando a aceleração aponta contra seu movimento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-aceleracao.5",
+              "concept_id": "fis-aceleracao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um carrinho de 2 kg recebe 10 N para frente e 4 N para trás. Qual a aceleração para frente em m/s²?",
+              "difficulty": 2,
+              "validator": "3",
+              "options": [],
+              "feedback": "A resultante é 6 N. Divida por dois.",
+              "hints": [
+                "Para massa constante, a aceleração tem a direção da força resultante e vale F resultante dividida por m.",
+                "A resultante é 6 N. Divida por dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-aceleracao.r2",
+              "concept_id": "fis-aceleracao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma força resultante de 15 N produz aceleração de 5 m/s². Qual é a massa em kg?",
+              "difficulty": 3,
+              "validator": "3",
+              "options": [],
+              "feedback": "A massa é a força dividida pela aceleração.",
+              "hints": [
+                "Mantida a força, aumentar a massa diminui a aceleração.",
+                "A massa é a força dividida pela aceleração."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "A mesma massa recebe o triplo da força resultante. A aceleração…",
+            "options": [
+              "Triplica",
+              "Cai para um terço"
+            ],
+            "solution": "Triplica",
+            "explanation": "Na relação F = ma, massa constante dá proporcionalidade direta."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "fis-energia",
+          "title": "Transferir e transformar energia",
+          "objective": "Reconhecer transformações de energia em exemplos mecânicos.",
+          "prerequisites": [
+            "fis-aceleracao"
+          ],
+          "steps": [
+            "Identifique o sistema e compare as formas de energia em dois instantes.",
+            "Se houver atrito, parte da energia mecânica se transforma em energia interna."
+          ],
+          "example": "Carrinho desce sem atrito → diminui energia potencial gravitacional → aumenta energia cinética.",
+          "questions": [
+            {
+              "id": "fis-energia.1",
+              "concept_id": "fis-energia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Ao elevar lentamente uma caixa, o que aumenta no sistema caixa–Terra?",
+              "difficulty": 1,
+              "validator": "Energia potencial gravitacional",
+              "options": [
+                "Energia potencial gravitacional",
+                "Massa da caixa",
+                "Somente energia sonora"
+              ],
+              "feedback": "A altura maior corresponde a maior energia potencial gravitacional.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "A altura maior corresponde a maior energia potencial gravitacional."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.2",
+              "concept_id": "fis-energia",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Atrito pode transformar parte da energia mecânica em energia interna.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "O aquecimento das superfícies é uma manifestação dessa transformação.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "O aquecimento das superfícies é uma manifestação dessa transformação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.3",
+              "concept_id": "fis-energia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Em queda a partir do repouso, desprezando o ar, que transformação ocorre?",
+              "difficulty": 3,
+              "validator": "Potencial gravitacional em cinética",
+              "options": [
+                "Massa em volume",
+                "Cinética em química",
+                "Potencial gravitacional em cinética"
+              ],
+              "feedback": "A redução da altura acompanha o aumento de rapidez.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "A redução da altura acompanha o aumento de rapidez."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.4",
+              "concept_id": "fis-energia",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe energia cinética à característica que ela descreve.",
+              "difficulty": 2,
+              "validator": "Movimento",
+              "options": [
+                "Movimento",
+                "Cor",
+                "Formato do recipiente"
+              ],
+              "feedback": "A energia cinética depende da massa e da rapidez.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "A energia cinética depende da massa e da rapidez."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.5",
+              "concept_id": "fis-energia",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um sistema perde 30 J de energia potencial e ganha 24 J de cinética. Quantos joules foram para outras formas, sem troca com o exterior?",
+              "difficulty": 2,
+              "validator": "6",
+              "options": [],
+              "feedback": "A diferença entre 30 e 24 J deve aparecer em outras formas.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "A diferença entre 30 e 24 J deve aparecer em outras formas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.6",
+              "concept_id": "fis-energia",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Um carrinho termina uma descida mais lento do que a previsão sem atrito. Qual explicação é compatível com conservação de energia?",
+              "difficulty": 3,
+              "validator": "Parte da energia foi transformada em energia interna.",
+              "options": [
+                "A energia desapareceu.",
+                "Parte da energia foi transformada em energia interna.",
+                "A massa obrigatoriamente dobrou."
+              ],
+              "feedback": "A transformação explica a diferença sem perder energia total.",
+              "hints": [
+                "Identifique o sistema e compare as formas de energia em dois instantes.",
+                "A transformação explica a diferença sem perder energia total."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "fis-energia.r2",
+              "concept_id": "fis-energia",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "Ao frear uma bicicleta, o aquecimento do freio é compatível com a conservação de energia.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Parte da energia mecânica se transforma em energia interna.",
+              "hints": [
+                "Se houver atrito, parte da energia mecânica se transforma em energia interna.",
+                "Parte da energia mecânica se transforma em energia interna."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma mola comprimida em repouso pode armazenar…",
+            "options": [
+              "Energia potencial elástica",
+              "Apenas energia cinética"
+            ],
+            "solution": "Energia potencial elástica",
+            "explanation": "A deformação da mola permite armazenamento de energia potencial."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

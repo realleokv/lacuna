@@ -1,0 +1,987 @@
+{
+  "schema_version": 1,
+  "id": "musica",
+  "title": "Música e instrumentos",
+  "symbol": "♫",
+  "tracks": [
+    {
+      "id": "mus-pulso",
+      "title": "Ritmo e pulsação",
+      "goal": "Marcar pulsos, subdividir e perceber agrupamentos através de som ou contagem visual.",
+      "lessons": [
+        {
+          "id": "mus-pulso",
+          "title": "Encontrar o pulso",
+          "objective": "Distinguir a pulsação regular do desenho rítmico.",
+          "prerequisites": [],
+          "steps": [
+            "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+            "No laboratório, compare seus intervalos com o pulso visual."
+          ],
+          "example": "Conte 1 · 2 · 3 · 4. Bata em 1 e 3, mantendo a contagem na mesma velocidade.",
+          "questions": [
+            {
+              "id": "mus-pulso.1",
+              "concept_id": "mus-pulso",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O que funciona como referência regular para acompanhar uma música?",
+              "difficulty": 1,
+              "validator": "Pulso",
+              "options": [
+                "Pulso",
+                "Timbre do cantor",
+                "Letra"
+              ],
+              "feedback": "A pulsação estabelece uma referência periódica.",
+              "hints": [
+                "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+                "A pulsação estabelece uma referência periódica."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-pulso.2",
+              "concept_id": "mus-pulso",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Em 60 batidas por minuto, quantos segundos separam duas batidas consecutivas?",
+              "difficulty": 2,
+              "validator": "1",
+              "options": [],
+              "feedback": "Sessenta segundos divididos por sessenta intervalos dão um segundo.",
+              "hints": [
+                "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+                "Sessenta segundos divididos por sessenta intervalos dão um segundo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-pulso.3",
+              "concept_id": "mus-pulso",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Dá para manter o pulso durante uma pausa da melodia.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A referência temporal pode continuar mesmo quando a melodia silencia.",
+              "hints": [
+                "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+                "A referência temporal pode continuar mesmo quando a melodia silencia."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-pulso.4",
+              "concept_id": "mus-pulso",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Um metrônomo passa de 60 para 120 BPM. Como muda o intervalo entre cliques?",
+              "difficulty": 2,
+              "validator": "Cai pela metade",
+              "options": [
+                "Dobra",
+                "Fica igual",
+                "Cai pela metade"
+              ],
+              "feedback": "Dobrar o número de pulsos por minuto reduz o intervalo à metade.",
+              "hints": [
+                "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+                "Dobrar o número de pulsos por minuto reduz o intervalo à metade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-pulso.5",
+              "concept_id": "mus-pulso",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "A 120 BPM, quantos pulsos cabem em dez segundos de música contínua?",
+              "difficulty": 2,
+              "validator": "20",
+              "options": [],
+              "feedback": "São dois pulsos por segundo, durante dez segundos.",
+              "hints": [
+                "Imagine uma caminhada regular. Cada passo marca um pulso, mesmo que as sílabas da música mudem.",
+                "São dois pulsos por segundo, durante dez segundos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-pulso.r2",
+              "concept_id": "mus-pulso",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "A 90 BPM, quantos pulsos correspondem a 20 segundos?",
+              "difficulty": 3,
+              "validator": "30",
+              "options": [],
+              "feedback": "Vinte segundos são um terço de minuto. Um terço de 90 é 30.",
+              "hints": [
+                "No laboratório, compare seus intervalos com o pulso visual.",
+                "Vinte segundos são um terço de minuto. Um terço de 90 é 30."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "A 60 BPM, acompanhar quatro segundos com o pulso iniciado no instante zero dá intervalos de…",
+            "options": [
+              "Quatro segundos",
+              "Um segundo"
+            ],
+            "solution": "Um segundo",
+            "explanation": "O intervalo é 60 dividido pelo BPM."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mus-subdiv",
+          "title": "Dividir um pulso",
+          "objective": "Distribuir ataques igualmente dentro de uma pulsação.",
+          "prerequisites": [
+            "mus-pulso"
+          ],
+          "steps": [
+            "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+            "Se acelerar só a subdivisão, a pulsação principal pode continuar igual."
+          ],
+          "example": "Conte “um-e, dois-e”. O número e a sílaba “e” ficam separados por meio pulso.",
+          "questions": [
+            {
+              "id": "mus-subdiv.1",
+              "concept_id": "mus-subdiv",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Cada pulso recebe duas batidas iguais. Quantas batidas cabem em quatro pulsos?",
+              "difficulty": 1,
+              "validator": "8",
+              "options": [],
+              "feedback": "Dois ataques por pulso vezes quatro pulsos dão oito.",
+              "hints": [
+                "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+                "Dois ataques por pulso vezes quatro pulsos dão oito."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-subdiv.2",
+              "concept_id": "mus-subdiv",
+              "role": "practice",
+              "format": "visual",
+              "prompt": "Na grade de quatro subdivisões iguais, X marca ataque. Qual padrão alterna ataque e silêncio a partir da primeira?",
+              "difficulty": 2,
+              "validator": "X · X ·",
+              "options": [
+                "· · X X",
+                "X · X ·",
+                "X X · ·"
+              ],
+              "feedback": "As posições um e três têm ataque e as demais ficam em silêncio.",
+              "hints": [
+                "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+                "As posições um e três têm ataque e as demais ficam em silêncio."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-subdiv.3",
+              "concept_id": "mus-subdiv",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Um pulso dura 1 s. Quanto dura cada uma de quatro subdivisões iguais?",
+              "difficulty": 3,
+              "validator": "0,25 s",
+              "options": [
+                "4 s",
+                "0,75 s",
+                "0,25 s"
+              ],
+              "feedback": "Dividir um segundo por quatro dá um quarto de segundo.",
+              "hints": [
+                "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+                "Dividir um segundo por quatro dá um quarto de segundo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-subdiv.4",
+              "concept_id": "mus-subdiv",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Duas subdivisões iguais ocupam juntas o mesmo tempo do pulso original.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Subdividir reparte a duração sem alterar o total.",
+              "hints": [
+                "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+                "Subdividir reparte a duração sem alterar o total."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-subdiv.5",
+              "concept_id": "mus-subdiv",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Três subdivisões por pulso durante dois pulsos rendem quantas subdivisões?",
+              "difficulty": 2,
+              "validator": "6",
+              "options": [],
+              "feedback": "São três posições em cada um dos dois pulsos.",
+              "hints": [
+                "Mantenha o pulso principal e divida cada intervalo em partes do mesmo tamanho.",
+                "São três posições em cada um dos dois pulsos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-subdiv.r2",
+              "concept_id": "mus-subdiv",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um pulso dura 0,8 segundo. Quanto dura cada metade em segundos?",
+              "difficulty": 3,
+              "validator": "0,4",
+              "options": [],
+              "feedback": "Divida a duração do pulso por dois.",
+              "hints": [
+                "Se acelerar só a subdivisão, a pulsação principal pode continuar igual.",
+                "Divida a duração do pulso por dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Em “1 e 2 e”, mantendo intervalos iguais, o “e” ocorre…",
+            "options": [
+              "Entre dois pulsos numerados",
+              "Só no fim da música"
+            ],
+            "solution": "Entre dois pulsos numerados",
+            "explanation": "Ele divide o intervalo entre dois pulsos consecutivos."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mus-compasso",
+          "title": "Agrupar pulsos",
+          "objective": "Reconhecer ciclos de acento em agrupamentos simples.",
+          "prerequisites": [
+            "mus-subdiv"
+          ],
+          "steps": [
+            "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+            "Use a repetição dos grupos para distinguir o tamanho do compasso do andamento."
+          ],
+          "example": "FORTE fraco fraco → 1 2 3 → novo grupo de três.",
+          "questions": [
+            {
+              "id": "mus-compasso.1",
+              "concept_id": "mus-compasso",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Em três compassos de quatro pulsos, quantos pulsos você conta?",
+              "difficulty": 1,
+              "validator": "12",
+              "options": [],
+              "feedback": "Três grupos de quatro somam doze pulsos.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "Três grupos de quatro somam doze pulsos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.2",
+              "concept_id": "mus-compasso",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual contagem representa um agrupamento em três pulsos?",
+              "difficulty": 2,
+              "validator": "UM dois três, UM dois três",
+              "options": [
+                "UM dois três, UM dois três",
+                "UM dois, UM dois",
+                "UM dois três quatro, UM dois três quatro"
+              ],
+              "feedback": "O primeiro pulso marca o início de cada grupo de três.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "O primeiro pulso marca o início de cada grupo de três."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.3",
+              "concept_id": "mus-compasso",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Mudar a velocidade do metrônomo muda necessariamente o número de pulsos por compasso.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Andamento e agrupamento são características diferentes.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "Andamento e agrupamento são características diferentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.4",
+              "concept_id": "mus-compasso",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe “forte, fraco, forte, fraco” repetido a um agrupamento básico.",
+              "difficulty": 2,
+              "validator": "Binário",
+              "options": [
+                "Binário",
+                "Quinário",
+                "Ternário"
+              ],
+              "feedback": "Acentos a cada dois pulsos sugerem grupos binários.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "Acentos a cada dois pulsos sugerem grupos binários."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.5",
+              "concept_id": "mus-compasso",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma frase tem 16 pulsos em quatro compassos de mesmo tamanho. Quantos pulsos há por compasso?",
+              "difficulty": 2,
+              "validator": "4",
+              "options": [],
+              "feedback": "Dezesseis dividido por quatro resulta em quatro.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "Dezesseis dividido por quatro resulta em quatro."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.6",
+              "concept_id": "mus-compasso",
+              "role": "checkpoint",
+              "format": "numeric",
+              "prompt": "Em 3/4 com a semínima a 60 BPM, quantos segundos duram dois compassos completos?",
+              "difficulty": 3,
+              "validator": "6",
+              "options": [],
+              "feedback": "São seis pulsos de um segundo cada.",
+              "hints": [
+                "Conte quantos pulsos existem de um acento principal até imediatamente antes do próximo.",
+                "São seis pulsos de um segundo cada."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-compasso.r2",
+              "concept_id": "mus-compasso",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Quantos compassos completos de três pulsos cabem em 18 pulsos?",
+              "difficulty": 3,
+              "validator": "6",
+              "options": [],
+              "feedback": "Dezoito dividido por três é seis.",
+              "hints": [
+                "Use a repetição dos grupos para distinguir o tamanho do compasso do andamento.",
+                "Dezoito dividido por três é seis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma sequência de três pulsos se repete mais depressa. O grupo continua…",
+            "options": [
+              "Ternário",
+              "Binário"
+            ],
+            "solution": "Ternário",
+            "explanation": "Velocidade e número de pulsos no grupo são independentes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mus-notas",
+      "title": "Notas e percepção musical",
+      "goal": "Relacionar nomes das notas, direção melódica e diferenças de timbre.",
+      "lessons": [
+        {
+          "id": "mus-notas",
+          "title": "Subir pela escala",
+          "objective": "Completar a sequência de nomes em uma escala de dó maior.",
+          "prerequisites": [],
+          "steps": [
+            "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+            "Ao chegar ao si, o próximo nome ascendente é dó na oitava seguinte."
+          ],
+          "example": "Dó → ré → mi. Cada nome ocupa a próxima posição da escala.",
+          "questions": [
+            {
+              "id": "mus-notas.1",
+              "concept_id": "mus-notas",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Na sequência dó, ré, ___, fá, complete o nome ausente.",
+              "difficulty": 1,
+              "validator": "mi",
+              "options": [],
+              "feedback": "Mi vem depois de ré na escala ascendente.",
+              "hints": [
+                "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+                "Mi vem depois de ré na escala ascendente."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-notas.2",
+              "concept_id": "mus-notas",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene este trecho em sentido ascendente a partir de fá.",
+              "difficulty": 2,
+              "validator": [
+                "fá",
+                "sol",
+                "lá",
+                "si"
+              ],
+              "options": [
+                "si",
+                "fá",
+                "sol",
+                "lá"
+              ],
+              "feedback": "Essas quatro notas são consecutivas na escala de dó maior.",
+              "hints": [
+                "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+                "Essas quatro notas são consecutivas na escala de dó maior."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-notas.3",
+              "concept_id": "mus-notas",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Depois de si, qual nome aparece ao continuar subindo em dó maior?",
+              "difficulty": 3,
+              "validator": "Dó",
+              "options": [
+                "Lá",
+                "Dó",
+                "Mi"
+              ],
+              "feedback": "O ciclo de nomes recomeça em outra oitava.",
+              "hints": [
+                "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+                "O ciclo de nomes recomeça em outra oitava."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-notas.4",
+              "concept_id": "mus-notas",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "Na escala de dó maior, qual nome vem imediatamente antes de fá ao subir?",
+              "difficulty": 2,
+              "validator": "mi",
+              "options": [],
+              "feedback": "A sequência local é ré, mi, fá.",
+              "hints": [
+                "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+                "A sequência local é ré, mi, fá."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-notas.5",
+              "concept_id": "mus-notas",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Partindo de ré, avance dois graus da escala de dó maior. Onde chega?",
+              "difficulty": 2,
+              "validator": "Fá",
+              "options": [
+                "Fá",
+                "Sol",
+                "Mi"
+              ],
+              "feedback": "O primeiro avanço leva a mi e o segundo a fá.",
+              "hints": [
+                "Em ordem ascendente, a escala natural de dó usa dó, ré, mi, fá, sol, lá e si antes do novo dó.",
+                "O primeiro avanço leva a mi e o segundo a fá."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-notas.r2",
+              "concept_id": "mus-notas",
+              "role": "review",
+              "format": "typed",
+              "prompt": "Descendo a escala de dó maior, qual nota vem imediatamente depois de ré?",
+              "difficulty": 3,
+              "validator": "dó",
+              "options": [],
+              "feedback": "Dó é o grau imediatamente inferior a ré nessa escala.",
+              "hints": [
+                "Ao chegar ao si, o próximo nome ascendente é dó na oitava seguinte.",
+                "Dó é o grau imediatamente inferior a ré nessa escala."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Subindo de sol para lá, o nome muda…",
+            "options": [
+              "Um grau na escala de dó",
+              "Uma oitava completa"
+            ],
+            "solution": "Um grau na escala de dó",
+            "explanation": "Sol e lá são graus vizinhos nessa escala."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mus-altura",
+          "title": "Perceber a direção da melodia",
+          "objective": "Relacionar frequência à altura sonora e identificar contornos.",
+          "prerequisites": [
+            "mus-notas"
+          ],
+          "steps": [
+            "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+            "Compare as frequências ou a altura dos pontos em uma representação visual."
+          ],
+          "example": "220 Hz → 440 Hz → subida de uma oitava.",
+          "questions": [
+            {
+              "id": "mus-altura.1",
+              "concept_id": "mus-altura",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual som simples é mais agudo?",
+              "difficulty": 1,
+              "validator": "600 Hz",
+              "options": [
+                "600 Hz",
+                "300 Hz",
+                "150 Hz"
+              ],
+              "feedback": "Entre as frequências dadas, 600 Hz é a maior.",
+              "hints": [
+                "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+                "Entre as frequências dadas, 600 Hz é a maior."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-altura.2",
+              "concept_id": "mus-altura",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Aumentar apenas o volume de uma nota transforma a nota necessariamente em outra mais aguda.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Volume e altura sonora são atributos diferentes.",
+              "hints": [
+                "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+                "Volume e altura sonora são atributos diferentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-altura.3",
+              "concept_id": "mus-altura",
+              "role": "practice",
+              "format": "visual",
+              "prompt": "Qual contorno corresponde a 330 Hz, 440 Hz e 330 Hz?",
+              "difficulty": 3,
+              "validator": "Sobe e desce",
+              "options": [
+                "Sobe e desce",
+                "Desce e sobe",
+                "Permanece no mesmo nível"
+              ],
+              "feedback": "A segunda frequência é maior que a primeira e a terceira volta ao valor inicial.",
+              "hints": [
+                "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+                "A segunda frequência é maior que a primeira e a terceira volta ao valor inicial."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-altura.4",
+              "concept_id": "mus-altura",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe uma frequência menor, mantidas as condições de comparação, à percepção de altura.",
+              "difficulty": 2,
+              "validator": "Mais grave",
+              "options": [
+                "Obrigatoriamente mais intensa",
+                "Mais rápida em BPM",
+                "Mais grave"
+              ],
+              "feedback": "Frequência menor corresponde a som mais grave.",
+              "hints": [
+                "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+                "Frequência menor corresponde a som mais grave."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-altura.5",
+              "concept_id": "mus-altura",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Qual é a frequência, em Hz, uma oitava acima de 220 Hz?",
+              "difficulty": 2,
+              "validator": "440",
+              "options": [],
+              "feedback": "Subir uma oitava corresponde a dobrar a frequência.",
+              "hints": [
+                "Com sons periódicos simples, maior frequência é percebida como som mais agudo. Volume é uma dimensão diferente.",
+                "Subir uma oitava corresponde a dobrar a frequência."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-altura.r2",
+              "concept_id": "mus-altura",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Qual a frequência em Hz uma oitava abaixo de 660 Hz?",
+              "difficulty": 3,
+              "validator": "330",
+              "options": [],
+              "feedback": "Descer uma oitava divide a frequência por dois.",
+              "hints": [
+                "Compare as frequências ou a altura dos pontos em uma representação visual.",
+                "Descer uma oitava divide a frequência por dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "440 Hz em relação a 220 Hz soa…",
+            "options": [
+              "Mais agudo",
+              "Mais grave"
+            ],
+            "solution": "Mais agudo",
+            "explanation": "Dobrar a frequência eleva o som em uma oitava."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mus-timbre",
+          "title": "Comparar sons de instrumentos",
+          "objective": "Diferenciar timbre, intensidade, duração e altura.",
+          "prerequisites": [
+            "mus-altura"
+          ],
+          "steps": [
+            "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+            "Para comparar timbres, procure manter altura e intensidade semelhantes."
+          ],
+          "example": "Um piano e uma flauta no mesmo lá → mesma altura de referência → timbres distintos.",
+          "questions": [
+            {
+              "id": "mus-timbre.1",
+              "concept_id": "mus-timbre",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O que ajuda a reconhecer um violino e uma flauta que tocam a mesma nota?",
+              "difficulty": 1,
+              "validator": "Timbre",
+              "options": [
+                "Timbre",
+                "Número do compasso",
+                "Nome da partitura"
+              ],
+              "feedback": "O timbre está ligado ao espectro e à evolução do som.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "O timbre está ligado ao espectro e à evolução do som."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.2",
+              "concept_id": "mus-timbre",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe “a nota continuou por quatro segundos” ao atributo descrito.",
+              "difficulty": 2,
+              "validator": "Duração",
+              "options": [
+                "Altura",
+                "Timbre",
+                "Duração"
+              ],
+              "feedback": "O trecho informa quanto tempo o som persiste.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "O trecho informa quanto tempo o som persiste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.3",
+              "concept_id": "mus-timbre",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Sons de mesma frequência fundamental podem ter conjuntos de harmônicos diferentes.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "As diferenças espectrais contribuem para o timbre.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "As diferenças espectrais contribuem para o timbre."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.4",
+              "concept_id": "mus-timbre",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Se alguém toca a mesma tecla com maior força e ela soa mais forte, qual atributo a frase destaca?",
+              "difficulty": 2,
+              "validator": "Intensidade",
+              "options": [
+                "Andamento da peça",
+                "Intensidade",
+                "Nome da nota"
+              ],
+              "feedback": "Mais forte descreve a intensidade percebida.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "Mais forte descreve a intensidade percebida."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.5",
+              "concept_id": "mus-timbre",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual teste isola melhor diferenças de timbre?",
+              "difficulty": 2,
+              "validator": "Comparar instrumentos na mesma nota e em volumes próximos",
+              "options": [
+                "Trocar simultaneamente instrumento e melodia",
+                "Comparar instrumentos na mesma nota e em volumes próximos",
+                "Comparar uma nota grave suave com uma aguda forte"
+              ],
+              "feedback": "Manter outras características semelhantes facilita a comparação.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "Manter outras características semelhantes facilita a comparação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.6",
+              "concept_id": "mus-timbre",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Dois sons têm 440 Hz, mesma duração e volumes semelhantes, mas ataques diferentes. O que a diferença de ataque pode alterar?",
+              "difficulty": 3,
+              "validator": "Timbre percebido",
+              "options": [
+                "Timbre percebido",
+                "Nome da frequência fundamental",
+                "Número de pulsos por minuto obrigatoriamente"
+              ],
+              "feedback": "A evolução temporal do som também participa do timbre.",
+              "hints": [
+                "Dois instrumentos podem tocar a mesma nota no mesmo volume e soar distintos. Compare o ataque e a composição do som.",
+                "A evolução temporal do som também participa do timbre."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mus-timbre.r2",
+              "concept_id": "mus-timbre",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual atributo muda quando um som de mesma nota e intensidade dura mais tempo?",
+              "difficulty": 3,
+              "validator": "Duração",
+              "options": [
+                "Altura",
+                "Andamento necessariamente",
+                "Duração"
+              ],
+              "feedback": "A extensão temporal da nota aumentou.",
+              "hints": [
+                "Para comparar timbres, procure manter altura e intensidade semelhantes.",
+                "A extensão temporal da nota aumentou."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Para estudar o ataque de uma nota, ouça com atenção…",
+            "options": [
+              "Somente a pausa final",
+              "O início do som"
+            ],
+            "solution": "O início do som",
+            "explanation": "O ataque descreve como o som começa e cresce."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

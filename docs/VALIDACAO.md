@@ -1,96 +1,58 @@
-# Relatório de validação — LACUNA 1.0.0
+# Validação da candidata Lacuna 0.8
 
-Fechamento: 11/11/2026. Código testado em Python 3.12.14/Linux e Chrome. Os dados usados na navegação foram criados exclusivamente para verificar o MVP.
+**Data:** 18/11/2026. **Base:** `802e2c80e359fe6e03792a61d9a3809b36b0f8ca`. **Escopo:** servidores locais Flask/Waitress, arquivos da branch de revisão e consulta somente de leitura ao serviço Render existente.
 
-## Resultado automatizado
+## Resultado reproduzível
 
-| Conjunto | Resultado | Cobertura principal |
-| --- | --- | --- |
-| `python -m pytest -q` | **72 aprovados** | Correção, conteúdo, diagnóstico, reavaliação, entradas inválidas, limites e API |
-| `node --test tests/storage.test.mjs` | **9 aprovados** | Persistência, exportação, exclusão isolada, dados corrompidos, limite de armazenamento e Lumi |
-| `node --check static/js/*.js` aplicado individualmente | Todos os seis módulos válidos | Sintaxe JavaScript |
-| `render.yaml` contra JSON Schema oficial | Válido | Estrutura do Blueprint; não valida uma conta nem cria um deploy |
+| Verificação executada | Resultado |
+|---|---|
+| Base antes das mudanças | Python: 196 passaram, quatro falharam. Node: nove passaram. No Chromium, diagnóstico respondeu corretamente; painel antigo lançou exceção. |
+| `python -m pytest -q` | **582 passaram**. Inclui os 200 casos do acervo, contrato de 10 pacotes, verificação de chave e alternativa para cada um dos 380 itens e integração com as rotas Flask de catálogo, pistas e correção. |
+| `node --test tests/*.test.mjs` | **20 passaram**. Abrange dados inválidos, quota, original recuperável, escrita a partir de aba desatualizada, versão anterior, recompensas, sequência, dificuldade, domínio, revisão e transformações do cubo. |
+| Playwright `--sweep`, Chromium, 1366 × 900 | Abriu as 60 aulas, respondeu às 180 práticas e concluiu os 20 desafios. Completou os dez diagnósticos (60 itens). Avançou o relógio do navegador de teste em três dias em cada uma de duas rodadas e concluiu 120 revisões inéditas. **380 IDs diferentes corrigidos na interface.** |
+| Playwright, jornada completa | Chromium 153 em 390 × 844 e 1366 × 900. Firefox 153 e WebKit 26.5 em 820 × 1024. Cobriu pular onboarding, escolher uma área, diagnóstico, mapa/lista, minidesafio, erro, dica pelo Lumi, refresh, conclusão, compra/equipamento, perfil, tema escuro, texto ampliado, revisão e quatro módulos de laboratório. |
+| `--reopen`, Chromium com diretório de perfil temporário | Carregou envelope v1 com N20, apelido antigo e extensão do hub ausente. Fechou o processo do navegador, abriu outro com o mesmo perfil e recuperou questão, rascunho e pista. Interrompeu uma correção HTTP, confirmou ausência de recompensa, repetiu com sucesso e preservou o original de um JSON corrompido. |
+| `--audit --axe …` | axe-core 4.14.1, regras WCAG 2 A/AA e 2.1 AA selecionadas: 14 rotas em claro e escuro, sem violações detectadas nessas execuções. Mais cinco estados auditados na jornada Chromium, incluindo erro com pista, perfil escuro ampliado e cubo 3D. Sem overflow horizontal nas 14 rotas a 320 pixels CSS. |
+| Interação e movimento | Arraste do Lumi dentro da faixa, centralização com Home, foco em diálogo, links, botões e ordenação por teclado. Fez o treino R U e o desfez por U′ R′; conferiu a recuperação das seis faces. Asserção de semântica da árvore de acessibilidade na exploração. Testes de jornada com movimento reduzido. |
+| HTTP, privacidade e falhas | Acerto e erro para cada ID; dicas e gabaritos de itens avaliados ausentes do GET; inválidos rejeitados; corpo excessivo retorna 413. No laboratório a jornada passa com a API de captura simulando indisponibilidade, sem solicitação de mídia. |
+| Medição local ilustrativa | CPython 3.12.14 e Flask test client, 100 chamadas por rota, sem latência de rede. Catálogo público de 174.184 bytes, mediana 2,47 ms e p95 3,27 ms. Correção numérica, mediana 0,15 ms e p95 0,24 ms. Não é medição de desempenho no Render. |
 
-Total: **81 testes automatizados aprovados**, sem falhas na execução final. Os comandos devem ser executados dentro da pasta `lacuna`, conforme o README. Uma primeira chamada de pytest feita a partir da pasta externa falhou na descoberta de módulos; o comando foi corrigido para a raiz do projeto, sem alterar os testes para esconder esse erro de execução.
+Os testes de percurso usam os gabaritos do repositório para operar os controles visíveis. Isso verifica o encadeamento real dos fluxos e a persistência. A suíte também testa respostas deliberadamente erradas, pistas e alternativas. A avaliação de correção conceitual por especialistas é uma etapa distinta.
 
-### Casos importantes cobertos
+## Critérios do Documento Mestre
 
-- 34 respostas esperadas conferidas, incluindo uma tabela de resultados calculados independentemente do gabarito.
-- Frações equivalentes, vírgula decimal, sinais negativos e formato `x = 5`.
-- Rejeição de divisão por zero, código, texto, infinito, valores gigantes e tipos inválidos.
-- Erro em equação leva a subtração e divisão, nessa ordem, inclusive se a subtração também estiver errada.
-- Diagnósticos terminam com 8 a 10 itens, sem repetir pergunta na mesma sessão.
-- Um erro isolado não confirma dificuldade nem altera automaticamente pré-requisitos não avaliados.
-- Domínio exige três questões distintas e dois acertos independentes; pistas e novas tentativas não viram evidências independentes.
-- A recomendação de divisão não desaparece por acertos em outras operações; dois acertos posteriores de divisão permitem avançar. Um novo erro de investigação reabre a hipótese.
-- Reavaliação usa itens diferentes da prática e inclui uma equação quando parte de N1, N2 ou N3.
-- Conteúdo público não antecipa gabarito, pistas ou explicações das questões. Exemplos resolvidos das aulas são públicos por finalidade pedagógica.
-- API limita o corpo a 256 KB e o histórico enviado a 500 registros; não cria cookie de sessão.
-- Persistência mantém preferências, rascunho e pistas; dados inválidos ou de versão desconhecida não são sobrescritos.
-- Falha de armazenamento avisa sem descartar a sessão em memória; exclusão não limpa dados de outros aplicativos.
-- Apelido é escapado para SVG e opções ficam restritas às permitidas; 144 combinações de configuração são verificadas.
+| ID | Estado | Evidência e limite |
+|---|---|---|
+| AC-01 | Verificado | Base inventariada, testes-base, diagnóstico e regressão do painel reproduzidos; acervo e leitura v1 exercitados. |
+| AC-02 | Verificado | Dez áreas, duas trilhas utilizáveis por área. Percurso completo em todas. |
+| AC-03 | Implementado; aceite docente pendente | Três aulas e nove práticas por trilha, fechamento por desafio, feedback e progresso. Matriz de conferência no guia editorial. |
+| AC-04 | Verificado | Onboarding pulável, seis itens diagnósticos por área, painel atualizado e exploração livre. |
+| AC-05 | Verificado por regra e interface | Seleção inicial ou manual, ordenação dos itens restantes conforme resposta, evidência preservada. |
+| AC-06 | Verificado | Mapa/lista, bases indicadas, estado e abertura pelo teclado. |
+| AC-07 | Verificado no escopo funcional | Escolhas, numéricos/texto/lacunas, booleano, associação com arraste ou seleção, ordenação e representações visuais. Ritmo por teclado/toque com indicação textual substitui o requisito dependente de dispositivo. |
+| AC-08 | Verificado | Erro e pista pelo Lumi, nova tentativa, explicação, reforço pelo exemplo e regras de independência. |
+| AC-09 | Verificado | Intervalo configurável, novo ID nas duas rodadas, teste de confirmação e repetição sem inflação. |
+| AC-10 | Verificado em navegadores de teste | Faixa reservada nas telas principais, arraste normalizado, retorno ao centro e diálogo. Teste em telefone físico pendente. |
+| AC-11 | Implementado e verificado por amostragem | Preferências persistentes, tema do sistema/claro/escuro, roupas e acessórios. Auditorias abrangem ambos os temas; combinações arbitrárias de cor e dispositivo não foram esgotadas. |
+| AC-12 | Verificado | Regras de XP e nível expostas, missões, moedas, compra idempotente, equipar, medalhas e sequência por dia local. |
+| AC-13 | Verificado | Dashboard, perfil, registros reais e retomada no novo processo do navegador. |
+| AC-14 | Verificado | Migração aditiva e leitura N20; armazenamento inválido, cheio e aba desatualizada cobertos. |
+| AC-15 | Verificado em três larguras emuladas | Celular, tablet e desktop completaram a jornada. Aparelhos físicos pendentes. |
+| AC-16 | Parcialmente verificado | Teclado, foco, semântica, movimento reduzido, reflow, alto contraste, ajuste de fonte e alternativas sem mídia exercitados. Faltam leitores de tela reais, zoom nativo e usuários de tecnologias assistivas. |
+| AC-17 | Verificado | Quatro módulos com interação e volta à aula. Modelo de cubo com inversas, leitura dos adesivos e modos 2D/3D. Air Drums por câmera fica em P2. |
+| AC-18 | Verificado localmente | Python, Node e smoke/E2E executados. O workflow do PR reproduz as suítes e duas jornadas Chromium. |
+| AC-19 | Pendente para a candidata | O Render de produção continua na versão anterior. Homologação HTTPS da candidata depende de autorização para o ambiente correspondente. |
+| AC-20 | Entregue | README, auditoria, arquitetura/decisões, guia de autoria, changelog, relatório e plano de publicação. |
 
-## Verificação manual no navegador
+## Falhas encontradas e tratadas
 
-| Fluxo | Evidência observada |
-| --- | --- |
-| Início e criador | Mascote, fontes locais, cores e controles renderizados; Menta e óculos selecionados e salvos |
-| Persistência | Preferências, resposta e pista reapareceram após recarregar a página |
-| Diagnóstico obrigatório | `3x+6=21` respondida com 4 → `21−6` → `15÷3`; indicação da aula de operações |
-| Resultado do diagnóstico de teste | 10 respostas, 8/10 acertos de primeira e 8 independentes; não são dados de alunos |
-| Prática com ajuda | `20÷4`: erro inicial, três pistas e acerto na segunda tentativa; resultado 0/1 de primeira e 0 independentes |
-| Reavaliação de operações | Novas questões: 18÷3, 28−8, 35÷5 e 4x+4=28; 4/4 independentes, comparação antes/depois e N1 com 3/3 no recorte |
-| Painel após recarregar | Contagens e estados permaneceram coerentes com as atividades finalizadas |
-| Tela estreita | Início, criador, introdução, exercício, painel, aula de negativos e configurações verificados em viewport de 360×780; sem rolagem horizontal após ajuste |
-| Exportação | Botão de exportar produziu download de arquivo JSON na página principal; conteúdo da exportação também coberto por teste unitário |
-| Teclado | Espaço ativou movimento reduzido; Enter no link de pular conteúdo levou o foco ao `main` sem mudar a rota |
-| Preferência de movimento | Checkbox permaneceu marcado após recarregar e atributo da interface refletiu a preferência |
-| Início da atividade | Questão começou no topo da página com foco no conteúdo, inclusive partindo da introdução na mesma rota |
+- O painel do acervo acessava coordenadas ausentes para N5–N20. A correção deixa o desenho original e oferece links para todos os 20 conceitos.
+- O leitor de estado do MVP recusava conclusões N5–N20. A migração e a reabertura real exercitam essa condição.
+- O validador encontrou colisões de IDs em Música. As trilhas receberam IDs próprios antes da entrega.
+- A auditoria encontrou contraste insuficiente em partes do tema escuro herdado e overflow decorativo na capa. Os caminhos foram corrigidos e as verificações repetidas.
+- Os primeiros roteiros de teste podiam consultar o formulário antes da mudança de rota e selecionavam o rádio invisível da cor. O roteiro passou a aguardar a renderização e clicar no rótulo visível. O teste de indisponibilidade de mídia instala a simulação no documento antes da navegação.
+- O executável Chromium de sistema e a primeira inicialização do WebKit não abriram neste ambiente. A validação utilizou Chromium headless e WebKit com bibliotecas de teste locais. Os fluxos de produção continuam sem essas dependências.
 
-A inspeção estreita usou um iframe local de teste em Chrome, com largura de viewport de 360 px (345 px úteis quando a barra de rolagem ocupa espaço). Não foi um aparelho físico. O wrapper e sua rota temporária foram removidos da entrega. A aplicação normal mantém `X-Frame-Options: DENY` e `frame-ancestors 'none'`.
+## Limites do aceite
 
-Uma tentativa de capturar download dentro desse iframe expirou na ferramenta de automação; a verificação foi concluída na página principal, onde o download foi observado. Isso não foi contado como sucesso antes da confirmação.
-
-## Ajustes feitos durante a revisão
-
-- Conservação do contexto de divisão além da janela curta das barras, sem alterar a regra de domínio.
-- Recomendação usa a ocorrência mais recente da investigação, mesmo quando existem tentativas semelhantes no histórico.
-- Validação de tipos do conceito recebido pela API.
-- Foco do link “Pular para o conteúdo”, rolagem ao iniciar atividade e título acessível das páginas.
-- Rótulo estável dos seletores de cor e singular nos resultados de uma questão.
-- Decoração do hero contida em telas estreitas, sem transbordar horizontalmente.
-- Rascunho respondido finalizado corretamente ao trocar de atividade.
-- Botão de retomar no início aponta para a atividade mesmo quando o criador foi pulado.
-
-## Limites desta validação
-
-Não foram realizados: execução real do `.bat` no Windows; teste em aparelho móvel físico, Safari ou Firefox; auditoria completa WCAG; teste com leitor de tela; carga/estresse; estudo pedagógico com estudantes; teste de eficácia. A exclusão real pela interface não foi acionada durante a navegação final; a função de exclusão e seu isolamento foram testados automaticamente.
-
-## Verificação da publicação — 11/11/2026
-
-O deploy `dep-dbq9hvajnfac73d96i2g` chegou ao estado **live** no Render. Commit da aplicação: `9ab70e7c4988d338b771170e71ba5dd0c7b7a01a`. Os 36 arquivos enviados ao GitHub foram comparados por hash com o pacote testado, sem divergências.
-
-| Verificação no endereço público | Resultado |
-| --- | --- |
-| [Página inicial](https://lacuna-40i2.onrender.com/) | HTML, estilos, fontes locais e Lumi renderizados |
-| [Saúde da API](https://lacuna-40i2.onrender.com/api/health) | `status: ok`, versão `1.0.0`, persistência `browser-localStorage` |
-| Personalização | Menta e óculos selecionados e salvos |
-| Investigação | Resposta 4 para `3x + 6 = 21` levou a `21 − 6` e depois `15 ÷ 3` |
-| Correção | Respostas 15 e 5 reconhecidas como corretas nas etapas correspondentes |
-| Persistência | Recarregar preservou a resposta corrigida, a etapa e o Lumi na cor escolhida |
-| Painel | Mostrou a sessão em andamento e os registros já finalizados; o rascunho ficou disponível para retomar |
-
-Essa checagem pública complementa os 81 testes automatizados e a revisão local descritos acima. Não foi uma nova bateria completa de testes nem um estudo com estudantes. As respostas usadas foram dados de teste neste navegador de revisão.
-
-Foi criado um único Web Service Python no plano Free, sem banco e sem disco. A criação direta manteve o health check TCP padrão do Render; o endpoint HTTP foi verificado manualmente. O `render.yaml` continua disponível para instalações por Blueprint com `/api/health` configurado.
-
-## Lista de entrega
-
-- [x] Código e assets locais, com licenças das fontes.
-- [x] 34 questões, 102 pistas e quatro aulas.
-- [x] Persistência sem login, exportação e exclusão.
-- [x] Testes reproduzíveis e relatório com limitações.
-- [x] README com execução Windows e Linux.
-- [x] Decisões, rastreabilidade e roteiro de três minutos.
-- [x] Blueprint Render.
-- [x] Publicação externa e verificação da URL atribuída pelo provedor.
+A candidata pode ser inspecionada e executada localmente. Não houve publicação. Seguem pendentes leitura por professor, teste com estudantes, dispositivos físicos, leitores de tela, Safari/Edge de distribuição e iniciador em Windows. O laboratório mede o intervalo entre toques no navegador; latência acústica, calibração de câmera e precisão de reconhecimento de mãos não foram avaliadas. O planejamento de liberação está em [Publicação e roadmap](PUBLICACAO-0.8.md).

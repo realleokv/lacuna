@@ -1,194 +1,78 @@
-# lacuna.
+# Lacuna 0.8
 
-**Aprender começa por entender.**
+**Aprender começa por entender.** O Lacuna é um hub de autoestudo com o Lumi, trilhas abertas e progresso salvo no navegador. A versão 0.8 está em uma branch de revisão. O endereço público acompanha a branch `main`.
 
-MVP de matemática com diagnóstico por regras, microaulas e um tutor personalizável: o Lumi. Desenvolvido em Python/Flask, HTML, CSS e JavaScript puro. Sem login e sem banco de dados. O histórico fica no `localStorage` do navegador.
+## Rodar no computador
 
-## Usar online
-
-**[Abrir o Lacuna](https://lacuna-40i2.onrender.com/)** — publicado no Render, plano Free, em 11/11/2026.
-
-Não precisa instalar nada ou criar conta. Histórico e personalização ficam neste navegador; não são sincronizados entre dispositivos.
-
-## Começar no Windows
-
-1. Instale o **Python 3.12 ou superior**, pelo site oficial: https://www.python.org/downloads/windows/ . Inclua o Python Launcher (`py`) na instalação.
-2. Extraia o ZIP inteiro. Não execute os arquivos dentro do ZIP.
-3. Abra a pasta `lacuna` e dê dois cliques em **`iniciar.bat`**.
-4. Na primeira execução, aguarde a criação do ambiente e o download das dependências.
-5. Abra **http://127.0.0.1:5000** no navegador. Mantenha a janela do servidor aberta; `Ctrl+C` encerra.
-
-O projeto não precisa de Node, npm, React, banco de dados, chave de API nem conta para funcionar. Node é opcional, apenas para os testes JavaScript.
-
-Se preferir o terminal, abra o PowerShell na pasta que contém `app.py`:
-
-```powershell
-py -3 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe serve.py
-```
-
-Não é necessário ativar o ambiente virtual; os comandos chamam diretamente seu Python. Se `py` não existir, use `python` na primeira linha, depois de conferir `python --version`. Não abra `index.html` diretamente: o servidor Flask é necessário para corrigir as atividades.
-
-### Problemas comuns
-
-| Sintoma | O que fazer |
-| --- | --- |
-| `py` não reconhecido | Reinstale com o Python Launcher ou use `python -m venv .venv`. |
-| Python anterior a 3.12 | Instale uma versão compatível e recrie apenas a pasta `.venv` deste projeto. |
-| Porta 5000 ocupada | No PowerShell: `$env:PORT="5001"`, depois execute `serve.py` e abra a porta 5001. |
-| Pacotes não baixam | Verifique internet/proxy da rede. As dependências vêm do PyPI. |
-| Página não corrige respostas | Confirme que o terminal está aberto e `/api/health` responde. |
-| Histórico não aparece | Confira o mesmo navegador, perfil, endereço e porta. `localhost` e `127.0.0.1` têm armazenamentos diferentes. |
-
-O início automático foi preparado para Windows; os testes desta entrega foram executados em Linux/Python 3.12.14 e Chrome. A execução real do `.bat` em Windows permanece a conferir no seu computador.
-
-## O que está pronto
-
-- Sete áreas: início, criação do Lumi, diagnóstico, painel, microaula, resultados e configurações.
-- Lumi original em SVG: quatro cores, três expressões, quatro opções de acessórios e três personalidades; apelido opcional de até 20 caracteres.
-- Cor escolhida aplicada aos destaques da interface; reações ao pensar, acertar e incentivar.
-- **34 questões**, com correção exata de números inteiros, decimais e frações equivalentes.
-- **Quatro microaulas**, com explicação em etapas, exemplo visual, prática e reavaliação.
-- Diagnóstico de 8 a 10 questões, uma por tela. O botão Continuar deixa o aluno controlar o ritmo.
-- Três pistas voluntárias por questão: orientação, primeiro passo e resolução.
-- Mapa de conceitos, barras, histórico e evolução construída com respostas reais.
-- Personalização, respostas, tentativas, pistas e atividade em andamento preservadas após recarregar a página.
-- Exportação JSON, exclusão dos dados do Lacuna com confirmação e preferência por movimento reduzido.
-
-## Como o diagnóstico funciona
-
-| Conceito | Conteúdo | Pré-requisitos |
-| --- | --- | --- |
-| N1 | Operações | Nenhum |
-| N2 | Números negativos | N1 |
-| N3 | Frações | N1 |
-| N4 | Equações lineares | N1, N2, N3 |
-
-O fluxo começa em `3x + 6 = 21`. Se a primeira resposta a uma equação estiver errada, o Lumi investiga `21 − 6` e depois `15 ÷ 3`. Uma dificuldade nessa divisão sugere a aula de operações como **hipótese de prática**. Um único erro não confirma uma lacuna.
-
-O estado de cada conceito considera suas **três questões distintas mais recentes**:
-
-- **Ainda não avaliado:** nenhuma resposta finalizada.
-- **Em desenvolvimento:** existem respostas, mas faltam evidências para os outros estados.
-- **Precisa praticar:** pelo menos duas primeiras respostas erradas no recorte.
-- **Demonstrou domínio:** três questões distintas e pelo menos duas corretas na primeira tentativa, sem pistas. Essa regra tem prioridade quando satisfeita.
-
-Repetir a mesma questão não fornece várias evidências distintas. Uma resposta acertada depois de errar continua registrada como tentativa com ajuda; não vira acerto independente. O alerta específico de divisão permanece até surgirem dois acertos independentes em outras questões de divisão posteriores à investigação.
-
-“Domínio” é uma estimativa simples deste MVP. É possível cumprir a regra geral de operações e ainda receber uma recomendação específica de divisão. Não é nota, laudo nem comprovação de eficácia pedagógica.
-
-O gráfico de evolução aparece a partir de dois diagnósticos/reavaliações concluídos; a prática de uma única questão fica fora dessa comparação. As barras e tabelas sempre mostram o denominador. A reavaliação guarda um retrato do mapa anterior para comparação.
-
-## Seus dados
-
-Tudo é organizado em uma única chave: **`lacuna:v1`**. O app não cria conta, cookie de sessão, senha nem banco no servidor. As respostas são enviadas ao Flask para correção em memória; o aplicativo não as grava em arquivos nem em logs. O provedor de hospedagem pode manter registros técnicos próprios, como acesso e IP.
-
-O navegador conserva histórico, preferência visual e atividade em andamento entre visitas ao mesmo endereço. **Outro dispositivo ou navegador terá outro histórico.** Limpar dados do site, navegar em modo privado ou trocar o domínio pode fazer o histórico desaparecer. O JSON exportado serve para consulta/backup legível; esta versão **não importa o arquivo de volta**.
-
-Se o armazenamento estiver cheio ou bloqueado, aparece um aviso e a sessão continua em memória. Se houver dados inválidos ou de uma versão desconhecida, o original é preservado, sem sobrescrita silenciosa. A exclusão remove somente a chave do Lacuna.
-
-Não há autenticação nem proteção contra edição manual dos dados pelo dono do navegador. Este MVP é para autoestudo e demonstração, não para certificação, ranking competitivo ou avaliação oficial.
-
-## Arquivos principais
-
-| Arquivo/pasta | Responsabilidade |
-| --- | --- |
-| `app.py` | Rotas Flask, validação HTTP e cabeçalhos de segurança |
-| `diagnostic.py` | Correção numérica, sequência, domínio e recomendação |
-| `serve.py` | Servidor WSGI Waitress, compartilhado por Windows e Render |
-| `data/concepts.json` | Grafo, quatro aulas e configuração da regra de domínio |
-| `data/questions.json` | Questões, respostas esperadas, pistas e explicações |
-| `templates/index.html` | Estrutura semântica, navegação e diálogo |
-| `static/js/app.js` | Rotas, eventos e coordenação da experiência |
-| `static/js/storage.js` | Persistência versionada, exportação e recorte de evidências |
-| `static/js/diagnostic.js` | Telas de atividade e microaula |
-| `static/js/dashboard.js` | Métricas, grafo, barras e histórico |
-| `static/js/lumi.js` | SVG original, opções visuais e falas |
-| `static/js/utils.js` | HTTP, escape de texto e utilitários |
-| `static/css/` | Tokens de marca, estilos e responsividade |
-| `static/assets/` | Marca, mascote, favicon e fontes locais com licenças |
-| `tests/` | Testes Python e JavaScript |
-| `render.yaml` | Configuração de publicação como Web Service Python |
-| `docs/` | Decisões, rastreabilidade, validação e roteiro da demonstração |
-
-## Testar
-
-Execute os comandos **dentro da pasta `lacuna`**, onde está `app.py`:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
-.\.venv\Scripts\python.exe -m pytest -q
-node --test tests/storage.test.mjs
-```
-
-Em Linux/macOS:
+No Windows com Python 3.12 ou superior, abra **iniciar.bat** na pasta do projeto. Em Linux ou macOS:
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements-dev.txt
-.venv/bin/python -m pytest -q
-node --test tests/storage.test.mjs
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python serve.py
 ```
 
-O relatório da entrega está em `docs/VALIDACAO.md`. Os testes não comprovam adequação pedagógica nem substituem avaliação com estudantes e professores.
+Acesse **http://127.0.0.1:5000**. No PowerShell, use `.\.venv\Scripts\python.exe` no lugar de `.venv/bin/python`. Flask corrige as respostas e Waitress serve a aplicação. Os recursos visuais, as fontes e os conteúdos acompanham o projeto.
 
-## API
+## Experimentar a versão
 
-Todas as rotas POST recebem JSON. Não existem credenciais para configurar.
+1. Na abertura, escolha **Começar a aprender** para informar um apelido e interesses ou **Pular e explorar** para entrar no catálogo.
+2. Abra uma área. O diagnóstico opcional traz uma questão de cada microaula. Você pode escolher qualquer trilha diretamente.
+3. Abra uma aula pelo mapa ou pela lista. Teste a previsão do exemplo, responda às três práticas e consulte uma pista se precisar. O painel permite retomar a atividade. Ao terminar as três aulas de uma trilha, aparece seu desafio final.
+4. Em **Revisões**, retome um conceito depois do intervalo escolhido nas configurações. Cada conceito possui duas questões reservadas. O estado de domínio considera tentativas independentes e questões distintas.
+5. Clique no Lumi para conversar ou pedir uma pista. Arraste-o dentro da faixa reservada. Com o botão focado, as setas movem e Home centraliza. No perfil e na coleção, veja histórico, calendário, moedas, itens e medalhas.
+6. Entre no **Laboratório** para manipular o cubo 3×3 em 2D/3D, marcar pulsos, comparar notas ou experimentar movimento. Todo o percurso pode ser feito com teclado e texto.
 
-| Método | Rota | Uso |
-| --- | --- | --- |
-| GET | `/` | Aplicação |
-| GET | `/api/health` | Estado e versão |
-| GET | `/api/content` | Conteúdo público sem gabarito das questões |
-| POST | `/api/diagnose` | Corrigir uma resposta |
-| POST | `/api/hint` | Solicitar uma pista de nível 1, 2 ou 3 |
-| POST | `/api/next` | Obter próxima questão ou encerramento |
-| POST | `/api/report` | Recalcular mapa e recomendação |
+### Catálogo do hub
 
-Exemplo de corpo para `/api/diagnose`:
+| Área | Primeira trilha | Segunda trilha |
+|---|---|---|
+| Matemática | Operações e frações | Equações e proporções |
+| Português e escrita | Interpretação e coesão | Ortografia e produção guiada |
+| Ciências | Método científico e matéria | Ecossistemas e corpo humano |
+| Física | Movimento e medidas | Forças e energia |
+| Química | Átomos e tabela periódica | Misturas e ligações |
+| História | Tempo e fontes históricas | Sociedades e transformações |
+| Geografia | Cartografia e orientação | Clima e território |
+| Música e instrumentos | Ritmo e pulsação | Notas e percepção musical |
+| Raciocínio lógico | Sequências e padrões | Dedução e problemas |
+| Cubo mágico | Peças, cores e notação | Primeiras sequências e resolução |
 
-```json
-{"question_id":"eq_001","answer":"5","first_answer":"5","attempts":1,"hints_used":0,"personality":"direct"}
+Cada uma das 20 trilhas contém três microaulas. As 60 microaulas somam 180 práticas avaliadas, 60 verificações diagnósticas, 120 revisões e 20 desafios de fim de trilha. Há ainda 60 previsões interativas nos exemplos. O botão **Meu acervo de matemática** abre as 20 aulas e 162 questões anteriores, incluindo os módulos de ampliação existentes. Os dois percursos identificam seus históricos separadamente.
+
+### Dados locais
+
+A chave `lacuna:v1` conserva os dados do acervo e recebe a extensão versionada `hub`. Apelido, preferências e progresso são locais. O servidor recebe a resposta para corrigir em memória. O site mantém a exportação JSON e a exclusão com confirmação. Uma gravação bloqueada ou cheia avisa o aluno e mantém a sessão na memória. Em caso de conteúdo inválido, Configurações permite exportar o original. Limpar os dados do site ou trocar de navegador, perfil ou domínio afeta o acesso ao histórico. A exportação é para consulta e não oferece reimportação pelo site.
+
+## Testes
+
+```bash
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -m pytest -q
+node --test tests/*.test.mjs
 ```
 
-Para `/api/next`, use `{"records":[],"mode":"diagnostic","concept_id":"N1"}`. Modos adicionais: `practice` e `reassessment`. Para `/api/report`, envie `{"records":[...]}` com registros no formato acima. O servidor recalcula os acertos e não confia em campos `correct` enviados pelo cliente. Aceita até 500 registros por solicitação e corpo máximo de 256 KB. O frontend envia somente a resposta mais recente de cada questão conhecida: no máximo 34 registros nesta versão. O servidor aplica a janela de três por conceito, preservando contexto para a investigação de divisão.
+Para a jornada real no navegador, instale os extras e o Chromium do Playwright:
 
-## Publicar no Render
+```bash
+.venv/bin/python -m pip install -r requirements-e2e.txt
+.venv/bin/python -m playwright install chromium
+.venv/bin/python tests/e2e/journey.py --width 390
+.venv/bin/python tests/e2e/journey.py --sweep --width 1366 --height 900
+```
 
-A instância deste repositório já está publicada em [https://lacuna-40i2.onrender.com/](https://lacuna-40i2.onrender.com/). Serviço: `srv-dbq9huqjnfac73d96h7g`. As instruções abaixo servem para reproduzir a instalação em outro ambiente; não é necessário criar outro serviço para usar o endereço existente.
+O script inicializa e encerra seu próprio servidor de teste. `--browser firefox` e `--browser webkit` selecionam outros motores instalados. `--audit --axe CAMINHO/axe.min.js` verifica regras de acessibilidade em dois temas e reflow a 320 pixels CSS. O JavaScript de auditoria é opcional e executado apenas nos testes.
 
-O projeto precisa de um **Web Service Python**, pois a correção depende do Flask. Não deve ser publicado como site apenas estático.
+## Documentação da entrega
 
-1. Coloque o conteúdo desta pasta na raiz de um repositório GitHub/GitLab/Bitbucket acessível ao Render. Não suba `.venv`, caches nem históricos exportados.
-2. No Render, crie um Blueprint a partir do repositório. O `render.yaml` já define runtime, comandos e health check.
-3. Confira o plano **Free** antes de aplicar. Não há banco, disco ou serviço adicional nesta configuração.
-4. Aguarde o deploy e abra o endereço efetivamente atribuído pelo Render. Teste também `/api/health` nesse endereço.
+| Documento | O que consultar |
+|---|---|
+| [Auditoria inicial](docs/AUDITORIA-0.8.md) | Commit-base, inventário e divergências |
+| [Arquitetura e decisões](docs/ARQUITETURA-0.8.md) | APIs, módulos, persistência, regras e laboratório |
+| [Guia de conteúdo](docs/CONTEUDO-0.8.md) | Contrato JSON, exemplos e revisão editorial |
+| [Relatório de validação](docs/VALIDACAO.md) | Testes executados, matriz AC-01–AC-20 e limites |
+| [Changelog](CHANGELOG.md) | Entregas incrementais |
+| [Publicação e roadmap](docs/PUBLICACAO-0.8.md) | Ambiente Render, verificação da candidata e pendências |
+| [README do MVP](docs/README-MVP.md) | Registro histórico do projeto anterior |
 
-Para criação manual:
-
-| Campo | Valor |
-| --- | --- |
-| Tipo | Web Service |
-| Runtime | Python |
-| Build command | `pip install -r requirements.txt` |
-| Start command | `python serve.py` |
-| Health check | `/api/health` |
-| Plano | Free |
-| `PYTHON_VERSION` | `3.12.14` |
-| `HOST` | `0.0.0.0` |
-| `PORT` | Fornecida pelo Render; não fixe manualmente |
-
-Se colocar a pasta inteira dentro de outro repositório, defina a raiz do serviço como `lacuna`, ou adapte o Blueprint antes de aplicar. A validação local do YAML não é um deploy: um link público só existe depois que o serviço for criado e o build terminar. O plano gratuito está sujeito às condições e limites atuais do provedor.
-
-Referências oficiais consultadas em 10/11/2026: [Flask com Waitress](https://flask.palletsprojects.com/en/stable/deploying/waitress/), [Flask no Render](https://render.com/docs/deploy-flask), [Blueprints](https://render.com/docs/blueprint-spec), [JSON Schema do Render](https://render.com/schema/render.yaml.json).
-
-## Limites e próximos passos
-
-Esta entrega não implementa login, sincronização, banco, importação JSON, IA generativa, correção de texto livre, modo offline/PWA, ranking ou validação científica. Reavaliações usam um conjunto fixo diferente do diagnóstico e da prática; repetir a mesma reavaliação pode favorecer memorização. O histórico local cresce com o uso, e o limite de armazenamento depende do navegador.
-
-Antes de uma implantação educacional ampla: revisão do conteúdo por professores, testes com leitores de tela e dispositivos reais, análise de acessibilidade completa, observabilidade e controles de uso do servidor. Nenhum resultado de aprendizagem ou desempenho em produção é prometido.
-
-As fontes Sora e Nunito Sans são distribuídas com seus arquivos OFL em `static/assets/fonts/`. Marca, ilustrações SVG e textos de exercícios foram produzidos para este projeto. Não foi atribuída uma licença pública ao restante do código; essa escolha fica com o autor do projeto.
+As fontes Sora e Nunito Sans mantêm suas licenças OFL em `static/assets/fonts/`. O projeto preserva os SVGs próprios. O laboratório usa geometria e sons sintetizados localmente.

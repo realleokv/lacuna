@@ -21,3 +21,7 @@ Base `802e2c80e359fe6e03792a61d9a3809b36b0f8ca`, branch de trabalho `feat/lacuna
 4. P0/P1 • Perfil, missões, cosméticos e Lumi com espaço reservado, movimento opcional e controle de retorno.
 5. P0/P1 • Laboratório com teclado/toque, alternativas visuais e volta ao conceito. P2 • avaliar Air Drums sem bloquear os demais módulos.
 6. Verificar regressões, falhas de armazenamento, três larguras, acessibilidade, integridade das respostas e documentar riscos antes de qualquer publicação.
+
+### Reprodução no navegador
+
+Uma cópia isolada do commit-base abriu a capa, iniciou o diagnóstico, aceitou a resposta 5 em 3x + 6 = 21 e mostrou a resolução. Ao abrir o painel, o Chromium registrou `undefined is not iterable` no desenho dos nós sem coordenadas. A correção limita o diagrama original aos quatro conceitos que ele representa e lista os 20 conceitos com links e denominadores reais. O histórico e a nova rota do painel têm cobertura de navegação.

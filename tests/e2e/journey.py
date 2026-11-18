@@ -131,12 +131,12 @@ def audit(page, label):
 
 
 def journey(page):
-    page.add_init_script("""() => {
+    page.add_init_script("""
       window.mediaRequests=0;
       if (navigator.mediaDevices) Object.defineProperty(navigator.mediaDevices,'getUserMedia',{
         value: async () => { window.mediaRequests++; throw new DOMException('Permission denied','NotAllowedError'); }
       });
-    }""")
+    """)
     nav(page, "")
     page.get_by_role("link", name="Começar a aprender").click()
     page.get_by_role("link", name="Pular e explorar").click()

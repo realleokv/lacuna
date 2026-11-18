@@ -1,3 +1,4 @@
+import {createLab} from './experiences/lab.js';
 import {attachCompanion} from './hub/companion.js';
 import {createHub} from './hub/controller.js';
 import {api,escapeHTML as e,icon,uid,pct,dateLabel} from './utils.js';
@@ -15,6 +16,7 @@ const currentRoute=()=>location.hash.replace(/^#\/?/,'').split('/').filter(Boole
 const currentReport=()=>state().last_report||emptyReport(content.concepts);
 
 const hub=createHub({state,save,render,go,main,notify,session:uid()});
+const lab=createLab({state,save,main});
 const companion=attachCompanion({state,save,hub});
 function notify(message){const toast=document.querySelector('#toast');toast.textContent=message;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true;},4000);}
 function applyTheme(lumi=state().lumi){document.body.dataset.color=lumi.color;document.body.dataset.reducedMotion=String(state().reduced_motion);}
@@ -65,8 +67,8 @@ function render(){
  applyTheme();hub.apply();storageNotice();
  const [route='',param]=currentRoute();
  const pages={'':landing,lumi:creator,diagnostico:()=>state().active?exercise(state(),content):diagnosticIntro(state()),classico:()=>dashboard(state(),content,currentReport())+(reportWarning?`<div class="page-shell"><div class="note-box"><p>O mapa pode estar desatualizado: ${e(reportWarning)} <button class="text-link" data-action="refresh-report">Atualizar mapa</button></p></div></div>`:''),resultados:()=>results(param),configuracoes:()=>hub.prefs()+settings(),aula:()=>{const c=content.concepts.find(c=>c.id===param);return c?lesson(state(),c):'<section class="error-page"><h1>Aula não encontrada.</h1><a class="button" href="#/painel">Voltar ao painel</a></section>';}};
- main.innerHTML=hub.view(route,param)??(Object.hasOwn(pages,route)?pages[route]():'<section class="error-page"><h1>Esse caminho ainda não existe.</h1><a class="button" href="#/">Voltar ao início</a></section>');
- companion.update();
+ main.innerHTML=lab.view(route,param,hub.getIndex())??hub.view(route,param)??(Object.hasOwn(pages,route)?pages[route]():'<section class="error-page"><h1>Esse caminho ainda não existe.</h1><a class="button" href="#/">Voltar ao início</a></section>');
+ lab.afterRender();companion.update();
  main.classList.remove('view-enter');void main.offsetWidth;main.classList.add('view-enter');
  document.querySelectorAll('[data-nav]').forEach(el=>{const active=el.dataset.nav===({painel:'dashboard',area:'explorar',trilha:'explorar',licao:'explorar',atividade:'explorar',experiencia:'laboratorio'}[route]||route);if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});
  const title=(main.querySelector('h1')?.innerText||'Aprender começa por entender.').replace(/\s+/g,' ');document.title=`${title} — lacuna.`;

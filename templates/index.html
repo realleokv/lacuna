@@ -25,6 +25,20 @@
     </nav>
     <a href="#/configuracoes" class="icon-button" aria-label="Configurações" title="Configurações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 3h6l.6 3 2.4 1.4 2.9-.9 3 5.2-2.3 2.1V16l2.3 2.1-3 5.2-2.9-.9-2.4 1.4-.6 3H9l-.6-3L6 22.4l-2.9.9-3-5.2L2.4 16v-2.2L.1 11.7l3-5.2L6 7.4 8.4 6z" transform="translate(3 -1) scale(.75)"/><circle cx="12" cy="12" r="3"/></svg></a>
   </header>
+  <aside id="lumi-dock" aria-label="Companheiro Lumi">
+    <div class="lumi-rail"><button type="button" id="lumi-handle" title="Conversar com Lumi. Use as setas para mover e Home para centralizar." aria-label="Conversar com Lumi"><img src="/static/assets/lumi.svg" alt=""></button></div>
+    <span class="dock-caption" role="status">Lumi está por aqui.</span>
+  </aside>
+  <dialog id="lumi-dialog" aria-labelledby="lumi-help-title">
+    <h2 id="lumi-help-title">Converse com o Lumi</h2><p role="status"></p><div class="hub-actions">
+      <button type="button" class="hub-btn" data-talk="hint">Abrir pista desta questão</button>
+      <button type="button" class="hub-btn" data-talk="next">Por onde sigo?</button>
+      <button type="button" class="hub-btn" data-talk="map">Como ler o mapa?</button>
+      <button type="button" class="hub-btn" data-talk="xp">Como ganho XP?</button>
+      <button type="button" class="hub-btn" data-talk="visit">Acompanhar o exemplo</button>
+      <button type="button" class="hub-btn primary" data-talk="close">Voltar ao estudo</button>
+    </div>
+  </dialog>
   <div id="storage-warning" class="storage-warning" role="status" hidden></div>
   <main id="main" tabindex="-1"><div class="loading-state"><span class="loading-dot"></span>Preparando seu ponto de partida…</div></main>
   <footer class="site-footer"><a class="brand brand-small" href="#/">lacuna<span>.</span></a><p>Toda dúvida é um ponto de partida.</p><a href="#/configuracoes">Seus dados e privacidade</a><span>Lacuna · 0.8</span></footer>

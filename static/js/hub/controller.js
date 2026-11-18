@@ -6,7 +6,7 @@ export function createHub({state,save,render,go,main,notify,session}){
  let idx, pending=false,dragIndex=null;
  const h=()=>state().hub;
  const route=()=>location.hash.slice(2).split('/');
- const run=()=>h().runs[route()[1]];
+ const run=()=>route()[0]==='atividade'?h().runs[route()[1]]:undefined;
  const q=()=>idx.questions.get(run()?.ids[run().index]);
  const context=()=>[run(),q(),location.hash];
  const isCurrent=([r,item,hash])=>hash===location.hash&&r===run()&&item===q();
@@ -86,6 +86,11 @@ export function createHub({state,save,render,go,main,notify,session}){
    if(b.dataset.shift){const i=Number(b.closest('li').dataset.index);reorder(i,i+Number(b.dataset.shift));return;}
    const {hub:act,value}=b.dataset;
    if(['lesson','review','diagnostic','checkpoint'].includes(act)){begin(act,value);return;}
+   if(act==='mini'){
+     const l=idx.lessons.find(l=>l.id===route()[1]);
+     const status=main.querySelector('#mini-that');
+     if(l&&status)status.textContent=(value===l.mini.solution?'Isso! ':'Confira o exemplo. ')+l.mini.explanation;
+   }
    if(act==='hint')await hint();
    if(act==='advance'&&run()){
      if(advanceRun(h(),run(),idx.questions)){

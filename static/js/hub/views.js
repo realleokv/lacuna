@@ -65,11 +65,10 @@ function trackPage(t,h,idx){
 }
 function lessonPage(l,h,idx){
   if(!l)return missing();
-  const [before,after]=l.example.split(' → ');
   const diagram=l.example.includes(' → ')?l.example.split(' → '):[l.example];
   return box(link('trilha',l.track,'← '+byId(idx.tracks,l.track).title)+head('Microaula',l.title,l.objective)+`
-  <article class="hub-card lesson-reading"><h2>Observe</h2><p>${e(l.steps[0])}</p><figure class="example-flow"><figcaption>Exemplo guiado</figcaption><div>${diagram.map(term=>`<span>${e(term)}</span>`).join('<b aria-hidden="true">→</b>')}</div></figure>
-  <details><summary>Experimente explicar o exemplo com suas palavras</summary><p>${e(l.steps[1])}</p></details></article><div class="hub-actions">${action('lesson',l.id,'Começar prática','primary')}${['musica','cubo','fisica'].includes(l.area)?link('laboratorio',l.id,'Experimentar no laboratório'):''}</div><p>Três questões com correção. Você pode usar pistas e retomar depois.</p>`);
+  <article class="hub-card lesson-reading"><h2>Observe</h2><p>${e(l.steps[0])}</p><figure class="example-flow"><figcaption>Exemplo guiado <span class="lumi-perch" data-lumi-anchor aria-hidden="true"></span></figcaption><div>${diagram.map(term=>`<span>${e(term)}</span>`).join('<b aria-hidden="true">→</b>')}</div></figure>
+  <p>${e(l.steps[1])}</p><fieldset class="mini-task"><legend>${e(l.mini.prompt)}</legend><div class="hub-actions">${l.mini.options.map(v=>action('mini',v,v)).join('')}</div><p id="mini-that" role="status"></p></fieldset></article><div class="hub-actions">${action('lesson',l.id,'Começar prática','primary')}${['musica','cubo','fisica'].includes(l.area)?link('laboratorio',l.id,'Experimentar no laboratório'):''}</div><p>Três questões com correção. Você pode usar pistas e retomar depois.</p>`);
 }
 function inputFor(q,a){
   const val=a.draft;

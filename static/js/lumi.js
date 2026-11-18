@@ -2,11 +2,11 @@ import {escapeHTML as e} from './utils.js';
 export const PALETTE = {lavender:{name:'Lavanda',hex:'#A78BFA'},sky:{name:'Azul céu',hex:'#60A5FA'},mint:{name:'Menta',hex:'#6EE7B7'},peach:{name:'Pêssego',hex:'#FDBA9A'}};
 export const DEFAULT_LUMI = {color:'lavender',expression:'curious',accessory:'none',personality:'direct',name:'Lumi'};
 export function sanitizeLumi(input = {}) {
-  return {color:PALETTE[input.color] ? input.color : 'lavender',expression:['happy','curious','calm'].includes(input.expression) ? input.expression : 'curious',accessory:['none','glasses','cap','headphones'].includes(input.accessory) ? input.accessory : 'none',personality:['patient','funny','direct'].includes(input.personality) ? input.personality : 'direct',name:typeof input.name==='string' ? (Array.from(input.name.trim()).slice(0,20).join('') || 'Lumi') : 'Lumi'};
+  return {color:Object.hasOwn(PALETTE,input?.color) ? input.color : 'lavender',expression:['happy','curious','calm'].includes(input.expression) ? input.expression : 'curious',accessory:['none','glasses','cap','headphones'].includes(input.accessory) ? input.accessory : 'none',personality:['patient','funny','direct'].includes(input.personality) ? input.personality : 'direct',name:typeof input.name==='string' ? (Array.from(input.name.trim()).slice(0,20).join('') || 'Lumi') : 'Lumi'};
 }
 export function lumiSVG(settings=DEFAULT_LUMI, mood='idle', className='') {
   const p=sanitizeLumi(settings), c=PALETTE[p.color].hex;
-  const expression=mood==='happy'?'happy':mood==='thinking'?'curious':p.expression;
+  const expression=mood==='happy'?'happy':['thinking','surprised','explaining'].includes(mood)?'curious':mood==='resting'?'calm':mood==='playful'?'happy':p.expression;
   const eyes=expression==='happy'
     ? '<path d="M126 150q12-20 24 0m32 0q12-20 24 0" fill="none" stroke="#171C36" stroke-width="10" stroke-linecap="round"/>'
     : expression==='calm'

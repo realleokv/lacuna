@@ -1,0 +1,1013 @@
+{
+  "schema_version": 1,
+  "id": "portugues",
+  "title": "Português e escrita",
+  "symbol": "Aa",
+  "tracks": [
+    {
+      "id": "pt-leitura",
+      "title": "Interpretação e coesão",
+      "goal": "Ler pistas, localizar referentes e identificar relações entre frases.",
+      "lessons": [
+        {
+          "id": "pt-inferencia",
+          "title": "Ler além do explícito",
+          "objective": "Distinguir o que está escrito de uma conclusão plausível.",
+          "prerequisites": [],
+          "steps": [
+            "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+            "Teste se outra explicação também combina com as pistas."
+          ],
+          "example": "“Ana guardou o guarda-chuva molhado.” → O objeto está molhado é explícito; ter chovido é uma hipótese.",
+          "questions": [
+            {
+              "id": "pt-inferencia.1",
+              "concept_id": "pt-inferencia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "“O ônibus partiu enquanto Rui corria ao ponto.” O que o texto afirma?",
+              "difficulty": 1,
+              "validator": "O ônibus partiu",
+              "options": [
+                "Rui chegou atrasado ao trabalho",
+                "Rui esqueceu a carteira",
+                "O ônibus partiu"
+              ],
+              "feedback": "A partida aparece no texto. O destino e a carteira de Rui não aparecem.",
+              "hints": [
+                "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+                "A partida aparece no texto. O destino e a carteira de Rui não aparecem."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-inferencia.2",
+              "concept_id": "pt-inferencia",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "“A praça amanheceu com poças.” Só essa frase prova que choveu durante a noite.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A água também poderia vir de uma lavagem.",
+              "hints": [
+                "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+                "A água também poderia vir de uma lavagem."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-inferencia.3",
+              "concept_id": "pt-inferencia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "“Ela dobrou a carta com cuidado e a guardou junto das fotos.” Qual hipótese tem melhor apoio?",
+              "difficulty": 3,
+              "validator": "A carta tem valor afetivo",
+              "options": [
+                "A carta tem valor afetivo",
+                "Ela trabalha no correio",
+                "A carta cobra uma dívida"
+              ],
+              "feedback": "O cuidado e a proximidade das fotos sustentam a leitura afetiva.",
+              "hints": [
+                "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+                "O cuidado e a proximidade das fotos sustentam a leitura afetiva."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-inferencia.4",
+              "concept_id": "pt-inferencia",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "“A luz da cozinha ainda estava acesa.” Qual informação é explícita?",
+              "difficulty": 2,
+              "validator": "A luz estava acesa",
+              "options": [
+                "Havia alguém cozinhando",
+                "Era meia-noite",
+                "A luz estava acesa"
+              ],
+              "feedback": "A frase só informa diretamente o estado da luz.",
+              "hints": [
+                "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+                "A frase só informa diretamente o estado da luz."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-inferencia.5",
+              "concept_id": "pt-inferencia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Um narrador diz que o portão rangeu e que o cachorro ergueu as orelhas. Qual hipótese aproveita as duas pistas?",
+              "difficulty": 2,
+              "validator": "O cachorro reagiu ao som",
+              "options": [
+                "O cachorro abriu o portão",
+                "O cachorro reagiu ao som",
+                "O dono voltou de viagem"
+              ],
+              "feedback": "O som seguido da reação sugere uma relação entre eles.",
+              "hints": [
+                "Localize uma pista concreta no trecho antes de propor uma interpretação.",
+                "O som seguido da reação sugere uma relação entre eles."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-inferencia.r2",
+              "concept_id": "pt-inferencia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "“Os pratos ainda soltavam vapor.” Que leitura depende de inferência?",
+              "difficulty": 3,
+              "validator": "A comida havia sido preparada recentemente.",
+              "options": [
+                "A comida havia sido preparada recentemente.",
+                "Saía vapor dos pratos.",
+                "Havia pratos."
+              ],
+              "feedback": "O vapor é uma pista de temperatura, mas o texto não informa quando houve preparo.",
+              "hints": [
+                "Teste se outra explicação também combina com as pistas.",
+                "O vapor é uma pista de temperatura, mas o texto não informa quando houve preparo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "“A porta estava entreaberta.” O texto informa quem a abriu?",
+            "options": [
+              "Sim",
+              "Não"
+            ],
+            "solution": "Não",
+            "explanation": "A frase descreve a posição da porta e deixa a autoria em aberto."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "pt-referencia",
+          "title": "Seguir os referentes",
+          "objective": "Identificar que termo uma expressão retoma.",
+          "prerequisites": [
+            "pt-inferencia"
+          ],
+          "steps": [
+            "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+            "Se mais de uma pessoa puder ser o referente, reescreva com o nome."
+          ],
+          "example": "“Vi as cartas. Guardei-as.” → “as” retoma “as cartas”.",
+          "questions": [
+            {
+              "id": "pt-referencia.1",
+              "concept_id": "pt-referencia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "“Os atletas chegaram. Eles foram ao vestiário.” Quem são “eles”?",
+              "difficulty": 1,
+              "validator": "Os atletas",
+              "options": [
+                "Os vestiários",
+                "Os técnicos",
+                "Os atletas"
+              ],
+              "feedback": "O pronome masculino plural retoma os atletas.",
+              "hints": [
+                "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+                "O pronome masculino plural retoma os atletas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-referencia.2",
+              "concept_id": "pt-referencia",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "“Bia comprou duas revistas e leu as duas.” Copie o substantivo retomado por “as duas”.",
+              "difficulty": 2,
+              "validator": "revistas",
+              "options": [],
+              "feedback": "A expressão retoma as duas revistas compradas.",
+              "hints": [
+                "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+                "A expressão retoma as duas revistas compradas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-referencia.3",
+              "concept_id": "pt-referencia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "“Lia avisou Nina que ela venceu.” Qual reescrita deixa claro que Nina venceu?",
+              "difficulty": 3,
+              "validator": "Lia avisou Nina da vitória de Nina.",
+              "options": [
+                "Ela contou a ela sobre isso.",
+                "Lia disse a Nina que ela ganhou.",
+                "Lia avisou Nina da vitória de Nina."
+              ],
+              "feedback": "Repetir o nome resolve a ambiguidade.",
+              "hints": [
+                "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+                "Repetir o nome resolve a ambiguidade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-referencia.4",
+              "concept_id": "pt-referencia",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "“O museu reabriu. O local recebeu visitas.” O que “o local” retoma?",
+              "difficulty": 2,
+              "validator": "O museu",
+              "options": [
+                "O museu",
+                "A cidade",
+                "As visitas"
+              ],
+              "feedback": "As duas expressões designam o mesmo espaço.",
+              "hints": [
+                "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+                "As duas expressões designam o mesmo espaço."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-referencia.5",
+              "concept_id": "pt-referencia",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "Em “Mara entregou o livro ao tio, que agradeceu”, “que” retoma o tio.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A oração relativa atribui o agradecimento ao tio.",
+              "hints": [
+                "Procure os nomes anteriores que combinam em número e sentido com a expressão.",
+                "A oração relativa atribui o agradecimento ao tio."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-referencia.r2",
+              "concept_id": "pt-referencia",
+              "role": "review",
+              "format": "typed",
+              "prompt": "“Uma canção começou. A melodia animou a praça.” Copie o substantivo retomado por “a melodia”.",
+              "difficulty": 3,
+              "validator": "canção",
+              "options": [],
+              "feedback": "A expressão refere-se à canção mencionada na primeira frase.",
+              "hints": [
+                "Se mais de uma pessoa puder ser o referente, reescreva com o nome.",
+                "A expressão refere-se à canção mencionada na primeira frase."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Em “chegaram os livros e eu os abri”, o que foi aberto?",
+            "options": [
+              "Os livros",
+              "Os portões"
+            ],
+            "solution": "Os livros",
+            "explanation": "O pronome “os” retoma o único referente masculino plural do trecho."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "pt-conectivo",
+          "title": "Conectar ideias",
+          "objective": "Escolher um conector de acordo com a relação de sentido.",
+          "prerequisites": [
+            "pt-referencia"
+          ],
+          "steps": [
+            "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+            "Substitua o conector por outro da mesma relação e releia."
+          ],
+          "example": "“Estudou, mas errou.” → “mas” introduz uma expectativa contrariada.",
+          "questions": [
+            {
+              "id": "pt-conectivo.1",
+              "concept_id": "pt-conectivo",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Complete com “porque” ou “porém”: “Fiquei em casa ___ estava gripado.”",
+              "difficulty": 1,
+              "validator": "porque",
+              "options": [],
+              "feedback": "A gripe explica a causa de ficar em casa.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "A gripe explica a causa de ficar em casa."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.2",
+              "concept_id": "pt-conectivo",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe “portanto” a uma relação.",
+              "difficulty": 2,
+              "validator": "Conclusão",
+              "options": [
+                "Conclusão",
+                "Oposição",
+                "Exemplificação"
+              ],
+              "feedback": "Portanto apresenta uma conclusão apoiada no que veio antes.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "Portanto apresenta uma conclusão apoiada no que veio antes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.3",
+              "concept_id": "pt-conectivo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual frase preserva o sentido de “Embora chovesse, saímos”?",
+              "difficulty": 3,
+              "validator": "Chovia, mas saímos.",
+              "options": [
+                "Chovia, mas saímos.",
+                "Chovia porque saímos.",
+                "Chovia, logo saímos."
+              ],
+              "feedback": "A chuva cria uma expectativa contrária à saída.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "A chuva cria uma expectativa contrária à saída."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.4",
+              "concept_id": "pt-conectivo",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "“Além disso” pode introduzir um segundo argumento na mesma direção.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A expressão acrescenta uma ideia.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "A expressão acrescenta uma ideia."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.5",
+              "concept_id": "pt-conectivo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "“As entradas esgotaram; ___ o teatro abriu sessão extra.” Qual expressão explicita a consequência?",
+              "difficulty": 2,
+              "validator": "por isso",
+              "options": [
+                "por isso",
+                "por exemplo",
+                "apesar disso"
+              ],
+              "feedback": "A sessão extra é apresentada como resultado da procura.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "A sessão extra é apresentada como resultado da procura."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.6",
+              "concept_id": "pt-conectivo",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "“O ônibus atrasou. Mesmo assim, Lia chegou a tempo.” Qual paráfrase mantém a relação?",
+              "difficulty": 3,
+              "validator": "Apesar do atraso, Lia chegou a tempo.",
+              "options": [
+                "Lia atrasou o ônibus.",
+                "Apesar do atraso, Lia chegou a tempo.",
+                "Lia chegou a tempo por causa do atraso."
+              ],
+              "feedback": "Mesmo assim sinaliza contraste com a expectativa.",
+              "hints": [
+                "Nomeie primeiro a relação: causa, contraste, adição ou consequência.",
+                "Mesmo assim sinaliza contraste com a expectativa."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-conectivo.r2",
+              "concept_id": "pt-conectivo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual conector introduz um exemplo de algo que acabou de ser dito?",
+              "difficulty": 3,
+              "validator": "Por exemplo",
+              "options": [
+                "No entanto",
+                "Portanto",
+                "Por exemplo"
+              ],
+              "feedback": "A expressão indica que o leitor encontrará um caso ilustrativo.",
+              "hints": [
+                "Substitua o conector por outro da mesma relação e releia.",
+                "A expressão indica que o leitor encontrará um caso ilustrativo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "“Tentou e conseguiu” estabelece aqui…",
+            "options": [
+              "Adição de ações",
+              "Contraste explícito"
+            ],
+            "solution": "Adição de ações",
+            "explanation": "A conjunção une duas ações em sequência."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pt-escrita",
+      "title": "Ortografia e produção guiada",
+      "goal": "Revisar grafia, pontuar vocativos e construir um parágrafo coerente.",
+      "lessons": [
+        {
+          "id": "pt-porques",
+          "title": "Escolher entre os porquês",
+          "objective": "Selecionar uma grafia pelo papel da expressão.",
+          "prerequisites": [],
+          "steps": [
+            "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+            "Leia a frase substituindo por “por qual motivo”, “pois” ou “o motivo”."
+          ],
+          "example": "“Qual é o porquê da demora?” → O artigo indica o substantivo que significa motivo.",
+          "questions": [
+            {
+              "id": "pt-porques.1",
+              "concept_id": "pt-porques",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Complete: “___ a reunião terminou cedo?”",
+              "difficulty": 1,
+              "validator": "Por que",
+              "options": [],
+              "feedback": "Pergunta-se por qual motivo ela terminou.",
+              "hints": [
+                "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+                "Pergunta-se por qual motivo ela terminou."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-porques.2",
+              "concept_id": "pt-porques",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Complete: “Ela voltou cedo ___ estava cansada.”",
+              "difficulty": 2,
+              "validator": "porque",
+              "options": [],
+              "feedback": "A palavra introduz uma explicação.",
+              "hints": [
+                "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+                "A palavra introduz uma explicação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-porques.3",
+              "concept_id": "pt-porques",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Complete: “Ninguém explicou o ___ da mudança.”",
+              "difficulty": 3,
+              "validator": "porquê",
+              "options": [],
+              "feedback": "O artigo “o” antecede o substantivo porquê.",
+              "hints": [
+                "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+                "O artigo “o” antecede o substantivo porquê."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-porques.4",
+              "concept_id": "pt-porques",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "“Você saiu cedo por ___?” Complete só a palavra final.",
+              "difficulty": 2,
+              "validator": "quê",
+              "options": [],
+              "feedback": "Na posição final tônica usa-se o acento.",
+              "hints": [
+                "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+                "Na posição final tônica usa-se o acento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-porques.5",
+              "concept_id": "pt-porques",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Em qual frase a grafia está adequada?",
+              "difficulty": 2,
+              "validator": "Não sei por que ele partiu.",
+              "options": [
+                "Não sei por que ele partiu.",
+                "Não sei por quê ele partiu agora.",
+                "Não sei porquê ele partiu."
+              ],
+              "feedback": "A oração expressa uma pergunta indireta sobre o motivo.",
+              "hints": [
+                "Use “por que” para perguntar a razão e “porque” para explicá-la. Antes da pausa final, a pergunta termina em “por quê”.",
+                "A oração expressa uma pergunta indireta sobre o motivo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-porques.r2",
+              "concept_id": "pt-porques",
+              "role": "review",
+              "format": "typed",
+              "prompt": "“Gostaria de saber ___ faltaram.” Complete com a grafia de duas palavras adequada.",
+              "difficulty": 3,
+              "validator": "por que",
+              "options": [],
+              "feedback": "A frase contém uma pergunta indireta sobre o motivo.",
+              "hints": [
+                "Leia a frase substituindo por “por qual motivo”, “pois” ou “o motivo”.",
+                "A frase contém uma pergunta indireta sobre o motivo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Em “o motivo da saída”, “motivo” pode ser trocado por…",
+            "options": [
+              "por que",
+              "porquê"
+            ],
+            "solution": "porquê",
+            "explanation": "O artigo permite usar o substantivo “porquê”."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "pt-vocativo",
+          "title": "A vírgula no chamamento",
+          "objective": "Separar o vocativo sem separar sujeito e verbo.",
+          "prerequisites": [
+            "pt-porques"
+          ],
+          "steps": [
+            "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+            "Leia retirando o chamamento: a ordem continua fazendo sentido."
+          ],
+          "example": "“Lumi, abra o mapa.” → A vírgula separa o nome de quem recebe o chamado.",
+          "questions": [
+            {
+              "id": "pt-vocativo.1",
+              "concept_id": "pt-vocativo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Você quer chamar Paulo. Qual frase usa o vocativo?",
+              "difficulty": 1,
+              "validator": "Paulo, leia o aviso.",
+              "options": [
+                "O aviso é de Paulo.",
+                "Paulo leu o aviso.",
+                "Paulo, leia o aviso."
+              ],
+              "feedback": "A pausa separa o chamado da ordem.",
+              "hints": [
+                "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+                "A pausa separa o chamado da ordem."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-vocativo.2",
+              "concept_id": "pt-vocativo",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Em “Marta abriu a janela”, Marta é vocativo.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Marta é o sujeito do verbo abriu.",
+              "hints": [
+                "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+                "Marta é o sujeito do verbo abriu."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-vocativo.3",
+              "concept_id": "pt-vocativo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Complete a pontuação de “Venha aqui meu amigo” quando se chama o amigo.",
+              "difficulty": 3,
+              "validator": "Venha aqui, meu amigo.",
+              "options": [
+                "Venha aqui meu, amigo.",
+                "Venha, aqui meu amigo.",
+                "Venha aqui, meu amigo."
+              ],
+              "feedback": "“Meu amigo” forma o chamamento completo.",
+              "hints": [
+                "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+                "“Meu amigo” forma o chamamento completo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-vocativo.4",
+              "concept_id": "pt-vocativo",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "Em “Turma, comecem a leitura”, copie o vocativo.",
+              "difficulty": 2,
+              "validator": "Turma",
+              "options": [],
+              "feedback": "O nome coletivo identifica os interlocutores.",
+              "hints": [
+                "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+                "O nome coletivo identifica os interlocutores."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-vocativo.5",
+              "concept_id": "pt-vocativo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual frase contém um vocativo intercalado?",
+              "difficulty": 2,
+              "validator": "Obrigada, Beto, pela ajuda.",
+              "options": [
+                "Beto ofereceu ajuda.",
+                "Obrigada, Beto, pela ajuda.",
+                "Obrigada pela ajuda de Beto."
+              ],
+              "feedback": "As duas vírgulas isolam o chamamento.",
+              "hints": [
+                "Identifique se o nome chama o interlocutor ou informa quem realiza a ação.",
+                "As duas vírgulas isolam o chamamento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-vocativo.r2",
+              "concept_id": "pt-vocativo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual pontuação indica claramente um chamado?",
+              "difficulty": 3,
+              "validator": "Pessoal, o ensaio começou.",
+              "options": [
+                "O ensaio do pessoal começou.",
+                "Pessoal, o ensaio começou.",
+                "O pessoal começou o ensaio."
+              ],
+              "feedback": "“Pessoal” está destacado como vocativo.",
+              "hints": [
+                "Leia retirando o chamamento: a ordem continua fazendo sentido.",
+                "“Pessoal” está destacado como vocativo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Em “escute, vizinho!”, quem está sendo chamado?",
+            "options": [
+              "O vizinho",
+              "O falante"
+            ],
+            "solution": "O vizinho",
+            "explanation": "O termo separado por vírgula se refere ao interlocutor."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "pt-paragrafo",
+          "title": "Construir um parágrafo",
+          "objective": "Organizar uma ideia central, uma evidência e um fechamento.",
+          "prerequisites": [
+            "pt-vocativo"
+          ],
+          "steps": [
+            "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+            "Na revisão, confira se cada frase contribui para o mesmo assunto."
+          ],
+          "example": "“O jardim atrai insetos.” → observação de abelhas → relação com a polinização.",
+          "questions": [
+            {
+              "id": "pt-paragrafo.1",
+              "concept_id": "pt-paragrafo",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene o parágrafo do tema ao exemplo e à conclusão.",
+              "difficulty": 1,
+              "validator": [
+                "A biblioteca ampliou o acesso.",
+                "Agora abre também aos sábados.",
+                "Assim, quem trabalha na semana pode visitá-la."
+              ],
+              "options": [
+                "Agora abre também aos sábados.",
+                "Assim, quem trabalha na semana pode visitá-la.",
+                "A biblioteca ampliou o acesso."
+              ],
+              "feedback": "A primeira frase apresenta a tese. A segunda a sustenta e a terceira explica o efeito.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "A primeira frase apresenta a tese. A segunda a sustenta e a terceira explica o efeito."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.2",
+              "concept_id": "pt-paragrafo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual dado sustenta melhor “A coleta seletiva cresceu na escola”?",
+              "difficulty": 2,
+              "validator": "O peso semanal de recicláveis passou de 12 para 19 kg.",
+              "options": [
+                "A escola tem duas quadras.",
+                "O portão foi pintado.",
+                "O peso semanal de recicláveis passou de 12 para 19 kg."
+              ],
+              "feedback": "Medidas comparáveis apoiam a afirmação sobre crescimento.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "Medidas comparáveis apoiam a afirmação sobre crescimento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.3",
+              "concept_id": "pt-paragrafo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual revisão dá mais precisão a “Muita gente veio ao encontro”?",
+              "difficulty": 3,
+              "validator": "A lista de presença registrou 48 pessoas.",
+              "options": [
+                "A lista de presença registrou 48 pessoas.",
+                "Vieram inúmeras pessoas legais.",
+                "A cidade inteira compareceu."
+              ],
+              "feedback": "Um número verificável torna a informação mais precisa.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "Um número verificável torna a informação mais precisa."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.4",
+              "concept_id": "pt-paragrafo",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Um exemplo deve ter ligação identificável com a ideia central do parágrafo.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "O vínculo ajuda o leitor a entender a função do exemplo.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "O vínculo ajuda o leitor a entender a função do exemplo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.5",
+              "concept_id": "pt-paragrafo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual frase encerra bem um parágrafo sobre plantar árvores para sombrear o pátio?",
+              "difficulty": 2,
+              "validator": "Assim, o recreio ganha áreas de descanso à sombra.",
+              "options": [
+                "A prova começa às oito.",
+                "Assim, o recreio ganha áreas de descanso à sombra.",
+                "O muro tem três metros."
+              ],
+              "feedback": "A conclusão retoma o objetivo do plantio.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "A conclusão retoma o objetivo do plantio."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.6",
+              "concept_id": "pt-paragrafo",
+              "role": "checkpoint",
+              "format": "order",
+              "prompt": "Organize a justificativa para ampliar o bicicletário.",
+              "difficulty": 3,
+              "validator": [
+                "O bicicletário está lotado.",
+                "Ontem doze bicicletas ficaram fora dele.",
+                "Por isso, propomos instalar novos suportes."
+              ],
+              "options": [
+                "Ontem doze bicicletas ficaram fora dele.",
+                "Por isso, propomos instalar novos suportes.",
+                "O bicicletário está lotado."
+              ],
+              "feedback": "O dado exemplifica o problema antes da proposta.",
+              "hints": [
+                "Apresente o assunto, desenvolva-o com um dado ou exemplo e explicite como isso apoia seu ponto.",
+                "O dado exemplifica o problema antes da proposta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "pt-paragrafo.r2",
+              "concept_id": "pt-paragrafo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual detalhe apoia “o novo bebedouro reduziu a fila”?",
+              "difficulty": 3,
+              "validator": "O tempo médio de espera caiu de seis para dois minutos.",
+              "options": [
+                "A parede é amarela.",
+                "O tempo médio de espera caiu de seis para dois minutos.",
+                "Havia um jogo no sábado."
+              ],
+              "feedback": "Uma medida de espera antes e depois sustenta a comparação.",
+              "hints": [
+                "Na revisão, confira se cada frase contribui para o mesmo assunto.",
+                "Uma medida de espera antes e depois sustenta a comparação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma frase muda de tema e não ajuda a ideia central. Na revisão, convém…",
+            "options": [
+              "Acrescentar um advérbio apenas",
+              "Reavaliar sua presença"
+            ],
+            "solution": "Reavaliar sua presença",
+            "explanation": "A coesão também depende da relação de sentido entre as frases."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

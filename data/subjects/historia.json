@@ -1,0 +1,1031 @@
+{
+  "schema_version": 1,
+  "id": "historia",
+  "title": "História",
+  "symbol": "⌛",
+  "tracks": [
+    {
+      "id": "hist-fontes",
+      "title": "Tempo e fontes históricas",
+      "goal": "Situar acontecimentos e interpretar vestígios considerando sua autoria.",
+      "lessons": [
+        {
+          "id": "his-tempo",
+          "title": "Ordenar acontecimentos",
+          "objective": "Construir uma sequência com datas antes e depois de Cristo.",
+          "prerequisites": [],
+          "steps": [
+            "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+            "Marque a direção do tempo antes de comparar os números."
+          ],
+          "example": "300 a.C. → 50 a.C. → 80 d.C.",
+          "questions": [
+            {
+              "id": "his-tempo.1",
+              "concept_id": "his-tempo",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene da data mais antiga à mais recente.",
+              "difficulty": 1,
+              "validator": [
+                "400 a.C.",
+                "100 a.C.",
+                "20 d.C."
+              ],
+              "options": [
+                "100 a.C.",
+                "400 a.C.",
+                "20 d.C."
+              ],
+              "feedback": "Na parte a.C., o maior número vem antes. Depois vêm as datas d.C.",
+              "hints": [
+                "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+                "Na parte a.C., o maior número vem antes. Depois vêm as datas d.C."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-tempo.2",
+              "concept_id": "his-tempo",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "A qual século pertence o ano 1822? Responda em algarismos arábicos.",
+              "difficulty": 2,
+              "validator": "19",
+              "options": [],
+              "feedback": "De 1801 a 1900 estamos no século 19.",
+              "hints": [
+                "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+                "De 1801 a 1900 estamos no século 19."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-tempo.3",
+              "concept_id": "his-tempo",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "O ano 1900 pertence ao século XX.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "O século XX começa em 1901.",
+              "hints": [
+                "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+                "O século XX começa em 1901."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-tempo.4",
+              "concept_id": "his-tempo",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual dessas datas é a mais antiga?",
+              "difficulty": 2,
+              "validator": "70 a.C.",
+              "options": [
+                "5 d.C.",
+                "70 a.C.",
+                "10 a.C."
+              ],
+              "feedback": "Setenta anos antes da era comum antecedem as outras datas.",
+              "hints": [
+                "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+                "Setenta anos antes da era comum antecedem as outras datas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-tempo.5",
+              "concept_id": "his-tempo",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um jornal foi fundado em 1888. Quantos anos depois ocorreu seu aniversário em 1918?",
+              "difficulty": 2,
+              "validator": "30",
+              "options": [],
+              "feedback": "A diferença entre as datas é 1918 menos 1888.",
+              "hints": [
+                "Na contagem a.C., números maiores ficam mais distantes do início da era comum. Não existe ano zero nessa convenção histórica.",
+                "A diferença entre as datas é 1918 menos 1888."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-tempo.r2",
+              "concept_id": "his-tempo",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Em qual século se situa o ano 2001? Responda em algarismos arábicos.",
+              "difficulty": 3,
+              "validator": "21",
+              "options": [],
+              "feedback": "O século 21 abrange de 2001 até 2100.",
+              "hints": [
+                "Marque a direção do tempo antes de comparar os números.",
+                "O século 21 abrange de 2001 até 2100."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Qual evento está mais perto de 1 d.C.?",
+            "options": [
+              "5 a.C.",
+              "80 a.C."
+            ],
+            "solution": "5 a.C.",
+            "explanation": "Na contagem a.C., valores menores se aproximam da era comum."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "his-fontes",
+          "title": "Investigar vestígios",
+          "objective": "Reconhecer fontes materiais, escritas, visuais e orais.",
+          "prerequisites": [
+            "his-tempo"
+          ],
+          "steps": [
+            "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+            "Cruze vestígios para distinguir o que a fonte mostra daquilo que você infere."
+          ],
+          "example": "Receita manuscrita → ingredientes registrados; panela com marcas → indícios de uso.",
+          "questions": [
+            {
+              "id": "his-fontes.1",
+              "concept_id": "his-fontes",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe uma entrevista gravada com uma moradora à categoria que destaca seu depoimento.",
+              "difficulty": 1,
+              "validator": "Fonte oral",
+              "options": [
+                "Fonte arquitetônica",
+                "Mapa político",
+                "Fonte oral"
+              ],
+              "feedback": "A gravação preserva um relato falado.",
+              "hints": [
+                "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+                "A gravação preserva um relato falado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-fontes.2",
+              "concept_id": "his-fontes",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Para estudar mudanças no traçado de uma praça, quais fontes ajudam mais?",
+              "difficulty": 2,
+              "validator": "Plantas e fotografias datadas",
+              "options": [
+                "Lista de telefones sem endereço",
+                "Receita de bolo",
+                "Plantas e fotografias datadas"
+              ],
+              "feedback": "Plantas e fotos permitem comparar a organização espacial em diferentes momentos.",
+              "hints": [
+                "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+                "Plantas e fotos permitem comparar a organização espacial em diferentes momentos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-fontes.3",
+              "concept_id": "his-fontes",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Uma ferramenta sem inscrição pode ser fonte histórica.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Material, desgaste e contexto de achado informam sobre práticas.",
+              "hints": [
+                "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+                "Material, desgaste e contexto de achado informam sobre práticas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-fontes.4",
+              "concept_id": "his-fontes",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual pergunta um bilhete de trem datado ajuda a responder diretamente?",
+              "difficulty": 2,
+              "validator": "Qual trajeto era indicado no bilhete?",
+              "options": [
+                "Qual trajeto era indicado no bilhete?",
+                "Como todos os viajantes se sentiram?",
+                "Quanto ganhava todo passageiro?"
+              ],
+              "feedback": "O trajeto pode estar impresso no documento. Sentimentos exigem outras evidências.",
+              "hints": [
+                "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+                "O trajeto pode estar impresso no documento. Sentimentos exigem outras evidências."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-fontes.5",
+              "concept_id": "his-fontes",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma foto mostra uma única rua vazia. Que conclusão respeita o alcance da fonte?",
+              "difficulty": 2,
+              "validator": "Essa rua parecia vazia naquele instante.",
+              "options": [
+                "Todos estavam viajando.",
+                "Essa rua parecia vazia naquele instante.",
+                "A cidade nunca tinha pedestres."
+              ],
+              "feedback": "O enquadramento limita a área e o instante observados.",
+              "hints": [
+                "Escolha a fonte de acordo com a pergunta. Uma panela, uma carta e uma entrevista preservam informações diferentes.",
+                "O enquadramento limita a área e o instante observados."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-fontes.r2",
+              "concept_id": "his-fontes",
+              "role": "review",
+              "format": "match",
+              "prompt": "Associe um edifício antigo investigado pelas marcas de construção ao tipo de vestígio.",
+              "difficulty": 3,
+              "validator": "Fonte material",
+              "options": [
+                "Fonte material",
+                "Previsão de futuro",
+                "Somente fonte oral"
+              ],
+              "feedback": "A análise parte das características físicas do edifício.",
+              "hints": [
+                "Cruze vestígios para distinguir o que a fonte mostra daquilo que você infere.",
+                "A análise parte das características físicas do edifício."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma entrevista décadas depois do acontecimento…",
+            "options": [
+              "Perde automaticamente todo valor",
+              "Pode ser estudada como fonte"
+            ],
+            "solution": "Pode ser estudada como fonte",
+            "explanation": "É preciso considerar memória, contexto e comparação com outras fontes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "his-autoria",
+          "title": "Perguntar quem produziu a fonte",
+          "objective": "Relacionar autoria e propósito ao interpretar um documento.",
+          "prerequisites": [
+            "his-fontes"
+          ],
+          "steps": [
+            "Pergunte quem produziu a fonte, para quem e em que situação.",
+            "Uma intenção identificável orienta a leitura, sem tornar a fonte inútil."
+          ],
+          "example": "Cartaz de campanha → autor quer convencer eleitores → comparar promessas com outras fontes.",
+          "questions": [
+            {
+              "id": "his-autoria.1",
+              "concept_id": "his-autoria",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Um anúncio antigo promete que um produto é o melhor. O que ele documenta diretamente?",
+              "difficulty": 1,
+              "validator": "A estratégia de venda usada",
+              "options": [
+                "A estratégia de venda usada",
+                "A qualidade superior comprovada",
+                "A opinião de toda a população"
+              ],
+              "feedback": "O anúncio registra o argumento do vendedor.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "O anúncio registra o argumento do vendedor."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.2",
+              "concept_id": "his-autoria",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Dois jornais divergem sobre uma greve. Qual ação favorece a investigação?",
+              "difficulty": 2,
+              "validator": "Comparar autoria, datas e fontes citadas",
+              "options": [
+                "Comparar autoria, datas e fontes citadas",
+                "Descartar ambos",
+                "Escolher o título mais forte"
+              ],
+              "feedback": "A comparação mostra como cada relato foi construído.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "A comparação mostra como cada relato foi construído."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.3",
+              "concept_id": "his-autoria",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Uma memória escrita décadas depois pode ser investigada considerando o tempo entre o fato e o relato.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A distância temporal influencia seleção e interpretação das lembranças.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "A distância temporal influencia seleção e interpretação das lembranças."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.4",
+              "concept_id": "his-autoria",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Uma carta privada e um discurso público do mesmo autor podem diferir por quê?",
+              "difficulty": 2,
+              "validator": "Por terem públicos e finalidades diferentes",
+              "options": [
+                "Por terem públicos e finalidades diferentes",
+                "Porque só discursos têm autoria",
+                "Porque cartas não contêm opiniões"
+              ],
+              "feedback": "O contexto de comunicação pode mudar tom e seleção de informações.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "O contexto de comunicação pode mudar tom e seleção de informações."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.5",
+              "concept_id": "his-autoria",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Um relato não traz assinatura. Qual decisão é mais cuidadosa?",
+              "difficulty": 2,
+              "validator": "Investigar origem e confrontar com outros registros",
+              "options": [
+                "Investigar origem e confrontar com outros registros",
+                "Atribuí-lo ao governante",
+                "Tomá-lo como verdade coletiva"
+              ],
+              "feedback": "A autoria incerta limita a atribuição.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "A autoria incerta limita a atribuição."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.6",
+              "concept_id": "his-autoria",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Um cartaz diz “a fábrica trouxe prosperidade a todos”. Que fonte permite testar melhor a palavra “todos”?",
+              "difficulty": 3,
+              "validator": "Registros de salários e relatos de diferentes trabalhadores",
+              "options": [
+                "Outra cópia do mesmo cartaz",
+                "Registros de salários e relatos de diferentes trabalhadores",
+                "A moldura do cartaz"
+              ],
+              "feedback": "Fontes sobre grupos diferentes ajudam a confrontar a generalização.",
+              "hints": [
+                "Pergunte quem produziu a fonte, para quem e em que situação.",
+                "Fontes sobre grupos diferentes ajudam a confrontar a generalização."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-autoria.r2",
+              "concept_id": "his-autoria",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma notícia repete literalmente um comunicado empresarial. O que conferir para obter outra perspectiva?",
+              "difficulty": 3,
+              "validator": "Relatos de fontes independentes",
+              "options": [
+                "Somente o mesmo comunicado em outro site",
+                "O tamanho do título",
+                "Relatos de fontes independentes"
+              ],
+              "feedback": "A independência das fontes importa no cruzamento de versões.",
+              "hints": [
+                "Uma intenção identificável orienta a leitura, sem tornar a fonte inútil.",
+                "A independência das fontes importa no cruzamento de versões."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Conhecer o público de um cartaz ajuda a entender…",
+            "options": [
+              "O que o autor queria comunicar",
+              "Se tudo nele é verdadeiro"
+            ],
+            "solution": "O que o autor queria comunicar",
+            "explanation": "A mensagem pode ter sido adaptada aos leitores pretendidos."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hist-sociedade",
+      "title": "Sociedades e transformações",
+      "goal": "Comparar modos de vida e relacionar mudanças sociais a diferentes experiências.",
+      "lessons": [
+        {
+          "id": "his-agricultura",
+          "title": "Cultivar e permanecer",
+          "objective": "Explicar uma relação possível entre cultivo e ocupação do espaço.",
+          "prerequisites": [],
+          "steps": [
+            "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+            "Evite supor uma trajetória idêntica para todos os povos."
+          ],
+          "example": "Sementes guardadas em silos → indício de estocagem → investigar consumo e plantio.",
+          "questions": [
+            {
+              "id": "his-agricultura.1",
+              "concept_id": "his-agricultura",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual vestígio pode apoiar a hipótese de estocagem de grãos?",
+              "difficulty": 1,
+              "validator": "Estrutura com restos de sementes",
+              "options": [
+                "Pegada isolada na areia",
+                "Estrutura com restos de sementes",
+                "Lâmina sem contexto"
+              ],
+              "feedback": "A estrutura e as sementes fornecem evidências combinadas.",
+              "hints": [
+                "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+                "A estrutura e as sementes fornecem evidências combinadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-agricultura.2",
+              "concept_id": "his-agricultura",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Adotar agricultura fez todos os povos abandonarem imediatamente caça e coleta.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Diferentes estratégias de subsistência puderam coexistir.",
+              "hints": [
+                "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+                "Diferentes estratégias de subsistência puderam coexistir."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-agricultura.3",
+              "concept_id": "his-agricultura",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Por que acompanhar o ciclo da planta pode favorecer permanência no local?",
+              "difficulty": 3,
+              "validator": "É preciso cuidar do cultivo até a colheita.",
+              "options": [
+                "Toda planta cresce em um dia.",
+                "É preciso cuidar do cultivo até a colheita.",
+                "A pesca se torna impossível."
+              ],
+              "feedback": "O tempo de cultivo pode incentivar ocupações mais longas.",
+              "hints": [
+                "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+                "O tempo de cultivo pode incentivar ocupações mais longas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-agricultura.4",
+              "concept_id": "his-agricultura",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe guardar parte da colheita ao uso mais direto.",
+              "difficulty": 2,
+              "validator": "Formar reserva",
+              "options": [
+                "Produzir metal",
+                "Formar reserva",
+                "Medir latitude"
+              ],
+              "feedback": "A reserva ajuda a manter alimento para outro momento.",
+              "hints": [
+                "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+                "A reserva ajuda a manter alimento para outro momento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-agricultura.5",
+              "concept_id": "his-agricultura",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Duas aldeias cultivavam plantas, mas tinham moradias diferentes. Qual conclusão é adequada?",
+              "difficulty": 2,
+              "validator": "Cultivo admite organizações variadas.",
+              "options": [
+                "Só uma delas praticava agricultura.",
+                "As moradias devem ter a mesma idade.",
+                "Cultivo admite organizações variadas."
+              ],
+              "feedback": "A mesma técnica não determina sozinha todas as formas de viver.",
+              "hints": [
+                "O cultivo exige acompanhar ciclos das plantas. Em alguns contextos ele favoreceu permanências mais longas e armazenamento.",
+                "A mesma técnica não determina sozinha todas as formas de viver."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-agricultura.r2",
+              "concept_id": "his-agricultura",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "O cultivo podia coexistir com pesca e coleta em uma mesma comunidade.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Estratégias de subsistência não são mutuamente exclusivas.",
+              "hints": [
+                "Evite supor uma trajetória idêntica para todos os povos.",
+                "Estratégias de subsistência não são mutuamente exclusivas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Encontrar sementes em um silo sugere…",
+            "options": [
+              "Armazenamento",
+              "Fim de toda coleta"
+            ],
+            "solution": "Armazenamento",
+            "explanation": "Um vestígio apoia hipóteses dentro de seu alcance."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "his-industria",
+          "title": "Trabalho e industrialização",
+          "objective": "Comparar a organização do trabalho artesanal e fabril.",
+          "prerequisites": [
+            "his-agricultura"
+          ],
+          "steps": [
+            "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+            "Procure diferenças e continuidades entre grupos, lugares e períodos."
+          ],
+          "example": "Oficina com artesão executando várias etapas → fábrica com divisão de tarefas e horários coletivos.",
+          "questions": [
+            {
+              "id": "his-industria.1",
+              "concept_id": "his-industria",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual mudança está ligada à organização fabril do trabalho?",
+              "difficulty": 1,
+              "validator": "Divisão de etapas entre trabalhadores",
+              "options": [
+                "Divisão de etapas entre trabalhadores",
+                "Desaparecimento das cidades",
+                "Fim de todos os ofícios manuais"
+              ],
+              "feedback": "O trabalho pode ser dividido em tarefas coordenadas.",
+              "hints": [
+                "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+                "O trabalho pode ser dividido em tarefas coordenadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-industria.2",
+              "concept_id": "his-industria",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe um regulamento que marca o início do turno ao aspecto que ele organiza.",
+              "difficulty": 2,
+              "validator": "Tempo de trabalho",
+              "options": [
+                "Tempo de trabalho",
+                "Cor do produto",
+                "Origem da matéria-prima"
+              ],
+              "feedback": "Horários regulam a entrada, saída e pausas.",
+              "hints": [
+                "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+                "Horários regulam a entrada, saída e pausas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-industria.3",
+              "concept_id": "his-industria",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "A introdução de máquinas beneficiou todos os trabalhadores da mesma forma.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Qualificação, salários e condições de trabalho podiam variar.",
+              "hints": [
+                "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+                "Qualificação, salários e condições de trabalho podiam variar."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-industria.4",
+              "concept_id": "his-industria",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Que fontes permitem estudar a jornada numa fábrica antiga?",
+              "difficulty": 2,
+              "validator": "Folhas de ponto e depoimentos",
+              "options": [
+                "Catálogo de cores",
+                "Mapa de chuvas",
+                "Folhas de ponto e depoimentos"
+              ],
+              "feedback": "Os registros e a experiência narrada ajudam a reconstruir horários.",
+              "hints": [
+                "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+                "Os registros e a experiência narrada ajudam a reconstruir horários."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-industria.5",
+              "concept_id": "his-industria",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma oficina manual continua ativa após a abertura de uma fábrica. Isso mostra o quê?",
+              "difficulty": 2,
+              "validator": "Formas de trabalho podem coexistir.",
+              "options": [
+                "Não houve mudanças técnicas.",
+                "Formas de trabalho podem coexistir.",
+                "A fábrica nunca funcionou."
+              ],
+              "feedback": "Transformações históricas podem ter ritmos diferentes.",
+              "hints": [
+                "Observe quem controla os instrumentos, onde se trabalha e como se organiza o tempo.",
+                "Transformações históricas podem ter ritmos diferentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-industria.r2",
+              "concept_id": "his-industria",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Para saber como uma operária percebia o trabalho, qual fonte é especialmente pertinente?",
+              "difficulty": 3,
+              "validator": "Seu depoimento contextualizado",
+              "options": [
+                "Seu depoimento contextualizado",
+                "A marca de tinta da parede",
+                "Somente a planta da fábrica"
+              ],
+              "feedback": "A narrativa permite investigar sua perspectiva específica.",
+              "hints": [
+                "Procure diferenças e continuidades entre grupos, lugares e períodos.",
+                "A narrativa permite investigar sua perspectiva específica."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "O relógio de ponto informa diretamente…",
+            "options": [
+              "Horários registrados",
+              "Toda a qualidade de vida"
+            ],
+            "solution": "Horários registrados",
+            "explanation": "O documento permite perguntas sobre tempo de trabalho, com limites."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "his-cidadania",
+          "title": "Mudança legal e experiência cotidiana",
+          "objective": "Distinguir um direito registrado e as condições de exercê-lo.",
+          "prerequisites": [
+            "his-industria"
+          ],
+          "steps": [
+            "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+            "Uma mudança jurídica tem data; sua realização social pode ocorrer em ritmos distintos."
+          ],
+          "example": "Direito de frequentar a escola → verificar matrículas, distâncias e relatos familiares.",
+          "questions": [
+            {
+              "id": "his-cidadania.1",
+              "concept_id": "his-cidadania",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Para saber se aumentou o acesso à escola após uma lei, o que comparar?",
+              "difficulty": 1,
+              "validator": "Matrículas antes e depois, por grupo",
+              "options": [
+                "Matrículas antes e depois, por grupo",
+                "Somente o título da lei",
+                "Tamanho do papel da lei"
+              ],
+              "feedback": "Os registros permitem verificar alcance, tempo e diferenças entre grupos.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "Os registros permitem verificar alcance, tempo e diferenças entre grupos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.2",
+              "concept_id": "his-cidadania",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "A assinatura de uma lei prova automaticamente que ela foi aplicada em todo lugar.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A aplicação exige evidências próprias.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "A aplicação exige evidências próprias."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.3",
+              "concept_id": "his-cidadania",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Uma petição de moradores pede transporte até a escola. O que ela ajuda a identificar?",
+              "difficulty": 3,
+              "validator": "Uma barreira relatada ao acesso",
+              "options": [
+                "Uma barreira relatada ao acesso",
+                "O fim imediato do problema",
+                "A opinião de todos os habitantes"
+              ],
+              "feedback": "A petição registra uma demanda concreta daquele grupo.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "A petição registra uma demanda concreta daquele grupo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.4",
+              "concept_id": "his-cidadania",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual informação uma lei datada oferece diretamente?",
+              "difficulty": 2,
+              "validator": "O texto aprovado naquele momento",
+              "options": [
+                "O sentimento de cada cidadão",
+                "O texto aprovado naquele momento",
+                "Todos os resultados futuros"
+              ],
+              "feedback": "O efeito na vida das pessoas requer outras fontes.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "O efeito na vida das pessoas requer outras fontes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.5",
+              "concept_id": "his-cidadania",
+              "role": "review",
+              "format": "match",
+              "prompt": "Associe uma série de registros de frequência escolar ao tipo de pergunta mais pertinente.",
+              "difficulty": 2,
+              "validator": "Quem frequentava as aulas ao longo do tempo?",
+              "options": [
+                "Qual era a cor de todos os livros?",
+                "Como soava cada voz?",
+                "Quem frequentava as aulas ao longo do tempo?"
+              ],
+              "feedback": "A frequência documenta presença e mudanças ao longo do período.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "A frequência documenta presença e mudanças ao longo do período."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.6",
+              "concept_id": "his-cidadania",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Há mais matrículas, mas relatos apontam falta de transporte rural. Qual síntese respeita as duas fontes?",
+              "difficulty": 3,
+              "validator": "O acesso registrado cresceu e persistiram obstáculos locais.",
+              "options": [
+                "O transporte funcionava para todos.",
+                "Os registros de matrícula são inúteis.",
+                "O acesso registrado cresceu e persistiram obstáculos locais."
+              ],
+              "feedback": "As fontes descrevem dimensões complementares do acesso.",
+              "hints": [
+                "Leia o alcance de uma lei. Depois verifique como diferentes pessoas experimentaram seus efeitos.",
+                "As fontes descrevem dimensões complementares do acesso."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "his-cidadania.r2",
+              "concept_id": "his-cidadania",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma escola abriu vagas, mas algumas famílias não puderam pagar transporte. Que diferença aparece?",
+              "difficulty": 3,
+              "validator": "Oferta de vagas e possibilidade de frequentar",
+              "options": [
+                "Causa e ausência de qualquer efeito",
+                "Ano civil e década",
+                "Oferta de vagas e possibilidade de frequentar"
+              ],
+              "feedback": "A existência formal da vaga não garante o acesso cotidiano.",
+              "hints": [
+                "Uma mudança jurídica tem data; sua realização social pode ocorrer em ritmos distintos.",
+                "A existência formal da vaga não garante o acesso cotidiano."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Um direito aparece no papel. Para conhecer seu alcance, procure…",
+            "options": [
+              "Só a caligrafia do texto",
+              "Evidências de acesso real"
+            ],
+            "solution": "Evidências de acesso real",
+            "explanation": "Registros e relatos complementam a leitura da norma."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

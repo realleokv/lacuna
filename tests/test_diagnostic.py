@@ -84,7 +84,7 @@ def test_diagnostic_length_coverage_and_termination(wrong):
         history.append(record(qid,"999" if wrong else None))
     assert following["done"]
     assert 5 <= len(history) <= 10
-    assert {QUESTIONS[r["question_id"]]["concept_id"] for r in history} == set(CONCEPTS)
+    assert {QUESTIONS[r["question_id"]]["concept_id"] for r in history} == {"N1", "N2", "N3", "N4"}
 
 
 def test_single_error_never_confirms_gap():
@@ -139,7 +139,8 @@ def test_practice_complete_after_one_item():
 def test_api_content_no_premature_answers(client):
     response=client.get('/api/content')
     assert response.status_code == 200
-    assert len(response.json["questions"]) == 34
+    assert {q["id"] for q in response.json["questions"]} == set(QUESTIONS)
+    assert len(QUESTIONS) >= 162
     for q in response.json["questions"]:
         assert "expected" not in q and "hints" not in q and "explanation" not in q
 

@@ -1,0 +1,1050 @@
+{
+  "schema_version": 1,
+  "id": "ciencias",
+  "title": "Ciências",
+  "symbol": "☘",
+  "tracks": [
+    {
+      "id": "cie-investigar",
+      "title": "Método científico e matéria",
+      "goal": "Investigar perguntas e usar observações para explicar transformações.",
+      "lessons": [
+        {
+          "id": "cie-hipotese",
+          "title": "Perguntas que se podem testar",
+          "objective": "Distinguir uma hipótese testável de uma preferência.",
+          "prerequisites": [],
+          "steps": [
+            "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+            "Descreva o resultado que faria você reconsiderar sua hipótese."
+          ],
+          "example": "“O gelo derrete mais rápido ao sol” → comparar tempos de fusão sob condições definidas.",
+          "questions": [
+            {
+              "id": "cie-hipotese.1",
+              "concept_id": "cie-hipotese",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual pergunta pode ser investigada com régua e cronômetro?",
+              "difficulty": 1,
+              "validator": "Que carrinho percorre mais distância em dois segundos?",
+              "options": [
+                "Qual carrinho é mais bonito?",
+                "Qual cor é a melhor?",
+                "Que carrinho percorre mais distância em dois segundos?"
+              ],
+              "feedback": "Distância e tempo são medidas observáveis.",
+              "hints": [
+                "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+                "Distância e tempo são medidas observáveis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-hipotese.2",
+              "concept_id": "cie-hipotese",
+              "role": "practice",
+              "format": "match",
+              "prompt": "“A esfera chegará ao fim da rampa em menos de três segundos.” Classifique.",
+              "difficulty": 2,
+              "validator": "Previsão testável",
+              "options": [
+                "Preferência estética",
+                "Previsão testável"
+              ],
+              "feedback": "Um cronômetro permite comparar o resultado com a previsão.",
+              "hints": [
+                "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+                "Um cronômetro permite comparar o resultado com a previsão."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-hipotese.3",
+              "concept_id": "cie-hipotese",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Se o resultado divergir da previsão, vale revisar a hipótese e as condições do teste.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A divergência é informação para investigar as explicações possíveis.",
+              "hints": [
+                "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+                "A divergência é informação para investigar as explicações possíveis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-hipotese.4",
+              "concept_id": "cie-hipotese",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual observação contrariaria a hipótese de que toda bola testada flutua na água?",
+              "difficulty": 2,
+              "validator": "Uma das bolas testadas afundou.",
+              "options": [
+                "Uma das bolas testadas afundou.",
+                "A água estava transparente.",
+                "Duas bolas flutuaram."
+              ],
+              "feedback": "Um contraexemplo basta para contrariar a afirmação universal.",
+              "hints": [
+                "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+                "Um contraexemplo basta para contrariar a afirmação universal."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-hipotese.5",
+              "concept_id": "cie-hipotese",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual frase registra um dado observado?",
+              "difficulty": 2,
+              "validator": "A sombra media 42 cm às nove horas.",
+              "options": [
+                "O dia estava perfeito.",
+                "A sombra media 42 cm às nove horas.",
+                "A planta gosta de sombra."
+              ],
+              "feedback": "A medida identifica valor, unidade e momento.",
+              "hints": [
+                "Uma hipótese prevê um resultado que uma observação pode contrariar. Identifique o que será medido.",
+                "A medida identifica valor, unidade e momento."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-hipotese.r2",
+              "concept_id": "cie-hipotese",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual frase formula uma previsão mensurável para um avião de papel?",
+              "difficulty": 3,
+              "validator": "Ele voará mais de três metros neste teste.",
+              "options": [
+                "Ele voará mais de três metros neste teste.",
+                "Ele será o mais elegante.",
+                "Será legal para todos."
+              ],
+              "feedback": "Distância pode ser medida e comparada ao limite.",
+              "hints": [
+                "Descreva o resultado que faria você reconsiderar sua hipótese.",
+                "Distância pode ser medida e comparada ao limite."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se nenhuma observação possível puder contrariar a frase, ela é…",
+            "options": [
+              "Difícil de testar empiricamente",
+              "Uma medida precisa"
+            ],
+            "solution": "Difícil de testar empiricamente",
+            "explanation": "Uma hipótese testável precisa permitir confronto com resultados observáveis."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cie-variavel",
+          "title": "Comparar mantendo condições",
+          "objective": "Identificar variáveis modificadas, medidas e controladas.",
+          "prerequisites": [
+            "cie-hipotese"
+          ],
+          "steps": [
+            "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+            "Repetições ajudam a estimar a variabilidade das medidas."
+          ],
+          "example": "Comparar rampas com inclinações diferentes → manter carrinho e trajeto → medir o tempo.",
+          "questions": [
+            {
+              "id": "cie-variavel.1",
+              "concept_id": "cie-variavel",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Ao testar o efeito da altura de soltura no alcance de um carrinho, a altura escolhida é qual variável?",
+              "difficulty": 1,
+              "validator": "Manipulada",
+              "options": [
+                "Mantida fixa",
+                "Manipulada",
+                "Medida como resultado"
+              ],
+              "feedback": "O pesquisador escolhe a altura antes de cada teste.",
+              "hints": [
+                "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+                "O pesquisador escolhe a altura antes de cada teste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-variavel.2",
+              "concept_id": "cie-variavel",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Para comparar o tempo de queda de dois filtros de papel de formatos diferentes, o que convém manter igual?",
+              "difficulty": 2,
+              "validator": "Altura de soltura",
+              "options": [
+                "Tempo de queda por obrigação",
+                "Formato dos filtros",
+                "Altura de soltura"
+              ],
+              "feedback": "A altura pode influenciar o tempo e deve ser controlada.",
+              "hints": [
+                "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+                "A altura pode influenciar o tempo e deve ser controlada."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-variavel.3",
+              "concept_id": "cie-variavel",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Alterar ao mesmo tempo inclinação e superfície sempre permite isolar o efeito da inclinação.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Os dois fatores podem influenciar o resultado.",
+              "hints": [
+                "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+                "Os dois fatores podem influenciar o resultado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-variavel.4",
+              "concept_id": "cie-variavel",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Num teste de aquecimento de copos de cores diferentes, que medida pode representar o resultado?",
+              "difficulty": 2,
+              "validator": "Variação da temperatura da água",
+              "options": [
+                "Nome da escola",
+                "Ordem alfabética das cores",
+                "Variação da temperatura da água"
+              ],
+              "feedback": "A variação de temperatura mede o efeito investigado.",
+              "hints": [
+                "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+                "A variação de temperatura mede o efeito investigado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-variavel.5",
+              "concept_id": "cie-variavel",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Dois testes iguais deram 2,1 s e 2,4 s. Qual atitude informa mais?",
+              "difficulty": 2,
+              "validator": "Repetir e registrar a dispersão",
+              "options": [
+                "Arredondar os dois para zero",
+                "Guardar só o menor valor",
+                "Repetir e registrar a dispersão"
+              ],
+              "feedback": "Resultados repetidos permitem avaliar a variação.",
+              "hints": [
+                "Mude o fator em estudo e procure manter os demais comparáveis. Defina qual resposta será medida.",
+                "Resultados repetidos permitem avaliar a variação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-variavel.r2",
+              "concept_id": "cie-variavel",
+              "role": "review",
+              "format": "match",
+              "prompt": "Numa comparação de bolas, soltar todas da mesma altura torna a altura uma variável…",
+              "difficulty": 3,
+              "validator": "Controlada",
+              "options": [
+                "Controlada",
+                "Impossível de medir",
+                "Escolhida como resultado"
+              ],
+              "feedback": "A altura é mantida igual entre os testes.",
+              "hints": [
+                "Repetições ajudam a estimar a variabilidade das medidas.",
+                "A altura é mantida igual entre os testes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Você quer comparar dois materiais. Mudar o tamanho das peças também…",
+            "options": [
+              "Garante uma comparação justa",
+              "Dificulta atribuir o efeito ao material"
+            ],
+            "solution": "Dificulta atribuir o efeito ao material",
+            "explanation": "O tamanho pode influenciar o resultado junto com o material."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cie-materia",
+          "title": "Reconhecer mudanças de estado",
+          "objective": "Identificar mudanças de estado sem confundir substância e aparência.",
+          "prerequisites": [
+            "cie-variavel"
+          ],
+          "steps": [
+            "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+            "Compare com situações em que aparecem substâncias diferentes."
+          ],
+          "example": "Gelo → água líquida → vapor de água. Em cada etapa continua sendo água.",
+          "questions": [
+            {
+              "id": "cie-materia.1",
+              "concept_id": "cie-materia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual processo ocorre quando água líquida vira gelo?",
+              "difficulty": 1,
+              "validator": "Solidificação",
+              "options": [
+                "Fusão",
+                "Solidificação",
+                "Condensação"
+              ],
+              "feedback": "A passagem de líquido a sólido é solidificação.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "A passagem de líquido a sólido é solidificação."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.2",
+              "concept_id": "cie-materia",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe o aparecimento de gotas do lado externo de um copo gelado ao processo principal.",
+              "difficulty": 2,
+              "validator": "Condensação do vapor do ar",
+              "options": [
+                "Condensação do vapor do ar",
+                "Fusão do vidro",
+                "Solidificação do ar"
+              ],
+              "feedback": "Vapor de água do ar pode condensar na superfície fria.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "Vapor de água do ar pode condensar na superfície fria."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.3",
+              "concept_id": "cie-materia",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Evaporação só ocorre quando a água entra em ebulição.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A evaporação pode ocorrer na superfície em diversas temperaturas.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "A evaporação pode ocorrer na superfície em diversas temperaturas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.4",
+              "concept_id": "cie-materia",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Uma poça seca em dia de vento sem ferver. Que processo explica a passagem para o ar?",
+              "difficulty": 2,
+              "validator": "Evaporação",
+              "options": [
+                "Evaporação",
+                "Congelamento",
+                "Fusão"
+              ],
+              "feedback": "Moléculas de água deixam a superfície líquida.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "Moléculas de água deixam a superfície líquida."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.5",
+              "concept_id": "cie-materia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "A cera sólida derrete e volta a endurecer ao esfriar. Qual evidência foi observada?",
+              "difficulty": 2,
+              "validator": "Mudança reversível de estado",
+              "options": [
+                "Desaparecimento de matéria",
+                "Formação de ferro",
+                "Mudança reversível de estado"
+              ],
+              "feedback": "Os estados mudaram e a cera voltou a endurecer.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "Os estados mudaram e a cera voltou a endurecer."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.6",
+              "concept_id": "cie-materia",
+              "role": "checkpoint",
+              "format": "order",
+              "prompt": "Ordene as etapas em que um cubo de gelo recebe calor até a água entrar em ebulição, sob pressão constante usual.",
+              "difficulty": 3,
+              "validator": [
+                "Gelo sólido no início",
+                "Fusão do gelo",
+                "Água líquida aquecida até ferver"
+              ],
+              "options": [
+                "Água líquida aquecida até ferver",
+                "Gelo sólido no início",
+                "Fusão do gelo"
+              ],
+              "feedback": "O sólido funde antes de o líquido atingir a temperatura de ebulição.",
+              "hints": [
+                "Observe os estados inicial e final. Uma mudança física pode conservar a substância.",
+                "O sólido funde antes de o líquido atingir a temperatura de ebulição."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-materia.r2",
+              "concept_id": "cie-materia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual exemplo descreve fusão?",
+              "difficulty": 3,
+              "validator": "Gelo virando água líquida",
+              "options": [
+                "Vapor formando gotas no espelho",
+                "Gelo virando água líquida",
+                "Água formando cubos no congelador"
+              ],
+              "feedback": "Fusão é a passagem do estado sólido ao líquido.",
+              "hints": [
+                "Compare com situações em que aparecem substâncias diferentes.",
+                "Fusão é a passagem do estado sólido ao líquido."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "A água que aparece por fora do copo vem principalmente…",
+            "options": [
+              "Do vapor no ar",
+              "Do vidro derretido"
+            ],
+            "solution": "Do vapor no ar",
+            "explanation": "O vapor condensa ao entrar em contato com a superfície fria."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cie-vida",
+      "title": "Ecossistemas e corpo humano",
+      "goal": "Explicar relações de alimentação, circulação de matéria e integração de sistemas.",
+      "lessons": [
+        {
+          "id": "cie-teia",
+          "title": "Ler uma cadeia alimentar",
+          "objective": "Interpretar o sentido das setas em uma cadeia.",
+          "prerequisites": [],
+          "steps": [
+            "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+            "Em uma teia, um mesmo organismo pode ocupar mais de uma relação."
+          ],
+          "example": "Capim → gafanhoto → sapo. O gafanhoto consome capim e serve de alimento ao sapo.",
+          "questions": [
+            {
+              "id": "cie-teia.1",
+              "concept_id": "cie-teia",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Na cadeia folha → lagarta → pássaro, quem é o consumidor primário?",
+              "difficulty": 1,
+              "validator": "Lagarta",
+              "options": [
+                "Folha",
+                "Lagarta",
+                "Pássaro"
+              ],
+              "feedback": "O consumidor primário alimenta-se diretamente do produtor.",
+              "hints": [
+                "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+                "O consumidor primário alimenta-se diretamente do produtor."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-teia.2",
+              "concept_id": "cie-teia",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "A seta milho → galinha significa que a galinha serve de alimento ao milho.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A seta vai do alimento a quem o consome.",
+              "hints": [
+                "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+                "A seta vai do alimento a quem o consome."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-teia.3",
+              "concept_id": "cie-teia",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene a cadeia começando pelo produtor.",
+              "difficulty": 3,
+              "validator": [
+                "Alga",
+                "Pequeno crustáceo que come alga",
+                "Peixe que come o crustáceo"
+              ],
+              "options": [
+                "Peixe que come o crustáceo",
+                "Pequeno crustáceo que come alga",
+                "Alga"
+              ],
+              "feedback": "A energia segue do produtor aos consumidores descritos.",
+              "hints": [
+                "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+                "A energia segue do produtor aos consumidores descritos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-teia.4",
+              "concept_id": "cie-teia",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe uma planta que faz fotossíntese ao seu papel nessa cadeia.",
+              "difficulty": 2,
+              "validator": "Produtor",
+              "options": [
+                "Consumidor primário",
+                "Produtor",
+                "Consumidor secundário"
+              ],
+              "feedback": "Ela usa energia luminosa para produzir matéria orgânica.",
+              "hints": [
+                "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+                "Ela usa energia luminosa para produzir matéria orgânica."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-teia.5",
+              "concept_id": "cie-teia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Duas aves comem os mesmos frutos escassos. Qual relação é plausível?",
+              "difficulty": 2,
+              "validator": "Competição por alimento",
+              "options": [
+                "Competição por alimento",
+                "Produção de frutos pelas aves",
+                "Ausência total de interação"
+              ],
+              "feedback": "O uso de um recurso limitado pode gerar competição.",
+              "hints": [
+                "Nesta convenção, a seta parte do alimento para quem o consome. Ela indica transferência de matéria e energia.",
+                "O uso de um recurso limitado pode gerar competição."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-teia.r2",
+              "concept_id": "cie-teia",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Na sequência fruta → ave → gavião, quem consome a ave?",
+              "difficulty": 3,
+              "validator": "Gavião",
+              "options": [
+                "Fruta",
+                "A própria árvore",
+                "Gavião"
+              ],
+              "feedback": "A seta após a ave aponta para quem a consome.",
+              "hints": [
+                "Em uma teia, um mesmo organismo pode ocupar mais de uma relação.",
+                "A seta após a ave aponta para quem a consome."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se o sapo come o gafanhoto, a seta desta aula começa…",
+            "options": [
+              "No gafanhoto",
+              "No sapo"
+            ],
+            "solution": "No gafanhoto",
+            "explanation": "Ela parte do alimento para o consumidor."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cie-ciclo",
+          "title": "Matéria nos ecossistemas",
+          "objective": "Diferenciar reciclagem de matéria e fluxo de energia.",
+          "prerequisites": [
+            "cie-teia"
+          ],
+          "steps": [
+            "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+            "A energia transferida entre níveis também se dissipa como calor."
+          ],
+          "example": "Folha caída → decomposição → nutrientes podem voltar a ser absorvidos pelas plantas.",
+          "questions": [
+            {
+              "id": "cie-ciclo.1",
+              "concept_id": "cie-ciclo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual processo ajuda a devolver nutrientes de folhas mortas ao ambiente?",
+              "difficulty": 1,
+              "validator": "Decomposição",
+              "options": [
+                "Decomposição",
+                "Somente deslocamento dos animais",
+                "Sombreamento"
+              ],
+              "feedback": "Decompositores transformam matéria orgânica e participam da ciclagem.",
+              "hints": [
+                "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+                "Decompositores transformam matéria orgânica e participam da ciclagem."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-ciclo.2",
+              "concept_id": "cie-ciclo",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "A energia de uma cadeia é reciclada integralmente como os átomos de carbono.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Parte da energia se dissipa como calor e os ecossistemas recebem energia de fora.",
+              "hints": [
+                "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+                "Parte da energia se dissipa como calor e os ecossistemas recebem energia de fora."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-ciclo.3",
+              "concept_id": "cie-ciclo",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe o carbono que passa do ar para açúcares de uma planta ao processo.",
+              "difficulty": 3,
+              "validator": "Fotossíntese",
+              "options": [
+                "Fotossíntese",
+                "Evaporação",
+                "Erosão"
+              ],
+              "feedback": "Na fotossíntese o carbono do dióxido de carbono é incorporado a moléculas orgânicas.",
+              "hints": [
+                "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+                "Na fotossíntese o carbono do dióxido de carbono é incorporado a moléculas orgânicas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-ciclo.4",
+              "concept_id": "cie-ciclo",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Um mineral passou do solo para uma raiz e depois a um animal. O que foi acompanhado?",
+              "difficulty": 2,
+              "validator": "Matéria",
+              "options": [
+                "Som",
+                "Luz refletida",
+                "Matéria"
+              ],
+              "feedback": "O mineral é matéria transferida entre componentes do ambiente.",
+              "hints": [
+                "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+                "O mineral é matéria transferida entre componentes do ambiente."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-ciclo.5",
+              "concept_id": "cie-ciclo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual descrição respeita o papel dos fungos em uma floresta?",
+              "difficulty": 2,
+              "validator": "Alguns decompõem restos e participam da ciclagem.",
+              "options": [
+                "Todos produzem luz para plantas.",
+                "Todos são consumidores de folhas vivas.",
+                "Alguns decompõem restos e participam da ciclagem."
+              ],
+              "feedback": "Diversos fungos obtêm nutrientes decompondo matéria orgânica.",
+              "hints": [
+                "Os átomos passam entre seres vivos, solo, ar e água. Decompositores participam da transformação de restos orgânicos.",
+                "Diversos fungos obtêm nutrientes decompondo matéria orgânica."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-ciclo.r2",
+              "concept_id": "cie-ciclo",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "Um átomo que estava num alimento pode passar a compor o corpo de um consumidor.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A transferência de matéria conecta os seres vivos.",
+              "hints": [
+                "A energia transferida entre níveis também se dissipa como calor.",
+                "A transferência de matéria conecta os seres vivos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Ao cair no solo, o carbono de uma folha…",
+            "options": [
+              "Deixa de existir",
+              "Pode continuar circulando"
+            ],
+            "solution": "Pode continuar circulando",
+            "explanation": "O carbono pode retornar ao ar ou participar de outras formas de matéria."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "cie-corpo",
+          "title": "Integrar respiração e circulação",
+          "objective": "Descrever como o oxigênio chega às células.",
+          "prerequisites": [
+            "cie-ciclo"
+          ],
+          "steps": [
+            "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+            "O sistema circulatório também leva dióxido de carbono dos tecidos aos pulmões."
+          ],
+          "example": "Ar inspirado → alvéolos → sangue → células.",
+          "questions": [
+            {
+              "id": "cie-corpo.1",
+              "concept_id": "cie-corpo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Em qual estrutura pulmonar ocorrem as principais trocas de gases com o sangue?",
+              "difficulty": 1,
+              "validator": "Alvéolos",
+              "options": [
+                "Dentes",
+                "Esôfago",
+                "Alvéolos"
+              ],
+              "feedback": "Alvéolos têm contato próximo com capilares sanguíneos.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "Alvéolos têm contato próximo com capilares sanguíneos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.2",
+              "concept_id": "cie-corpo",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene o trajeto do oxigênio inspirado até os tecidos.",
+              "difficulty": 2,
+              "validator": [
+                "Ar nos alvéolos",
+                "Sangue nos capilares pulmonares",
+                "Células dos tecidos"
+              ],
+              "options": [
+                "Ar nos alvéolos",
+                "Células dos tecidos",
+                "Sangue nos capilares pulmonares"
+              ],
+              "feedback": "O oxigênio entra no sangue nos pulmões e depois chega aos tecidos.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "O oxigênio entra no sangue nos pulmões e depois chega aos tecidos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.3",
+              "concept_id": "cie-corpo",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Respiração e circulação trabalham juntas na oferta de oxigênio às células.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um sistema faz a troca com o ar e o outro transporta os gases.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "Um sistema faz a troca com o ar e o outro transporta os gases."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.4",
+              "concept_id": "cie-corpo",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "Associe o coração à sua principal função circulatória.",
+              "difficulty": 2,
+              "validator": "Impulsionar o sangue",
+              "options": [
+                "Absorver luz",
+                "Filtrar o ar inspirado",
+                "Impulsionar o sangue"
+              ],
+              "feedback": "Contrações do coração impulsionam o sangue.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "Contrações do coração impulsionam o sangue."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.5",
+              "concept_id": "cie-corpo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Nos tecidos, qual gás produzido pela respiração celular é transportado de volta aos pulmões?",
+              "difficulty": 2,
+              "validator": "Dióxido de carbono",
+              "options": [
+                "Hélio",
+                "Dióxido de carbono",
+                "Neônio"
+              ],
+              "feedback": "O dióxido de carbono é um produto da respiração celular aeróbia.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "O dióxido de carbono é um produto da respiração celular aeróbia."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.6",
+              "concept_id": "cie-corpo",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Por que apenas levar ar aos pulmões não descreve todo o percurso do oxigênio?",
+              "difficulty": 3,
+              "validator": "O gás ainda precisa passar ao sangue e chegar às células.",
+              "options": [
+                "O gás ainda precisa passar ao sangue e chegar às células.",
+                "O gás se transforma em sangue.",
+                "O coração armazena todo o ar."
+              ],
+              "feedback": "A explicação completa conecta trocas gasosas e transporte circulatório.",
+              "hints": [
+                "O ar chega aos alvéolos dos pulmões. O oxigênio passa para o sangue e é transportado aos tecidos.",
+                "A explicação completa conecta trocas gasosas e transporte circulatório."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "cie-corpo.r2",
+              "concept_id": "cie-corpo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual relação conecta os dois sistemas ao expirar dióxido de carbono?",
+              "difficulty": 3,
+              "validator": "O sangue traz o gás aos pulmões, que o liberam para o ar.",
+              "options": [
+                "A pele faz toda a troca pulmonar.",
+                "O sangue traz o gás aos pulmões, que o liberam para o ar.",
+                "O coração produz todo o ar."
+              ],
+              "feedback": "O trajeto articula transporte pelo sangue e troca com o ar alveolar.",
+              "hints": [
+                "O sistema circulatório também leva dióxido de carbono dos tecidos aos pulmões.",
+                "O trajeto articula transporte pelo sangue e troca com o ar alveolar."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Após sair do ar alveolar, o oxigênio segue primeiro para…",
+            "options": [
+              "O interior dos ossos diretamente",
+              "O sangue nos capilares"
+            ],
+            "solution": "O sangue nos capilares",
+            "explanation": "Os capilares participam da troca gasosa nos pulmões."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

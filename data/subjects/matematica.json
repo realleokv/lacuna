@@ -1,0 +1,921 @@
+{
+  "schema_version": 1,
+  "id": "matematica",
+  "title": "Matemática",
+  "symbol": "÷",
+  "tracks": [
+    {
+      "id": "mat-bases",
+      "title": "Operações e frações",
+      "goal": "Repartir quantidades, interpretar sinais e comparar partes do mesmo inteiro.",
+      "lessons": [
+        {
+          "id": "mat-grupos",
+          "title": "Repartir em grupos",
+          "objective": "Distinguir tamanho de grupo e número de grupos.",
+          "prerequisites": [],
+          "steps": [
+            "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+            "Confira multiplicando o número de grupos pelo tamanho de cada grupo."
+          ],
+          "example": "24 lápis → 4 potes → 6 lápis em cada pote.",
+          "questions": [
+            {
+              "id": "mat-grupos.1",
+              "concept_id": "mat-grupos",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Trinta sementes são divididas igualmente em cinco vasos. Quantas vão em cada vaso?",
+              "difficulty": 1,
+              "validator": "6",
+              "options": [],
+              "feedback": "Cinco grupos de seis recompõem as trinta sementes.",
+              "hints": [
+                "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+                "Cinco grupos de seis recompõem as trinta sementes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-grupos.2",
+              "concept_id": "mat-grupos",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual conta encontra o número de caixas para guardar 42 livros, sete por caixa?",
+              "difficulty": 2,
+              "validator": "42 ÷ 7",
+              "options": [
+                "42 ÷ 7",
+                "42 − 7",
+                "42 × 7"
+              ],
+              "feedback": "A pergunta é quantos grupos de sete cabem em 42.",
+              "hints": [
+                "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+                "A pergunta é quantos grupos de sete cabem em 42."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-grupos.3",
+              "concept_id": "mat-grupos",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Você tem 38 fotos e cada página comporta seis. Quantas páginas ficam completamente cheias?",
+              "difficulty": 3,
+              "validator": "6",
+              "options": [],
+              "feedback": "Seis páginas recebem 36 fotos. As outras duas começam a próxima página.",
+              "hints": [
+                "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+                "Seis páginas recebem 36 fotos. As outras duas começam a próxima página."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-grupos.4",
+              "concept_id": "mat-grupos",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Em três equipes iguais há 27 pessoas ao todo. Quantas pessoas há em cada equipe?",
+              "difficulty": 2,
+              "validator": "9",
+              "options": [],
+              "feedback": "Três vezes nove dá o total de 27.",
+              "hints": [
+                "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+                "Três vezes nove dá o total de 27."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-grupos.5",
+              "concept_id": "mat-grupos",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Há 45 botões. Depois de guardar cinco, distribua o restante em oito caixas iguais. Quantos ficam por caixa?",
+              "difficulty": 2,
+              "validator": "5",
+              "options": [],
+              "feedback": "Restam 40 botões. Oito grupos de cinco recompõem esse total.",
+              "hints": [
+                "Desenhe um recipiente por grupo. Distribua o total igualmente e conte quanto cabe em cada um.",
+                "Restam 40 botões. Oito grupos de cinco recompõem esse total."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-grupos.r2",
+              "concept_id": "mat-grupos",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Quantos pacotes completos de nove folhas cabem em 74 folhas?",
+              "difficulty": 3,
+              "validator": "8",
+              "options": [],
+              "feedback": "Oito pacotes usam 72 folhas e sobram duas.",
+              "hints": [
+                "Confira multiplicando o número de grupos pelo tamanho de cada grupo.",
+                "Oito pacotes usam 72 folhas e sobram duas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Você dobrou o total e manteve os mesmos grupos. O tamanho de cada grupo…",
+            "options": [
+              "Fica igual",
+              "Dobra"
+            ],
+            "solution": "Dobra",
+            "explanation": "Cada grupo recebe o dobro de elementos."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mat-sinais",
+          "title": "Deslocamentos com sinal",
+          "objective": "Calcular uma variação que atravessa o zero.",
+          "prerequisites": [
+            "mat-grupos"
+          ],
+          "steps": [
+            "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+            "Verifique se o resultado está do lado esperado em relação ao ponto de partida."
+          ],
+          "example": "Temperatura de −2 °C + aumento de 5 °C → 3 °C.",
+          "questions": [
+            {
+              "id": "mat-sinais.1",
+              "concept_id": "mat-sinais",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um elevador parte do piso −3 e sobe sete andares. Em qual piso para?",
+              "difficulty": 1,
+              "validator": "4",
+              "options": [],
+              "feedback": "Três andares levam ao zero e outros quatro ao piso 4.",
+              "hints": [
+                "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+                "Três andares levam ao zero e outros quatro ao piso 4."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-sinais.2",
+              "concept_id": "mat-sinais",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual variação leva o termômetro de +2 °C a −4 °C?",
+              "difficulty": 2,
+              "validator": "−6 °C",
+              "options": [
+                "+6 °C",
+                "−2 °C",
+                "−6 °C"
+              ],
+              "feedback": "A temperatura cai seis graus.",
+              "hints": [
+                "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+                "A temperatura cai seis graus."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-sinais.3",
+              "concept_id": "mat-sinais",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "O saldo era −12 reais. Após receber 8 e gastar 3, qual é o saldo em reais?",
+              "difficulty": 3,
+              "validator": "−7",
+              "options": [],
+              "feedback": "Somar oito leva a −4. Retirar três leva a −7.",
+              "hints": [
+                "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+                "Somar oito leva a −4. Retirar três leva a −7."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-sinais.4",
+              "concept_id": "mat-sinais",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Na reta numérica, −8 fica à esquerda de −5.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Entre negativos, o mais distante do zero à esquerda é menor.",
+              "hints": [
+                "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+                "Entre negativos, o mais distante do zero à esquerda é menor."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-sinais.5",
+              "concept_id": "mat-sinais",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um mergulhador está a −9 m em relação à superfície. Ele sobe 4 m. Qual é a nova posição em metros?",
+              "difficulty": 2,
+              "validator": "−5",
+              "options": [],
+              "feedback": "A subida aproxima o mergulhador do zero.",
+              "hints": [
+                "Marque o ponto inicial na reta. Avance à direita quando a variação é positiva e à esquerda quando é negativa.",
+                "A subida aproxima o mergulhador do zero."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-sinais.r2",
+              "concept_id": "mat-sinais",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Você começa no piso +3 e desce oito andares. Em que piso para?",
+              "difficulty": 3,
+              "validator": "−5",
+              "options": [],
+              "feedback": "Três andares levam ao zero e outros cinco ao piso −5.",
+              "hints": [
+                "Verifique se o resultado está do lado esperado em relação ao ponto de partida.",
+                "Três andares levam ao zero e outros cinco ao piso −5."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Na reta, partindo de −1 e andando para a esquerda, o valor…",
+            "options": [
+              "Aumenta",
+              "Diminui"
+            ],
+            "solution": "Diminui",
+            "explanation": "Para a esquerda ficam os valores menores."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mat-fracoes",
+          "title": "Partes de um inteiro",
+          "objective": "Somar e comparar frações com uma unidade comum.",
+          "prerequisites": [
+            "mat-sinais"
+          ],
+          "steps": [
+            "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+            "Some os numeradores depois de igualar os denominadores."
+          ],
+          "example": "Meia folha equivale a 2/4. Juntar mais 1/4 da mesma folha cobre 3/4.",
+          "questions": [
+            {
+              "id": "mat-fracoes.1",
+              "concept_id": "mat-fracoes",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma fita tem 1/3 pintado de azul e 1/6 de verde, sem sobreposição. Que fração está pintada?",
+              "difficulty": 1,
+              "validator": "1/2",
+              "options": [],
+              "feedback": "Um terço são dois sextos. Três sextos são metade.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Um terço são dois sextos. Três sextos são metade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.2",
+              "concept_id": "mat-fracoes",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual porção é maior, considerando barras iguais?",
+              "difficulty": 2,
+              "validator": "5/8",
+              "options": [
+                "3/8",
+                "5/8",
+                "1/2"
+              ],
+              "feedback": "Meia barra equivale a quatro oitavos.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Meia barra equivale a quatro oitavos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.3",
+              "concept_id": "mat-fracoes",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Sobraram 3/4 de uma torta. Você comeu 1/3 dessa sobra. Que fração da torta inteira você comeu?",
+              "difficulty": 3,
+              "validator": "1/4",
+              "options": [],
+              "feedback": "Dividir os três quartos em três porções dá um quarto por porção.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Dividir os três quartos em três porções dá um quarto por porção."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.4",
+              "concept_id": "mat-fracoes",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Que fração representa seis das oito partes iguais de um disco?",
+              "difficulty": 2,
+              "validator": "3/4",
+              "options": [],
+              "feedback": "Divida o numerador e o denominador de 6/8 por dois.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Divida o numerador e o denominador de 6/8 por dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.5",
+              "concept_id": "mat-fracoes",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Você percorreu 2/5 de uma pista e depois 1/10 da mesma pista. Que fração ainda falta?",
+              "difficulty": 2,
+              "validator": "1/2",
+              "options": [],
+              "feedback": "Quatro décimos mais um décimo formam metade. Falta a outra metade.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Quatro décimos mais um décimo formam metade. Falta a outra metade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.6",
+              "concept_id": "mat-fracoes",
+              "role": "checkpoint",
+              "format": "numeric",
+              "prompt": "Uma receita usa 3/4 de xícara por bolo. Quantas xícaras são necessárias para dois bolos?",
+              "difficulty": 3,
+              "validator": "3/2",
+              "options": [],
+              "feedback": "Duas porções de três quartos somam seis quartos.",
+              "hints": [
+                "Confira se as partes têm o mesmo tamanho. Se preciso, transforme cada fração em partes de um mesmo denominador.",
+                "Duas porções de três quartos somam seis quartos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-fracoes.r2",
+              "concept_id": "mat-fracoes",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Em uma garrafa cheia, bebeu-se 1/6 pela manhã e 1/3 à tarde. Que fração sobrou?",
+              "difficulty": 3,
+              "validator": "1/2",
+              "options": [],
+              "feedback": "Um terço são dois sextos. Sobram três sextos.",
+              "hints": [
+                "Some os numeradores depois de igualar os denominadores.",
+                "Um terço são dois sextos. Sobram três sextos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Para comparar 1/3 de duas barras, o tamanho das barras importa?",
+            "options": [
+              "Sim",
+              "Não"
+            ],
+            "solution": "Sim",
+            "explanation": "O mesmo número fracionário pode representar quantidades concretas diferentes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat-relacoes",
+      "title": "Equações e proporções",
+      "goal": "Encontrar valores desconhecidos e aplicar relações proporcionais.",
+      "lessons": [
+        {
+          "id": "mat-equacao",
+          "title": "Equilíbrio de uma igualdade",
+          "objective": "Encontrar a incógnita mantendo os dois lados iguais.",
+          "prerequisites": [],
+          "steps": [
+            "Desfaça a última operação aplicando sua inversa aos dois lados.",
+            "Substitua a resposta na equação original e confira a igualdade."
+          ],
+          "example": "2x + 4 = 18 → 2x = 14 → x = 7.",
+          "questions": [
+            {
+              "id": "mat-equacao.1",
+              "concept_id": "mat-equacao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Qual valor de x satisfaz 3x + 5 = 26?",
+              "difficulty": 1,
+              "validator": "7",
+              "options": [],
+              "feedback": "Retirar cinco deixa 21. Dividir por três dá sete.",
+              "hints": [
+                "Desfaça a última operação aplicando sua inversa aos dois lados.",
+                "Retirar cinco deixa 21. Dividir por três dá sete."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-equacao.2",
+              "concept_id": "mat-equacao",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Em 4x − 2 = 10, qual transformação preserva a igualdade?",
+              "difficulty": 2,
+              "validator": "Somar 2 aos dois lados",
+              "options": [
+                "Multiplicar só o 10 por 4",
+                "Somar 2 aos dois lados",
+                "Somar 2 somente à esquerda"
+              ],
+              "feedback": "A mesma transformação nos dois lados mantém o equilíbrio.",
+              "hints": [
+                "Desfaça a última operação aplicando sua inversa aos dois lados.",
+                "A mesma transformação nos dois lados mantém o equilíbrio."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-equacao.3",
+              "concept_id": "mat-equacao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Duas entradas iguais mais uma taxa total de 6 reais custam 32 reais. Qual é o preço de uma entrada em reais?",
+              "difficulty": 3,
+              "validator": "13",
+              "options": [],
+              "feedback": "Retire a taxa e divida 26 por dois.",
+              "hints": [
+                "Desfaça a última operação aplicando sua inversa aos dois lados.",
+                "Retire a taxa e divida 26 por dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-equacao.4",
+              "concept_id": "mat-equacao",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Se x/4 + 1 = 4, quanto vale x?",
+              "difficulty": 2,
+              "validator": "12",
+              "options": [],
+              "feedback": "Subtraia um dos dois lados e multiplique o resultado por quatro.",
+              "hints": [
+                "Desfaça a última operação aplicando sua inversa aos dois lados.",
+                "Subtraia um dos dois lados e multiplique o resultado por quatro."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-equacao.5",
+              "concept_id": "mat-equacao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Três cadernos com desconto total de 5 reais custam 31 reais. Quanto custa um caderno antes do desconto?",
+              "difficulty": 2,
+              "validator": "12",
+              "options": [],
+              "feedback": "O preço conjunto original era 36 reais. Cada caderno custa 12.",
+              "hints": [
+                "Desfaça a última operação aplicando sua inversa aos dois lados.",
+                "O preço conjunto original era 36 reais. Cada caderno custa 12."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-equacao.r2",
+              "concept_id": "mat-equacao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Qual valor de x satisfaz 5x − 4 = 16?",
+              "difficulty": 3,
+              "validator": "4",
+              "options": [],
+              "feedback": "Some quatro e divida 20 por cinco.",
+              "hints": [
+                "Substitua a resposta na equação original e confira a igualdade.",
+                "Some quatro e divida 20 por cinco."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma balança está em equilíbrio. Tirar a mesma massa dos dois pratos…",
+            "options": [
+              "Dobra a diferença",
+              "Mantém o equilíbrio"
+            ],
+            "solution": "Mantém o equilíbrio",
+            "explanation": "A diferença entre os dois lados continua zero."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mat-proporcao",
+          "title": "Escalar uma receita",
+          "objective": "Reconhecer um fator multiplicativo comum.",
+          "prerequisites": [
+            "mat-equacao"
+          ],
+          "steps": [
+            "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+            "Para porções fracionadas, calcule antes a quantidade por unidade."
+          ],
+          "example": "2 copos de arroz para 5 pessoas → 4 copos para 10 pessoas.",
+          "questions": [
+            {
+              "id": "mat-proporcao.1",
+              "concept_id": "mat-proporcao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Quatro camisetas iguais custam 68 reais. Quanto custam seis, sem desconto?",
+              "difficulty": 1,
+              "validator": "102",
+              "options": [],
+              "feedback": "Cada camiseta custa 17 reais. Seis custam 102.",
+              "hints": [
+                "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+                "Cada camiseta custa 17 reais. Seis custam 102."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-proporcao.2",
+              "concept_id": "mat-proporcao",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual relação é diretamente proporcional quando o preço unitário é fixo e não há taxa?",
+              "difficulty": 2,
+              "validator": "Quantidade e preço total",
+              "options": [
+                "Número da casa e área",
+                "Quantidade e preço total",
+                "Idade e altura"
+              ],
+              "feedback": "Dobrar a quantidade dobra o preço total nessas condições.",
+              "hints": [
+                "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+                "Dobrar a quantidade dobra o preço total nessas condições."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-proporcao.3",
+              "concept_id": "mat-proporcao",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma tinta usa azul e branco na razão 2 para 3. Em 25 litros de mistura, quantos litros são azuis?",
+              "difficulty": 3,
+              "validator": "10",
+              "options": [],
+              "feedback": "As cinco partes iguais têm cinco litros cada. Duas são azuis.",
+              "hints": [
+                "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+                "As cinco partes iguais têm cinco litros cada. Duas são azuis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-proporcao.4",
+              "concept_id": "mat-proporcao",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Uma receita para quatro pessoas pede 300 g de arroz. Quantos gramas servem seis pessoas?",
+              "difficulty": 2,
+              "validator": "450",
+              "options": [],
+              "feedback": "Cada pessoa corresponde a 75 g. Multiplique por seis.",
+              "hints": [
+                "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+                "Cada pessoa corresponde a 75 g. Multiplique por seis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-proporcao.5",
+              "concept_id": "mat-proporcao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Na escala de um modelo, 3 cm representam 12 m. Quantos metros representam 8 cm?",
+              "difficulty": 2,
+              "validator": "32",
+              "options": [],
+              "feedback": "Cada centímetro representa quatro metros.",
+              "hints": [
+                "Descubra por quanto uma quantidade foi multiplicada. Aplique o mesmo fator à quantidade correspondente.",
+                "Cada centímetro representa quatro metros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-proporcao.r2",
+              "concept_id": "mat-proporcao",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Cinco metros de tecido custam 45 reais. Quanto custam oito metros ao mesmo preço por metro?",
+              "difficulty": 3,
+              "validator": "72",
+              "options": [],
+              "feedback": "Cada metro custa nove reais.",
+              "hints": [
+                "Para porções fracionadas, calcule antes a quantidade por unidade.",
+                "Cada metro custa nove reais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "A receita triplicou em porções. A quantidade de cada ingrediente deve…",
+            "options": [
+              "Aumentar em três unidades",
+              "Triplicar"
+            ],
+            "solution": "Triplicar",
+            "explanation": "Preservar a receita significa conservar as proporções entre os ingredientes."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "mat-percentual",
+          "title": "Porcentagem e valor de referência",
+          "objective": "Calcular descontos e distinguir suas bases.",
+          "prerequisites": [
+            "mat-proporcao"
+          ],
+          "steps": [
+            "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+            "Em alterações sucessivas, recalcule a base a cada etapa."
+          ],
+          "example": "15% de 80 → 0,15 × 80 → 12.",
+          "questions": [
+            {
+              "id": "mat-percentual.1",
+              "concept_id": "mat-percentual",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um livro de 60 reais tem 15% de desconto. Qual é o preço final?",
+              "difficulty": 1,
+              "validator": "51",
+              "options": [],
+              "feedback": "O desconto é de nove reais. Subtraia-o do preço inicial.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "O desconto é de nove reais. Subtraia-o do preço inicial."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.2",
+              "concept_id": "mat-percentual",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Um preço passou de 40 para 50 reais. Qual é o aumento percentual?",
+              "difficulty": 2,
+              "validator": "25%",
+              "options": [
+                "10%",
+                "25%",
+                "20%"
+              ],
+              "feedback": "Os dez reais de aumento são um quarto dos 40 iniciais.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "Os dez reais de aumento são um quarto dos 40 iniciais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.3",
+              "concept_id": "mat-percentual",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma mochila de 100 reais sobe 20% e depois cai 20%. Qual é o preço final?",
+              "difficulty": 3,
+              "validator": "96",
+              "options": [],
+              "feedback": "O segundo percentual incide sobre 120. Retirar 24 deixa 96.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "O segundo percentual incide sobre 120. Retirar 24 deixa 96."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.4",
+              "concept_id": "mat-percentual",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Em uma turma de 32 estudantes, 25% vão a pé. Quantos vão a pé?",
+              "difficulty": 2,
+              "validator": "8",
+              "options": [],
+              "feedback": "Um quarto de 32 são oito estudantes.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "Um quarto de 32 são oito estudantes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.5",
+              "concept_id": "mat-percentual",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Depois de um desconto de 10%, um jogo custa 54 reais. Quanto custava antes?",
+              "difficulty": 2,
+              "validator": "60",
+              "options": [],
+              "feedback": "Os 54 reais representam 90% do preço inicial. Divida por 0,9.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "Os 54 reais representam 90% do preço inicial. Divida por 0,9."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.6",
+              "concept_id": "mat-percentual",
+              "role": "checkpoint",
+              "format": "numeric",
+              "prompt": "Um kit de 80 reais passa a custar 68. Qual é o desconto em porcentagem? Digite o número.",
+              "difficulty": 3,
+              "validator": "15",
+              "options": [],
+              "feedback": "A diferença é 12. Dividir 12 por 80 e multiplicar por 100 dá 15.",
+              "hints": [
+                "Expresse a porcentagem como fração de cem. Identifique o valor sobre o qual ela incide.",
+                "A diferença é 12. Dividir 12 por 80 e multiplicar por 100 dá 15."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "mat-percentual.r2",
+              "concept_id": "mat-percentual",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma taxa de 5% incide sobre 240 reais. De quantos reais é a taxa?",
+              "difficulty": 3,
+              "validator": "12",
+              "options": [],
+              "feedback": "Dez por cento são 24 reais e cinco por cento são a metade.",
+              "hints": [
+                "Em alterações sucessivas, recalcule a base a cada etapa.",
+                "Dez por cento são 24 reais e cinco por cento são a metade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Metade do preço é um desconto de…",
+            "options": [
+              "5%",
+              "50%"
+            ],
+            "solution": "50%",
+            "explanation": "Cinquenta centésimos equivalem a metade."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1020 @@
+{
+  "schema_version": 1,
+  "id": "logica",
+  "title": "Raciocínio lógico",
+  "symbol": "◇",
+  "tracks": [
+    {
+      "id": "log-padroes",
+      "title": "Sequências e padrões",
+      "goal": "Descrever regras, reconhecer ciclos e testar generalizações.",
+      "lessons": [
+        {
+          "id": "log-passo",
+          "title": "Identificar uma regra de passo",
+          "objective": "Continuar uma sequência sob uma regra declarada.",
+          "prerequisites": [],
+          "steps": [
+            "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+            "Declare a regra usada para justificar sua previsão."
+          ],
+          "example": "4, 7, 10 → diferenças +3 e +3 → próximo termo 13 se o passo continuar.",
+          "questions": [
+            {
+              "id": "log-passo.1",
+              "concept_id": "log-passo",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "A regra é somar cinco. Depois de 3, 8 e 13, qual é o próximo termo?",
+              "difficulty": 1,
+              "validator": "18",
+              "options": [],
+              "feedback": "Treze mais cinco dá dezoito.",
+              "hints": [
+                "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+                "Treze mais cinco dá dezoito."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-passo.2",
+              "concept_id": "log-passo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual regra descreve 20, 16, 12, 8 em todos os passos mostrados?",
+              "difficulty": 2,
+              "validator": "Subtrair 4",
+              "options": [
+                "Dividir por 2",
+                "Subtrair 4",
+                "Somar 4"
+              ],
+              "feedback": "Cada diferença entre termos sucessivos é −4.",
+              "hints": [
+                "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+                "Cada diferença entre termos sucessivos é −4."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-passo.3",
+              "concept_id": "log-passo",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma sequência começa em 2 e soma 3 a cada passo. Qual é o quinto termo?",
+              "difficulty": 3,
+              "validator": "14",
+              "options": [],
+              "feedback": "Do primeiro ao quinto termo há quatro passos. Some doze a dois.",
+              "hints": [
+                "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+                "Do primeiro ao quinto termo há quatro passos. Some doze a dois."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-passo.4",
+              "concept_id": "log-passo",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Só os três primeiros valores de uma sequência sempre determinam uma única regra possível.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Mais de uma regra pode concordar nos primeiros termos.",
+              "hints": [
+                "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+                "Mais de uma regra pode concordar nos primeiros termos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-passo.5",
+              "concept_id": "log-passo",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "A regra é subtrair seis. Qual termo vem depois de 7?",
+              "difficulty": 2,
+              "validator": "1",
+              "options": [],
+              "feedback": "Sete menos seis vale um.",
+              "hints": [
+                "Calcule a diferença entre termos vizinhos e confira se ela se mantém. Uma lista finita pode admitir outras regras.",
+                "Sete menos seis vale um."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-passo.r2",
+              "concept_id": "log-passo",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "A sequência começa em 30 e perde quatro por passo. Qual o quarto termo?",
+              "difficulty": 3,
+              "validator": "18",
+              "options": [],
+              "feedback": "Depois de três passos, 30 − 12 vale 18.",
+              "hints": [
+                "Declare a regra usada para justificar sua previsão.",
+                "Depois de três passos, 30 − 12 vale 18."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Um termo passa de 8 a 5. A diferença é…",
+            "options": [
+              "−3",
+              "+3"
+            ],
+            "solution": "−3",
+            "explanation": "Subtraia o valor anterior do valor seguinte."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "log-ciclo",
+          "title": "Localizar posições em um ciclo",
+          "objective": "Usar o tamanho do ciclo para prever uma posição.",
+          "prerequisites": [
+            "log-passo"
+          ],
+          "steps": [
+            "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+            "Se o resto for zero em uma contagem que começa em 1, escolha a última posição do bloco."
+          ],
+          "example": "A B C A B C → posições 3, 6 e 9 terminam em C.",
+          "questions": [
+            {
+              "id": "log-ciclo.1",
+              "concept_id": "log-ciclo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O padrão repete sol, lua, estrela. Qual é o sétimo símbolo?",
+              "difficulty": 1,
+              "validator": "Sol",
+              "options": [
+                "Sol",
+                "Lua",
+                "Estrela"
+              ],
+              "feedback": "Seis posições formam dois ciclos. A sétima reinicia o bloco.",
+              "hints": [
+                "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+                "Seis posições formam dois ciclos. A sétima reinicia o bloco."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-ciclo.2",
+              "concept_id": "log-ciclo",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "O bloco A B B C se repete. Quantas letras B aparecem nos primeiros 12 símbolos?",
+              "difficulty": 2,
+              "validator": "6",
+              "options": [],
+              "feedback": "Três blocos completos contêm dois Bs cada.",
+              "hints": [
+                "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+                "Três blocos completos contêm dois Bs cada."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-ciclo.3",
+              "concept_id": "log-ciclo",
+              "role": "practice",
+              "format": "visual",
+              "prompt": "Qual bloco é suficiente para repetir a linha “◇ ○ ○ ◇ ○ ○”?",
+              "difficulty": 3,
+              "validator": "◇ ○ ○",
+              "options": [
+                "○ ◇",
+                "◇ ○",
+                "◇ ○ ○"
+              ],
+              "feedback": "A primeira sequência de três símbolos reaparece inteira.",
+              "hints": [
+                "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+                "A primeira sequência de três símbolos reaparece inteira."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-ciclo.4",
+              "concept_id": "log-ciclo",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "As luzes seguem vermelho, verde, azul, nessa ordem. Qual cor ocupa a posição 12?",
+              "difficulty": 2,
+              "validator": "Azul",
+              "options": [
+                "Vermelho",
+                "Azul",
+                "Verde"
+              ],
+              "feedback": "Doze é o fim do quarto bloco de três.",
+              "hints": [
+                "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+                "Doze é o fim do quarto bloco de três."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-ciclo.5",
+              "concept_id": "log-ciclo",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um desenho repete dois círculos e um quadrado. Quantos quadrados há em 15 formas?",
+              "difficulty": 2,
+              "validator": "5",
+              "options": [],
+              "feedback": "Cada grupo de três contém um quadrado.",
+              "hints": [
+                "Identifique o menor bloco repetido. Conte blocos completos antes de localizar o termo restante.",
+                "Cada grupo de três contém um quadrado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-ciclo.r2",
+              "concept_id": "log-ciclo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "No ciclo P Q R S, qual símbolo ocupa a posição 14?",
+              "difficulty": 3,
+              "validator": "Q",
+              "options": [
+                "Q",
+                "S",
+                "P"
+              ],
+              "feedback": "Após doze símbolos terminam três blocos. A posição 14 é a segunda do próximo.",
+              "hints": [
+                "Se o resto for zero em uma contagem que começa em 1, escolha a última posição do bloco.",
+                "Após doze símbolos terminam três blocos. A posição 14 é a segunda do próximo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "No bloco recorrente A B, a décima posição termina…",
+            "options": [
+              "Em B",
+              "Em A"
+            ],
+            "solution": "Em B",
+            "explanation": "Cada ciclo tem dois símbolos e dez encerra cinco ciclos."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "log-contra",
+          "title": "Testar uma generalização",
+          "objective": "Usar um contraexemplo para refutar uma afirmação universal.",
+          "prerequisites": [
+            "log-ciclo"
+          ],
+          "steps": [
+            "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+            "Um exemplo favorável sozinho não demonstra uma afirmação sobre todos os casos."
+          ],
+          "example": "“Todo múltiplo de 3 é ímpar” → 6 é múltiplo de 3 e é par → a afirmação falha.",
+          "questions": [
+            {
+              "id": "log-contra.1",
+              "concept_id": "log-contra",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual é um contraexemplo para “todo número primo é ímpar”?",
+              "difficulty": 1,
+              "validator": "2",
+              "options": [
+                "2",
+                "9",
+                "3"
+              ],
+              "feedback": "Dois é primo e é par. Nove não é primo.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "Dois é primo e é par. Nove não é primo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.2",
+              "concept_id": "log-contra",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Para refutar “todos os cartões são azuis”, basta encontrar um cartão verde no conjunto.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um elemento que não é azul invalida a afirmação universal.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "Um elemento que não é azul invalida a afirmação universal."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.3",
+              "concept_id": "log-contra",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual caso testa e refuta “todo retângulo tem quatro lados iguais”?",
+              "difficulty": 3,
+              "validator": "Retângulo de 2 por 3",
+              "options": [
+                "Triângulo de lado 3",
+                "Retângulo de 2 por 3",
+                "Quadrado de lado 2"
+              ],
+              "feedback": "O retângulo 2 por 3 satisfaz a hipótese e não tem quatro lados iguais.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "O retângulo 2 por 3 satisfaz a hipótese e não tem quatro lados iguais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.4",
+              "concept_id": "log-contra",
+              "role": "diagnostic",
+              "format": "match",
+              "prompt": "“Observei cinco cisnes brancos.” O que foi apresentado?",
+              "difficulty": 2,
+              "validator": "Exemplos favoráveis",
+              "options": [
+                "Prova de que todo cisne é branco",
+                "Exemplos favoráveis",
+                "Contraexemplo à cor branca"
+              ],
+              "feedback": "As cinco observações não cobrem todos os cisnes.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "As cinco observações não cobrem todos os cisnes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.5",
+              "concept_id": "log-contra",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Qual é o menor inteiro positivo que refuta “todo inteiro positivo é maior que 1”?",
+              "difficulty": 2,
+              "validator": "1",
+              "options": [],
+              "feedback": "Um é positivo, mas não é maior que ele mesmo.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "Um é positivo, mas não é maior que ele mesmo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.6",
+              "concept_id": "log-contra",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Uma regra diz “todo múltiplo de 4 termina em 4”. Qual opção refuta a regra?",
+              "difficulty": 3,
+              "validator": "8",
+              "options": [
+                "14",
+                "4",
+                "8"
+              ],
+              "feedback": "Oito é múltiplo de quatro e termina em oito.",
+              "hints": [
+                "Procure um único caso que satisfaça a condição inicial e falhe na conclusão.",
+                "Oito é múltiplo de quatro e termina em oito."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-contra.r2",
+              "concept_id": "log-contra",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual objeto poderia refutar “toda caneta desta caixa é preta”?",
+              "difficulty": 3,
+              "validator": "Uma caneta azul desta caixa",
+              "options": [
+                "Uma caneta preta da caixa",
+                "Uma caneta azul desta caixa",
+                "Um lápis azul fora dela"
+              ],
+              "feedback": "O contraexemplo precisa ser uma caneta da caixa e não ser preta.",
+              "hints": [
+                "Um exemplo favorável sozinho não demonstra uma afirmação sobre todos os casos.",
+                "O contraexemplo precisa ser uma caneta da caixa e não ser preta."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Um triângulo refuta “todo quadrado é azul”?",
+            "options": [
+              "Sim",
+              "Não"
+            ],
+            "solution": "Não",
+            "explanation": "O caso testado precisa satisfazer a condição de ser quadrado."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "log-deducao",
+      "title": "Dedução e problemas",
+      "goal": "Interpretar condicionais, combinar restrições e organizar etapas.",
+      "lessons": [
+        {
+          "id": "log-se",
+          "title": "Ler uma condição",
+          "objective": "Reconhecer o sentido de uma implicação sem inverter a regra.",
+          "prerequisites": [],
+          "steps": [
+            "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+            "Teste a regra procurando um caso em que A ocorreu e B não."
+          ],
+          "example": "“Se o cartão é ouro, entra.” → cartão ouro garante entrada; entrar não prova que o cartão era ouro.",
+          "questions": [
+            {
+              "id": "log-se.1",
+              "concept_id": "log-se",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "“Se a senha é válida, o painel abre.” A senha é válida. O que a regra garante?",
+              "difficulty": 1,
+              "validator": "O painel abre",
+              "options": [
+                "O painel abre",
+                "O painel está fechado",
+                "O painel só abre por senha"
+              ],
+              "feedback": "Aplicamos a regra no sentido declarado.",
+              "hints": [
+                "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+                "Aplicamos a regra no sentido declarado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-se.2",
+              "concept_id": "log-se",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Da regra “se chover, a rua molha”, ver a rua molhada permite concluir com certeza que choveu.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Outra causa pode ter molhado a rua.",
+              "hints": [
+                "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+                "Outra causa pode ter molhado a rua."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-se.3",
+              "concept_id": "log-se",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual caso viola “se o cartão é vermelho, há um círculo no verso”?",
+              "difficulty": 3,
+              "validator": "Vermelho com quadrado apenas",
+              "options": [
+                "Azul com quadrado",
+                "Vermelho com quadrado apenas",
+                "Azul com círculo"
+              ],
+              "feedback": "Existe a condição inicial e falta a consequência exigida.",
+              "hints": [
+                "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+                "Existe a condição inicial e falta a consequência exigida."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-se.4",
+              "concept_id": "log-se",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "“Se um número é múltiplo de 10, termina em zero.” Que informação basta para aplicar diretamente essa regra?",
+              "difficulty": 2,
+              "validator": "Ser múltiplo de 10",
+              "options": [
+                "Ser múltiplo de 10",
+                "Ter dois algarismos",
+                "Ser número par"
+              ],
+              "feedback": "O antecedente é a divisibilidade por dez.",
+              "hints": [
+                "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+                "O antecedente é a divisibilidade por dez."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-se.5",
+              "concept_id": "log-se",
+              "role": "review",
+              "format": "boolean",
+              "prompt": "Se a regra “todo bilhete premiado tem estrela” é válida, um bilhete sem estrela não é premiado.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um premiado sem estrela contrariaria a regra.",
+              "hints": [
+                "Na regra “se A, então B”, ocorrer A garante B. Observar B isoladamente pode ter outras explicações.",
+                "Um premiado sem estrela contrariaria a regra."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-se.r2",
+              "concept_id": "log-se",
+              "role": "review",
+              "format": "choice",
+              "prompt": "“Se é sábado, a sala fecha.” A sala está aberta. Se a regra é válida, então…",
+              "difficulty": 3,
+              "validator": "Não é sábado.",
+              "options": [
+                "É sábado.",
+                "Nada se pode deduzir sobre sábado.",
+                "Não é sábado."
+              ],
+              "feedback": "Um sábado com a sala aberta violaria a regra.",
+              "hints": [
+                "Teste a regra procurando um caso em que A ocorreu e B não.",
+                "Um sábado com a sala aberta violaria a regra."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se A garante B, observar apenas B…",
+            "options": [
+              "Pode ter outras explicações",
+              "Prova A sempre"
+            ],
+            "solution": "Pode ter outras explicações",
+            "explanation": "A regra não diz que A é a única maneira de obter B."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "log-pistas",
+          "title": "Combinar pistas de posição",
+          "objective": "Eliminar alternativas incompatíveis com as restrições.",
+          "prerequisites": [
+            "log-se"
+          ],
+          "steps": [
+            "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+            "Uma ordem parcial pode deixar mais de uma solução."
+          ],
+          "example": "Lia antes de Rui e Rui antes de Bia → Lia, Rui, Bia.",
+          "questions": [
+            {
+              "id": "log-pistas.1",
+              "concept_id": "log-pistas",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ana vem antes de Beto. Caio vem depois de Beto. Ordene os três.",
+              "difficulty": 1,
+              "validator": [
+                "Ana",
+                "Beto",
+                "Caio"
+              ],
+              "options": [
+                "Caio",
+                "Ana",
+                "Beto"
+              ],
+              "feedback": "As duas relações formam uma cadeia de três posições.",
+              "hints": [
+                "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+                "As duas relações formam uma cadeia de três posições."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-pistas.2",
+              "concept_id": "log-pistas",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Há caixas A, B e C. O prêmio não está em A nem em C. Onde está?",
+              "difficulty": 2,
+              "validator": "B",
+              "options": [
+                "C",
+                "A",
+                "B"
+              ],
+              "feedback": "Restou apenas a caixa B.",
+              "hints": [
+                "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+                "Restou apenas a caixa B."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-pistas.3",
+              "concept_id": "log-pistas",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Saber apenas que Lia chegou antes de Rui determina a posição de Bia entre os três.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A posição de Bia pode variar sem contrariar a pista.",
+              "hints": [
+                "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+                "A posição de Bia pode variar sem contrariar a pista."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-pistas.4",
+              "concept_id": "log-pistas",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Três livros estão em fila. O verde está no meio e o azul à esquerda do verde. Onde está o vermelho?",
+              "difficulty": 2,
+              "validator": "Na direita",
+              "options": [
+                "Na esquerda",
+                "No meio",
+                "Na direita"
+              ],
+              "feedback": "As duas primeiras posições já estão ocupadas.",
+              "hints": [
+                "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+                "As duas primeiras posições já estão ocupadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-pistas.5",
+              "concept_id": "log-pistas",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Três pessoas ocupam três assentos distintos. Se Ana deve ficar no primeiro, quantas ordens ainda são possíveis?",
+              "difficulty": 2,
+              "validator": "2",
+              "options": [],
+              "feedback": "As duas pessoas restantes podem trocar de posição.",
+              "hints": [
+                "Anote as opções e elimine apenas aquelas que contradizem uma pista. Verifique o resultado com todas as condições.",
+                "As duas pessoas restantes podem trocar de posição."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-pistas.r2",
+              "concept_id": "log-pistas",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Lia não está na frente nem atrás numa fila de três. Qual é sua posição?",
+              "difficulty": 3,
+              "validator": "Meio",
+              "options": [
+                "Meio",
+                "Atrás",
+                "Frente"
+              ],
+              "feedback": "A única posição restante é a intermediária.",
+              "hints": [
+                "Uma ordem parcial pode deixar mais de uma solução.",
+                "A única posição restante é a intermediária."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se restam duas posições possíveis e nenhuma pista diferencia as duas…",
+            "options": [
+              "Ainda há duas hipóteses",
+              "Há solução única garantida"
+            ],
+            "solution": "Ainda há duas hipóteses",
+            "explanation": "Elimine apenas as opções incompatíveis."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "log-etapas",
+          "title": "Ordenar dependências",
+          "objective": "Propor uma ordem válida e reconhecer tarefas independentes.",
+          "prerequisites": [
+            "log-pistas"
+          ],
+          "steps": [
+            "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+            "Se duas tarefas não dependem uma da outra, mais de uma ordem pode ser válida."
+          ],
+          "example": "Escolher foto → imprimir foto → colar no álbum.",
+          "questions": [
+            {
+              "id": "log-etapas.1",
+              "concept_id": "log-etapas",
+              "role": "practice",
+              "format": "order",
+              "prompt": "Ordene as etapas para enviar pelo correio uma carta que ainda não foi escrita.",
+              "difficulty": 1,
+              "validator": [
+                "Escrever a carta",
+                "Colocá-la no envelope",
+                "Postar o envelope"
+              ],
+              "options": [
+                "Colocá-la no envelope",
+                "Postar o envelope",
+                "Escrever a carta"
+              ],
+              "feedback": "O conteúdo precisa existir antes de ser envelopado e enviado.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "O conteúdo precisa existir antes de ser envelopado e enviado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.2",
+              "concept_id": "log-etapas",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Para fazer um cartaz, escrever o título e desenhar a borda são independentes. O que isso permite?",
+              "difficulty": 2,
+              "validator": "Executá-las em qualquer ordem",
+              "options": [
+                "Executá-las em qualquer ordem",
+                "Pendurar o cartaz antes de ter papel",
+                "Excluir as duas tarefas"
+              ],
+              "feedback": "Nenhuma das duas depende do resultado da outra.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "Nenhuma das duas depende do resultado da outra."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.3",
+              "concept_id": "log-etapas",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Se A depende de B e B depende de A, nenhuma das duas pode começar sem quebrar uma dependência.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "As pré-condições formam um ciclo.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "As pré-condições formam um ciclo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.4",
+              "concept_id": "log-etapas",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual etapa deve preceder medir a duração de um percurso com cronômetro?",
+              "difficulty": 2,
+              "validator": "Iniciar a contagem no ponto de partida",
+              "options": [
+                "Apagar o resultado final",
+                "Iniciar a contagem no ponto de partida",
+                "Calcular a média antes de medir"
+              ],
+              "feedback": "O tempo do percurso começa na partida.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "O tempo do percurso começa na partida."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.5",
+              "concept_id": "log-etapas",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma apresentação exige texto revisado e imagens escolhidas. Ambas as tarefas terminaram. Qual etapa já pode começar?",
+              "difficulty": 2,
+              "validator": "Montar a apresentação",
+              "options": [
+                "Desfazer a revisão",
+                "Montar a apresentação",
+                "Escolher um texto que ainda não existe"
+              ],
+              "feedback": "As duas dependências foram satisfeitas.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "As duas dependências foram satisfeitas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.6",
+              "concept_id": "log-etapas",
+              "role": "checkpoint",
+              "format": "order",
+              "prompt": "O relatório depende da análise, e a análise depende dos dados. Ordene o trabalho.",
+              "difficulty": 3,
+              "validator": [
+                "Coletar os dados",
+                "Analisar os dados",
+                "Escrever o relatório"
+              ],
+              "options": [
+                "Analisar os dados",
+                "Escrever o relatório",
+                "Coletar os dados"
+              ],
+              "feedback": "Cada etapa usa o resultado da anterior.",
+              "hints": [
+                "Trace uma seta de cada pré-requisito para a tarefa que depende dele. Comece pelas que não dependem de outra.",
+                "Cada etapa usa o resultado da anterior."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "log-etapas.r2",
+              "concept_id": "log-etapas",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Dois textos independentes devem ser revisados antes de juntá-los. O que pode ocorrer primeiro?",
+              "difficulty": 3,
+              "validator": "Revisar qualquer um dos dois",
+              "options": [
+                "Revisar qualquer um dos dois",
+                "Publicar a versão final",
+                "Juntar sem revisão"
+              ],
+              "feedback": "Entre os dois textos não foi definida dependência.",
+              "hints": [
+                "Se duas tarefas não dependem uma da outra, mais de uma ordem pode ser válida.",
+                "Entre os dois textos não foi definida dependência."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se uma etapa usa duas entradas, para iniciá-la é preciso…",
+            "options": [
+              "Ter as duas entradas",
+              "Ter só a de maior tamanho"
+            ],
+            "solution": "Ter as duas entradas",
+            "explanation": "Cada entrada exigida é uma dependência."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

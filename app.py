@@ -1,6 +1,7 @@
 """Lacuna API: ephemeral evaluation; no student data is saved on the server."""
 from flask import Flask, jsonify, render_template, request
 from werkzeug.exceptions import HTTPException
+from catalog import hub
 from diagnostic import (
     CONTENT, QUESTIONS, InputError, assess_record, bounded_int,
     feedback_for, next_question, question_for, recommend, summarize,
@@ -12,6 +13,7 @@ def create_app(test_config=None):
     app.config.update(MAX_CONTENT_LENGTH=262144, JSON_SORT_KEYS=False)
     if test_config:
         app.config.update(test_config)
+    app.register_blueprint(hub)
     app.json.ensure_ascii = False
 
     def payload():
@@ -39,7 +41,7 @@ def create_app(test_config=None):
 
     @app.get("/api/health")
     def health():
-        return jsonify(status="ok", version="1.0.0", persistence="browser-localStorage")
+        return jsonify(status="ok", version="0.8.0", persistence="browser-localStorage")
 
     @app.get("/api/content")
     def content():

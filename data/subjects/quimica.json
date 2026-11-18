@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "id": "quimica",
+  "title": "Química",
+  "symbol": "Z",
+  "tracks": [
+    {
+      "id": "qui-atomos",
+      "title": "Átomos e tabela periódica",
+      "goal": "Ler número atômico, distinguir isótopos e localizar famílias.",
+      "lessons": [
+        {
+          "id": "qui-numero",
+          "title": "Identificar um elemento",
+          "objective": "Usar o número de prótons para identificar um elemento.",
+          "prerequisites": [],
+          "steps": [
+            "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+            "Num átomo neutro, o número de elétrons é igual ao de prótons."
+          ],
+          "example": "Z = 8 → oito prótons → oxigênio.",
+          "questions": [
+            {
+              "id": "qui-numero.1",
+              "concept_id": "qui-numero",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um átomo neutro tem Z = 11. Quantos elétrons ele tem?",
+              "difficulty": 1,
+              "validator": "11",
+              "options": [],
+              "feedback": "Há onze prótons e, na neutralidade, onze elétrons.",
+              "hints": [
+                "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+                "Há onze prótons e, na neutralidade, onze elétrons."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-numero.2",
+              "concept_id": "qui-numero",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual partícula define a identidade de um elemento?",
+              "difficulty": 2,
+              "validator": "Próton",
+              "options": [
+                "Nêutron",
+                "Elétron",
+                "Próton"
+              ],
+              "feedback": "O número de prótons define o número atômico.",
+              "hints": [
+                "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+                "O número de prótons define o número atômico."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-numero.3",
+              "concept_id": "qui-numero",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma partícula tem 12 prótons e 10 elétrons. Qual é a carga líquida em unidades de carga elementar?",
+              "difficulty": 3,
+              "validator": "2",
+              "options": [],
+              "feedback": "Doze cargas positivas menos dez negativas deixam +2.",
+              "hints": [
+                "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+                "Doze cargas positivas menos dez negativas deixam +2."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-numero.4",
+              "concept_id": "qui-numero",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Um átomo que ganha um elétron conserva o número atômico.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Ganhar um elétron não altera os prótons do núcleo.",
+              "hints": [
+                "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+                "Ganhar um elétron não altera os prótons do núcleo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-numero.5",
+              "concept_id": "qui-numero",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um íon tem 9 prótons e carga −1. Quantos elétrons ele possui?",
+              "difficulty": 2,
+              "validator": "10",
+              "options": [],
+              "feedback": "Uma carga negativa em excesso significa dez elétrons para nove prótons.",
+              "hints": [
+                "O número atômico Z é a quantidade de prótons. Alterar a quantidade de elétrons muda a carga, mantendo o elemento.",
+                "Uma carga negativa em excesso significa dez elétrons para nove prótons."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-numero.r2",
+              "concept_id": "qui-numero",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um átomo neutro de alumínio tem 13 elétrons. Qual seu número atômico?",
+              "difficulty": 3,
+              "validator": "13",
+              "options": [],
+              "feedback": "Na neutralidade, prótons e elétrons têm a mesma quantidade.",
+              "hints": [
+                "Num átomo neutro, o número de elétrons é igual ao de prótons.",
+                "Na neutralidade, prótons e elétrons têm a mesma quantidade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Dois átomos têm oito prótons cada. Necessariamente têm…",
+            "options": [
+              "O mesmo elemento",
+              "A mesma massa"
+            ],
+            "solution": "O mesmo elemento",
+            "explanation": "O número de prótons define o elemento."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "qui-isotopos",
+          "title": "Contar prótons e nêutrons",
+          "objective": "Calcular o número de nêutrons e reconhecer isótopos.",
+          "prerequisites": [
+            "qui-numero"
+          ],
+          "steps": [
+            "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+            "Use o número de massa do isótopo, que é inteiro."
+          ],
+          "example": "Carbono-14: A = 14, Z = 6 → oito nêutrons.",
+          "questions": [
+            {
+              "id": "qui-isotopos.1",
+              "concept_id": "qui-isotopos",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um átomo tem A = 23 e Z = 11. Quantos nêutrons há?",
+              "difficulty": 1,
+              "validator": "12",
+              "options": [],
+              "feedback": "Retire onze prótons do total de 23 partículas nucleares.",
+              "hints": [
+                "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+                "Retire onze prótons do total de 23 partículas nucleares."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-isotopos.2",
+              "concept_id": "qui-isotopos",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual par pode representar isótopos?",
+              "difficulty": 2,
+              "validator": "Mesmo Z e A diferente",
+              "options": [
+                "Mesmo A e Z sempre diferente",
+                "Mesmo Z e A diferente",
+                "Mesmo número de elétrons sem outra informação"
+              ],
+              "feedback": "O elemento é o mesmo e o número de nêutrons muda.",
+              "hints": [
+                "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+                "O elemento é o mesmo e o número de nêutrons muda."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-isotopos.3",
+              "concept_id": "qui-isotopos",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um núcleo tem 8 prótons e 10 nêutrons. Qual seu número de massa?",
+              "difficulty": 3,
+              "validator": "18",
+              "options": [],
+              "feedback": "A soma das partículas nucleares é 18.",
+              "hints": [
+                "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+                "A soma das partículas nucleares é 18."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-isotopos.4",
+              "concept_id": "qui-isotopos",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Carbono-12 e carbono-14 têm o mesmo número de prótons.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Ambos são carbono e portanto têm Z = 6.",
+              "hints": [
+                "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+                "Ambos são carbono e portanto têm Z = 6."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-isotopos.5",
+              "concept_id": "qui-isotopos",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Dois isótopos de Z = 17 têm A = 35 e A = 37. Qual a diferença entre seus números de nêutrons?",
+              "difficulty": 2,
+              "validator": "2",
+              "options": [],
+              "feedback": "Como Z é igual, a diferença entre as massas inteiras vem dos dois nêutrons.",
+              "hints": [
+                "O número de massa A soma prótons e nêutrons. Isótopos têm mesmo Z e números de massa diferentes.",
+                "Como Z é igual, a diferença entre as massas inteiras vem dos dois nêutrons."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-isotopos.r2",
+              "concept_id": "qui-isotopos",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um isótopo tem 20 nêutrons e número de massa 39. Quantos prótons tem?",
+              "difficulty": 3,
+              "validator": "19",
+              "options": [],
+              "feedback": "A menos o número de nêutrons é igual ao número de prótons.",
+              "hints": [
+                "Use o número de massa do isótopo, que é inteiro.",
+                "A menos o número de nêutrons é igual ao número de prótons."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Somar um nêutron, mantendo Z, aumenta A em…",
+            "options": [
+              "Zero",
+              "Uma unidade"
+            ],
+            "solution": "Uma unidade",
+            "explanation": "Cada nêutron conta como uma unidade do número de massa."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "qui-tabela",
+          "title": "Ler períodos e grupos",
+          "objective": "Distinguir coluna e linha na tabela periódica.",
+          "prerequisites": [
+            "qui-isotopos"
+          ],
+          "steps": [
+            "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+            "Famílias podem apresentar semelhanças químicas, mas os elementos não são idênticos."
+          ],
+          "example": "Lítio e sódio ocupam a primeira coluna → pertencem ao mesmo grupo.",
+          "questions": [
+            {
+              "id": "qui-tabela.1",
+              "concept_id": "qui-tabela",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe uma linha horizontal da tabela periódica ao seu nome.",
+              "difficulty": 1,
+              "validator": "Período",
+              "options": [
+                "Isótopo",
+                "Grupo",
+                "Período"
+              ],
+              "feedback": "Períodos são as linhas.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "Períodos são as linhas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.2",
+              "concept_id": "qui-tabela",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual propriedade ordena a tabela moderna?",
+              "difficulty": 2,
+              "validator": "Número atômico",
+              "options": [
+                "Cor do sólido",
+                "Massa de uma amostra",
+                "Número atômico"
+              ],
+              "feedback": "A ordem crescente de Z organiza os elementos.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "A ordem crescente de Z organiza os elementos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.3",
+              "concept_id": "qui-tabela",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Elementos do mesmo grupo precisam ter exatamente o mesmo número de prótons.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Eles são elementos distintos e possuem diferentes números atômicos.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "Eles são elementos distintos e possuem diferentes números atômicos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.4",
+              "concept_id": "qui-tabela",
+              "role": "diagnostic",
+              "format": "blank",
+              "prompt": "Uma coluna vertical também é chamada de família ou ___.",
+              "difficulty": 2,
+              "validator": "grupo",
+              "options": [],
+              "feedback": "Grupo e família designam a coluna.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "Grupo e família designam a coluna."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.5",
+              "concept_id": "qui-tabela",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Duas casas estão lado a lado na mesma linha. Qual característica compartilham necessariamente?",
+              "difficulty": 2,
+              "validator": "Mesmo período",
+              "options": [
+                "Mesmo período",
+                "Mesmo grupo",
+                "Mesmo Z"
+              ],
+              "feedback": "As linhas representam os períodos.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "As linhas representam os períodos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.6",
+              "concept_id": "qui-tabela",
+              "role": "checkpoint",
+              "format": "numeric",
+              "prompt": "Uma espécie de Z = 13 e A = 27 perdeu três elétrons a partir do átomo neutro. Quantos nêutrons continuam no núcleo?",
+              "difficulty": 3,
+              "validator": "14",
+              "options": [],
+              "feedback": "A perda de elétrons não muda o núcleo. Subtraia 13 de 27.",
+              "hints": [
+                "A tabela segue número atômico crescente. Uma linha é um período e uma coluna é um grupo.",
+                "A perda de elétrons não muda o núcleo. Subtraia 13 de 27."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-tabela.r2",
+              "concept_id": "qui-tabela",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Se dois símbolos químicos ocupam linhas distintas mas a mesma coluna, eles estão em…",
+              "difficulty": 3,
+              "validator": "Períodos diferentes e mesmo grupo",
+              "options": [
+                "Grupos diferentes e mesmo período",
+                "Mesma posição da tabela",
+                "Períodos diferentes e mesmo grupo"
+              ],
+              "feedback": "Linhas distintas indicam períodos diferentes.",
+              "hints": [
+                "Famílias podem apresentar semelhanças químicas, mas os elementos não são idênticos.",
+                "Linhas distintas indicam períodos diferentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Ao descer uma casa na mesma coluna, você permanece…",
+            "options": [
+              "No mesmo grupo",
+              "No mesmo período"
+            ],
+            "solution": "No mesmo grupo",
+            "explanation": "Grupos são colunas e períodos são linhas."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "qui-misturas",
+      "title": "Misturas e ligações",
+      "goal": "Identificar fases, escolher separações e comparar modelos de ligação.",
+      "lessons": [
+        {
+          "id": "qui-fases",
+          "title": "Contar fases de um sistema",
+          "objective": "Separar os conceitos de componente e fase.",
+          "prerequisites": [],
+          "steps": [
+            "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+            "Uma solução uniforme pode conter vários componentes."
+          ],
+          "example": "Água líquida com gelo puro → um componente e duas fases.",
+          "questions": [
+            {
+              "id": "qui-fases.1",
+              "concept_id": "qui-fases",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Um copo contém apenas gelo e água líquida pura. Quantos componentes existem?",
+              "difficulty": 1,
+              "validator": "1",
+              "options": [],
+              "feedback": "Os dois estados físicos são da mesma substância.",
+              "hints": [
+                "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+                "Os dois estados físicos são da mesma substância."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-fases.2",
+              "concept_id": "qui-fases",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Sal totalmente dissolvido em água forma, nessas condições, qual sistema?",
+              "difficulty": 2,
+              "validator": "Mistura homogênea",
+              "options": [
+                "Duas fases visíveis",
+                "Substância simples",
+                "Mistura homogênea"
+              ],
+              "feedback": "A solução é uniforme apesar dos dois componentes.",
+              "hints": [
+                "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+                "A solução é uniforme apesar dos dois componentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-fases.3",
+              "concept_id": "qui-fases",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Óleo e água formam duas camadas e não há bolhas. Quantas fases líquidas se observam?",
+              "difficulty": 3,
+              "validator": "2",
+              "options": [],
+              "feedback": "Cada camada líquida homogênea constitui uma fase.",
+              "hints": [
+                "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+                "Cada camada líquida homogênea constitui uma fase."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-fases.4",
+              "concept_id": "qui-fases",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Uma única fase visível garante que o material seja uma substância pura.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Uma solução também pode ter uma única fase.",
+              "hints": [
+                "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+                "Uma solução também pode ter uma única fase."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-fases.5",
+              "concept_id": "qui-fases",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Em água com sal dissolvido e cristais de sal no fundo, que fases há?",
+              "difficulty": 2,
+              "validator": "Solução líquida e sal sólido",
+              "options": [
+                "Solução líquida e sal sólido",
+                "Duas soluções líquidas",
+                "Apenas água pura"
+              ],
+              "feedback": "A porção líquida é homogênea e o sólido é outra fase.",
+              "hints": [
+                "Componente é uma substância presente. Fase é uma porção homogênea distinguível no sistema.",
+                "A porção líquida é homogênea e o sólido é outra fase."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-fases.r2",
+              "concept_id": "qui-fases",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Um sistema tem água salgada homogênea e uma camada separada de óleo. Quantas fases macroscópicas líquidas há?",
+              "difficulty": 3,
+              "validator": "2",
+              "options": [],
+              "feedback": "A solução e o óleo formam duas porções distinguíveis.",
+              "hints": [
+                "Uma solução uniforme pode conter vários componentes.",
+                "A solução e o óleo formam duas porções distinguíveis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Gelo e água pura: conte primeiro as substâncias. Você encontra…",
+            "options": [
+              "Duas",
+              "Uma"
+            ],
+            "solution": "Uma",
+            "explanation": "As duas porções são formadas por H₂O."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "qui-separar",
+          "title": "Escolher uma separação física",
+          "objective": "Associar métodos de separação às propriedades dos componentes.",
+          "prerequisites": [
+            "qui-fases"
+          ],
+          "steps": [
+            "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+            "Considere qual componente você deseja recuperar."
+          ],
+          "example": "Areia suspensa em água → filtração → o sólido fica retido.",
+          "questions": [
+            {
+              "id": "qui-separar.1",
+              "concept_id": "qui-separar",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe areia grossa insolúvel em água ao método para reter a areia.",
+              "difficulty": 1,
+              "validator": "Filtração",
+              "options": [
+                "Congelamento obrigatório",
+                "Filtração",
+                "Dissolução completa"
+              ],
+              "feedback": "O filtro pode reter partículas maiores que seus poros.",
+              "hints": [
+                "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+                "O filtro pode reter partículas maiores que seus poros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-separar.2",
+              "concept_id": "qui-separar",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Para recuperar água líquida de uma solução salina por vaporização e condensação, qual é o método?",
+              "difficulty": 2,
+              "validator": "Destilação simples",
+              "options": [
+                "Imantação",
+                "Destilação simples",
+                "Peneiração"
+              ],
+              "feedback": "Na destilação o vapor de água é condensado e recolhido.",
+              "hints": [
+                "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+                "Na destilação o vapor de água é condensado e recolhido."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-separar.3",
+              "concept_id": "qui-separar",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Um filtro de papel comum retém os íons de sal dissolvido como retém areia.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Os íons dissolvidos atravessam esse filtro junto com a água.",
+              "hints": [
+                "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+                "Os íons dissolvidos atravessam esse filtro junto com a água."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-separar.4",
+              "concept_id": "qui-separar",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual propriedade permite separar limalha de ferro de areia seca usando um ímã?",
+              "difficulty": 2,
+              "validator": "Resposta magnética",
+              "options": [
+                "Cheiro",
+                "Ponto de ebulição",
+                "Resposta magnética"
+              ],
+              "feedback": "A limalha é atraída pelo ímã.",
+              "hints": [
+                "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+                "A limalha é atraída pelo ímã."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-separar.5",
+              "concept_id": "qui-separar",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Dois líquidos imiscíveis formam camadas estáveis. Que método aproveita essa diferença?",
+              "difficulty": 2,
+              "validator": "Decantação",
+              "options": [
+                "Decantação",
+                "Moagem",
+                "Peneiração"
+              ],
+              "feedback": "As camadas com densidades distintas podem ser separadas.",
+              "hints": [
+                "Descubra se a diferença útil é tamanho de partícula, densidade, volatilidade ou comportamento magnético.",
+                "As camadas com densidades distintas podem ser separadas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-separar.r2",
+              "concept_id": "qui-separar",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Uma peneira separa dois sólidos principalmente por qual diferença?",
+              "difficulty": 3,
+              "validator": "Tamanho dos grãos",
+              "options": [
+                "Tamanho dos grãos",
+                "Concentração de íons",
+                "Pressão do vapor"
+              ],
+              "feedback": "Os grãos menores atravessam os espaços da malha.",
+              "hints": [
+                "Considere qual componente você deseja recuperar.",
+                "Os grãos menores atravessam os espaços da malha."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Para recolher o líquido depois que evapora, falta…",
+            "options": [
+              "Peneirar o vapor",
+              "Condensar o vapor"
+            ],
+            "solution": "Condensar o vapor",
+            "explanation": "A condensação devolve o componente ao estado líquido."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "qui-ligar",
+          "title": "Comparar modelos de ligação",
+          "objective": "Relacionar ligação iônica, covalente e metálica a seus modelos.",
+          "prerequisites": [
+            "qui-separar"
+          ],
+          "steps": [
+            "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+            "Use o modelo adequado ao material e à propriedade discutida."
+          ],
+          "example": "NaCl sólido → rede de íons; H₂ → par compartilhado; cobre → ligação metálica.",
+          "questions": [
+            {
+              "id": "qui-ligar.1",
+              "concept_id": "qui-ligar",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe o compartilhamento de pares eletrônicos à ligação.",
+              "difficulty": 1,
+              "validator": "Covalente",
+              "options": [
+                "Iônica",
+                "Covalente",
+                "Metálica"
+              ],
+              "feedback": "O par compartilhado participa da ligação covalente.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "O par compartilhado participa da ligação covalente."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.2",
+              "concept_id": "qui-ligar",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "O que mantém unidos os íons em um cristal de NaCl?",
+              "difficulty": 2,
+              "validator": "Atração entre cargas opostas",
+              "options": [
+                "Gravidade como interação dominante",
+                "Compartilhamento igual entre todos os núcleos",
+                "Atração entre cargas opostas"
+              ],
+              "feedback": "A atração eletrostática organiza a rede iônica.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "A atração eletrostática organiza a rede iônica."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.3",
+              "concept_id": "qui-ligar",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Elétrons deslocalizados ajudam a explicar a condução elétrica de metais.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Esses elétrons podem responder a um campo elétrico.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "Esses elétrons podem responder a um campo elétrico."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.4",
+              "concept_id": "qui-ligar",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual descrição corresponde ao modelo de H₂?",
+              "difficulty": 2,
+              "validator": "Dois átomos compartilham um par eletrônico.",
+              "options": [
+                "Um conjunto de íons metálicos num mar eletrônico.",
+                "Dois átomos compartilham um par eletrônico.",
+                "Uma mistura de gases diferentes."
+              ],
+              "feedback": "Os dois hidrogênios formam uma molécula com ligação covalente.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "Os dois hidrogênios formam uma molécula com ligação covalente."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.5",
+              "concept_id": "qui-ligar",
+              "role": "review",
+              "format": "choice",
+              "prompt": "No NaCl fundido, que partículas móveis permitem condução?",
+              "difficulty": 2,
+              "validator": "Íons",
+              "options": [
+                "Íons",
+                "Prótons livres dos núcleos",
+                "Somente moléculas neutras de gás"
+              ],
+              "feedback": "No fundido, cátions e ânions têm mobilidade.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "No fundido, cátions e ânions têm mobilidade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.6",
+              "concept_id": "qui-ligar",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Uma amostra de cobre conduz corrente no estado sólido. Qual modelo explica melhor esse comportamento?",
+              "difficulty": 3,
+              "validator": "Elétrons deslocalizados na estrutura metálica",
+              "options": [
+                "Evaporação de moléculas de cobre",
+                "Íons de sal dissolvidos na amostra",
+                "Elétrons deslocalizados na estrutura metálica"
+              ],
+              "feedback": "A mobilidade eletrônica é característica importante do modelo metálico.",
+              "hints": [
+                "Observe se o modelo enfatiza atração entre íons, compartilhamento de pares eletrônicos ou elétrons deslocalizados.",
+                "A mobilidade eletrônica é característica importante do modelo metálico."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "qui-ligar.r2",
+              "concept_id": "qui-ligar",
+              "role": "review",
+              "format": "match",
+              "prompt": "Associe a atração entre Na⁺ e Cl⁻ em uma rede à ligação predominante.",
+              "difficulty": 3,
+              "validator": "Iônica",
+              "options": [
+                "Covalente apolar",
+                "Iônica",
+                "Metálica"
+              ],
+              "feedback": "A rede é mantida principalmente por atração entre cargas opostas.",
+              "hints": [
+                "Use o modelo adequado ao material e à propriedade discutida.",
+                "A rede é mantida principalmente por atração entre cargas opostas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "No modelo de um metal, a condução depende de…",
+            "options": [
+              "Desaparecimento de elétrons",
+              "Cargas com mobilidade"
+            ],
+            "solution": "Cargas com mobilidade",
+            "explanation": "Elétrons deslocalizados podem se deslocar sob um campo elétrico."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

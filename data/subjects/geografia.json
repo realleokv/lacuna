@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "id": "geografia",
+  "title": "Geografia",
+  "symbol": "◎",
+  "tracks": [
+    {
+      "id": "geo-mapas",
+      "title": "Cartografia e orientação",
+      "goal": "Ler escalas, direções, coordenadas e convenções do mapa.",
+      "lessons": [
+        {
+          "id": "geo-orientacao",
+          "title": "Orientar um percurso",
+          "objective": "Relacionar deslocamentos aos pontos cardeais.",
+          "prerequisites": [],
+          "steps": [
+            "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+            "Em um mapa girado, gire também a rosa dos ventos."
+          ],
+          "example": "Com norte no alto, direita → leste; abaixo → sul.",
+          "questions": [
+            {
+              "id": "geo-orientacao.1",
+              "concept_id": "geo-orientacao",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Com o norte para cima, uma pessoa vai para a esquerda no mapa. Em que direção vai?",
+              "difficulty": 1,
+              "validator": "Oeste",
+              "options": [
+                "Leste",
+                "Oeste",
+                "Sul"
+              ],
+              "feedback": "O oeste fica à esquerda quando o norte aponta para cima.",
+              "hints": [
+                "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+                "O oeste fica à esquerda quando o norte aponta para cima."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-orientacao.2",
+              "concept_id": "geo-orientacao",
+              "role": "practice",
+              "format": "blank",
+              "prompt": "Complete com um ponto cardeal: o oposto de nordeste é ___.",
+              "difficulty": 2,
+              "validator": "sudoeste",
+              "options": [],
+              "feedback": "Os dois componentes se invertem: norte vira sul e leste vira oeste.",
+              "hints": [
+                "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+                "Os dois componentes se invertem: norte vira sul e leste vira oeste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-orientacao.3",
+              "concept_id": "geo-orientacao",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "A seta norte aponta para a direita da folha. Onde está o leste?",
+              "difficulty": 3,
+              "validator": "Para baixo",
+              "options": [
+                "Para a esquerda",
+                "Para baixo",
+                "Para cima"
+              ],
+              "feedback": "O leste fica um quarto de volta no sentido horário a partir do norte.",
+              "hints": [
+                "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+                "O leste fica um quarto de volta no sentido horário a partir do norte."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-orientacao.4",
+              "concept_id": "geo-orientacao",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "O topo da página sempre indica norte, mesmo sem verificar a orientação.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "O mapa pode estar girado.",
+              "hints": [
+                "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+                "O mapa pode estar girado."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-orientacao.5",
+              "concept_id": "geo-orientacao",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Você caminha para o sul e gira 90° à esquerda. Para onde fica voltado?",
+              "difficulty": 2,
+              "validator": "Leste",
+              "options": [
+                "Norte",
+                "Leste",
+                "Oeste"
+              ],
+              "feedback": "De frente para o sul, sua esquerda aponta para leste.",
+              "hints": [
+                "Localize a seta do norte no mapa antes de usar direita, esquerda, acima ou abaixo.",
+                "De frente para o sul, sua esquerda aponta para leste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-orientacao.r2",
+              "concept_id": "geo-orientacao",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Você segue para oeste e faz meia-volta. Qual é a nova direção?",
+              "difficulty": 3,
+              "validator": "Leste",
+              "options": [
+                "Norte",
+                "Sul",
+                "Leste"
+              ],
+              "feedback": "A meia-volta aponta ao sentido oposto.",
+              "hints": [
+                "Em um mapa girado, gire também a rosa dos ventos.",
+                "A meia-volta aponta ao sentido oposto."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Com o norte no alto, o sudeste fica…",
+            "options": [
+              "Abaixo e à direita",
+              "Acima e à esquerda"
+            ],
+            "solution": "Abaixo e à direita",
+            "explanation": "Sul fica abaixo e leste à direita nessa orientação."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "geo-escala",
+          "title": "Medir com a escala",
+          "objective": "Converter uma distância no mapa em distância no terreno.",
+          "prerequisites": [
+            "geo-orientacao"
+          ],
+          "steps": [
+            "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+            "Faça a multiplicação antes de converter centímetros em metros ou quilômetros."
+          ],
+          "example": "1:10.000 → 1 cm no papel → 10.000 cm ou 100 m no terreno.",
+          "questions": [
+            {
+              "id": "geo-escala.1",
+              "concept_id": "geo-escala",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Em 1:50.000, quantos metros representam 2 cm no mapa?",
+              "difficulty": 1,
+              "validator": "1000",
+              "options": [],
+              "feedback": "Dois centímetros representam 100.000 cm ou mil metros.",
+              "hints": [
+                "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+                "Dois centímetros representam 100.000 cm ou mil metros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-escala.2",
+              "concept_id": "geo-escala",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual escala costuma mostrar mais detalhe da mesma área impressa?",
+              "difficulty": 2,
+              "validator": "1:1.000",
+              "options": [
+                "1:100.000",
+                "1:1.000.000",
+                "1:1.000"
+              ],
+              "feedback": "Na escala 1:1.000, cada centímetro representa uma distância menor.",
+              "hints": [
+                "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+                "Na escala 1:1.000, cada centímetro representa uma distância menor."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-escala.3",
+              "concept_id": "geo-escala",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Em um mapa, 3 cm representam 6 km. Quantos quilômetros são 4,5 cm?",
+              "difficulty": 3,
+              "validator": "9",
+              "options": [],
+              "feedback": "Cada centímetro representa dois quilômetros.",
+              "hints": [
+                "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+                "Cada centímetro representa dois quilômetros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-escala.4",
+              "concept_id": "geo-escala",
+              "role": "diagnostic",
+              "format": "numeric",
+              "prompt": "Uma barra de escala mostra 2 km por divisão. Quantos quilômetros cobrem três divisões?",
+              "difficulty": 2,
+              "validator": "6",
+              "options": [],
+              "feedback": "Três vezes dois quilômetros são seis.",
+              "hints": [
+                "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+                "Três vezes dois quilômetros são seis."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-escala.5",
+              "concept_id": "geo-escala",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Uma trilha mede 500 m. Quantos centímetros ela ocupa na escala 1:25.000?",
+              "difficulty": 2,
+              "validator": "2",
+              "options": [],
+              "feedback": "Os 500 m correspondem a 50.000 cm. Divida por 25.000.",
+              "hints": [
+                "Na escala 1:n, uma unidade no mapa equivale a n da mesma unidade no terreno.",
+                "Os 500 m correspondem a 50.000 cm. Divida por 25.000."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-escala.r2",
+              "concept_id": "geo-escala",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Em 1:20.000, quanto medem em metros 3,5 cm de uma rua no mapa?",
+              "difficulty": 3,
+              "validator": "700",
+              "options": [],
+              "feedback": "Multiplique por 20.000 e converta 70.000 cm em metros.",
+              "hints": [
+                "Faça a multiplicação antes de converter centímetros em metros ou quilômetros.",
+                "Multiplique por 20.000 e converta 70.000 cm em metros."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma escala 1:100 significa que 1 cm no desenho representa…",
+            "options": [
+              "1 m no terreno",
+              "100 m no terreno"
+            ],
+            "solution": "1 m no terreno",
+            "explanation": "Cem centímetros equivalem a um metro."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "geo-coordenadas",
+          "title": "Localizar por coordenadas",
+          "objective": "Identificar hemisférios com latitude e longitude.",
+          "prerequisites": [
+            "geo-escala"
+          ],
+          "steps": [
+            "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+            "Confira primeiro qual referência tem direção N/S e depois qual tem L/O."
+          ],
+          "example": "23° S, 46° O → hemisférios sul e ocidental.",
+          "questions": [
+            {
+              "id": "geo-coordenadas.1",
+              "concept_id": "geo-coordenadas",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe latitude zero à sua referência.",
+              "difficulty": 1,
+              "validator": "Equador",
+              "options": [
+                "Trópico de Capricórnio",
+                "Meridiano de Greenwich",
+                "Equador"
+              ],
+              "feedback": "O Equador é o paralelo de latitude zero.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "O Equador é o paralelo de latitude zero."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.2",
+              "concept_id": "geo-coordenadas",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Um ponto está a 12° N e 45° O. Em quais hemisférios está?",
+              "difficulty": 2,
+              "validator": "Norte e ocidental",
+              "options": [
+                "Sul e ocidental",
+                "Norte e ocidental",
+                "Norte e oriental"
+              ],
+              "feedback": "N indica norte do Equador e O indica oeste de Greenwich.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "N indica norte do Equador e O indica oeste de Greenwich."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.3",
+              "concept_id": "geo-coordenadas",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Duas cidades com a mesma latitude precisam ter a mesma longitude.",
+              "difficulty": 3,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um paralelo contém diferentes longitudes.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "Um paralelo contém diferentes longitudes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.4",
+              "concept_id": "geo-coordenadas",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual coordenada indica longitude?",
+              "difficulty": 2,
+              "validator": "35° L",
+              "options": [
+                "5° N",
+                "20° S",
+                "35° L"
+              ],
+              "feedback": "Longitude recebe a indicação leste ou oeste.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "Longitude recebe a indicação leste ou oeste."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.5",
+              "concept_id": "geo-coordenadas",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Um barco segue sobre o Equador para leste. Qual coordenada fica constante?",
+              "difficulty": 2,
+              "validator": "Latitude",
+              "options": [
+                "As duas coordenadas",
+                "Longitude",
+                "Latitude"
+              ],
+              "feedback": "No Equador a latitude segue igual a zero.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "No Equador a latitude segue igual a zero."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.6",
+              "concept_id": "geo-coordenadas",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "Um ponto está a 5° S e 10° L. O que se pode afirmar sem escala gráfica?",
+              "difficulty": 3,
+              "validator": "Está ao sul do Equador e a leste de Greenwich.",
+              "options": [
+                "Fica no hemisfério norte.",
+                "Está ao sul do Equador e a leste de Greenwich.",
+                "Fica a cinco quilômetros do Equador."
+              ],
+              "feedback": "Os graus indicam posição angular e os sufixos identificam os hemisférios.",
+              "hints": [
+                "Latitude mede posição ao norte ou sul do Equador. Longitude mede posição a leste ou oeste de Greenwich.",
+                "Os graus indicam posição angular e os sufixos identificam os hemisférios."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-coordenadas.r2",
+              "concept_id": "geo-coordenadas",
+              "role": "review",
+              "format": "match",
+              "prompt": "Associe longitude zero à linha de referência.",
+              "difficulty": 3,
+              "validator": "Meridiano de Greenwich",
+              "options": [
+                "Equador",
+                "Círculo Polar Ártico",
+                "Meridiano de Greenwich"
+              ],
+              "feedback": "Greenwich é a referência de longitude.",
+              "hints": [
+                "Confira primeiro qual referência tem direção N/S e depois qual tem L/O.",
+                "Greenwich é a referência de longitude."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Se aparece “S” no valor de uma coordenada, trata-se de…",
+            "options": [
+              "Latitude",
+              "Longitude"
+            ],
+            "solution": "Latitude",
+            "explanation": "Sul e norte são medidos em relação ao Equador."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geo-territorio",
+      "title": "Clima e território",
+      "goal": "Distinguir escalas de tempo, interpretar padrões e investigar o uso do espaço.",
+      "lessons": [
+        {
+          "id": "geo-tempo",
+          "title": "Tempo ou clima?",
+          "objective": "Distinguir uma condição momentânea de um padrão de longo prazo.",
+          "prerequisites": [],
+          "steps": [
+            "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+            "Uma ocorrência isolada não define o comportamento típico de uma região."
+          ],
+          "example": "“Choveu na terça” → tempo; “os verões costumam ser chuvosos” → clima.",
+          "questions": [
+            {
+              "id": "geo-tempo.1",
+              "concept_id": "geo-tempo",
+              "role": "practice",
+              "format": "match",
+              "prompt": "“Às 14h havia neblina no aeroporto.” Classifique a informação.",
+              "difficulty": 1,
+              "validator": "Tempo atmosférico",
+              "options": [
+                "Tempo atmosférico",
+                "Clima regional"
+              ],
+              "feedback": "A observação tem hora e local específicos.",
+              "hints": [
+                "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+                "A observação tem hora e local específicos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-tempo.2",
+              "concept_id": "geo-tempo",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual conjunto ajuda a caracterizar o clima?",
+              "difficulty": 2,
+              "validator": "Décadas de registros de temperatura e chuva",
+              "options": [
+                "Uma foto de uma nuvem",
+                "Décadas de registros de temperatura e chuva",
+                "Somente a chuva de ontem"
+              ],
+              "feedback": "Séries longas permitem reconhecer padrões e variações.",
+              "hints": [
+                "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+                "Séries longas permitem reconhecer padrões e variações."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-tempo.3",
+              "concept_id": "geo-tempo",
+              "role": "practice",
+              "format": "boolean",
+              "prompt": "Um inverno mais quente que a média pode ocorrer numa região de invernos frios.",
+              "difficulty": 3,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Um valor individual pode se afastar do padrão de longo prazo.",
+              "hints": [
+                "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+                "Um valor individual pode se afastar do padrão de longo prazo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-tempo.4",
+              "concept_id": "geo-tempo",
+              "role": "diagnostic",
+              "format": "choice",
+              "prompt": "Qual frase descreve um padrão climático?",
+              "difficulty": 2,
+              "validator": "O período seco costuma ocorrer no inverno.",
+              "options": [
+                "Ventou hoje às oito.",
+                "O período seco costuma ocorrer no inverno.",
+                "Há uma nuvem sobre a quadra."
+              ],
+              "feedback": "A primeira frase fala em repetição habitual.",
+              "hints": [
+                "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+                "A primeira frase fala em repetição habitual."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-tempo.5",
+              "concept_id": "geo-tempo",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Para comparar o clima de dois lugares, qual escolha é mais adequada?",
+              "difficulty": 2,
+              "validator": "Usar séries longas de períodos comparáveis",
+              "options": [
+                "Usar uma tarde de cada lugar",
+                "Usar séries longas de períodos comparáveis",
+                "Contar roupas nos varais"
+              ],
+              "feedback": "Períodos comparáveis reduzem diferenças causadas só pela amostragem.",
+              "hints": [
+                "Procure a duração da observação. Tempo descreve condições em um momento; clima envolve padrões em séries longas.",
+                "Períodos comparáveis reduzem diferenças causadas só pela amostragem."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-tempo.r2",
+              "concept_id": "geo-tempo",
+              "role": "review",
+              "format": "match",
+              "prompt": "“O verão costuma concentrar as chuvas da região.” Classifique a escala da afirmação.",
+              "difficulty": 3,
+              "validator": "Padrão climático",
+              "options": [
+                "Orientação cartográfica",
+                "Padrão climático",
+                "Estado instantâneo"
+              ],
+              "feedback": "A expressão “costuma” descreve regularidade em vários anos.",
+              "hints": [
+                "Uma ocorrência isolada não define o comportamento típico de uma região.",
+                "A expressão “costuma” descreve regularidade em vários anos."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Um boletim para amanhã é uma previsão de…",
+            "options": [
+              "Tempo",
+              "Clima de décadas"
+            ],
+            "solution": "Tempo",
+            "explanation": "O horizonte curto se refere às condições atmosféricas previstas."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "geo-chuva",
+          "title": "Ler a distribuição da chuva",
+          "objective": "Comparar totais e sazonalidade em uma série.",
+          "prerequisites": [
+            "geo-tempo"
+          ],
+          "steps": [
+            "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+            "Totais iguais podem esconder distribuições distintas ao longo do período."
+          ],
+          "example": "Janeiro 90 mm, fevereiro 30 mm → total 120 mm; janeiro concentrou três quartos.",
+          "questions": [
+            {
+              "id": "geo-chuva.1",
+              "concept_id": "geo-chuva",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Uma estação mediu 40 mm, 70 mm e 20 mm em três meses. Qual foi o total em mm?",
+              "difficulty": 1,
+              "validator": "130",
+              "options": [],
+              "feedback": "Some 40, 70 e 20.",
+              "hints": [
+                "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+                "Some 40, 70 e 20."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-chuva.2",
+              "concept_id": "geo-chuva",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Local A recebeu 100 mm em um dia; B, 100 mm ao longo de um mês. O que é igual?",
+              "difficulty": 2,
+              "validator": "O acumulado citado",
+              "options": [
+                "O acumulado citado",
+                "O risco exato de inundação",
+                "A intensidade a cada hora"
+              ],
+              "feedback": "O mesmo total pode ter distribuições temporais diferentes.",
+              "hints": [
+                "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+                "O mesmo total pode ter distribuições temporais diferentes."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-chuva.3",
+              "concept_id": "geo-chuva",
+              "role": "practice",
+              "format": "numeric",
+              "prompt": "Em abril caíram 80 mm e em maio 50 mm. Quantos milímetros a menos caíram em maio?",
+              "difficulty": 3,
+              "validator": "30",
+              "options": [],
+              "feedback": "Subtraia 50 de 80.",
+              "hints": [
+                "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+                "Subtraia 50 de 80."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-chuva.4",
+              "concept_id": "geo-chuva",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "A média mensal sozinha informa exatamente em quais dias choveu.",
+              "difficulty": 2,
+              "validator": "Falso",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "A média agrega valores e não conserva todas as datas individuais.",
+              "hints": [
+                "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+                "A média agrega valores e não conserva todas as datas individuais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-chuva.5",
+              "concept_id": "geo-chuva",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Qual série de três meses mostra chuva mais concentrada em um mês?",
+              "difficulty": 2,
+              "validator": "0, 90, 0 mm",
+              "options": [
+                "25, 40, 25 mm",
+                "30, 30, 30 mm",
+                "0, 90, 0 mm"
+              ],
+              "feedback": "Na primeira série todo o volume caiu em um único mês.",
+              "hints": [
+                "Confira período, unidade e local. Some os valores para obter um total e compare meses para identificar concentração.",
+                "Na primeira série todo o volume caiu em um único mês."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-chuva.r2",
+              "concept_id": "geo-chuva",
+              "role": "review",
+              "format": "numeric",
+              "prompt": "Três meses tiveram 20, 40 e 90 mm. Qual a média mensal em mm?",
+              "difficulty": 3,
+              "validator": "50",
+              "options": [],
+              "feedback": "O total é 150 mm. Dividindo por três, resulta em 50 mm.",
+              "hints": [
+                "Totais iguais podem esconder distribuições distintas ao longo do período.",
+                "O total é 150 mm. Dividindo por três, resulta em 50 mm."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Uma média de 50 mm garante chuva idêntica em todos os meses?",
+            "options": [
+              "Não",
+              "Sim"
+            ],
+            "solution": "Não",
+            "explanation": "Valores acima e abaixo podem produzir a mesma média."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "geo-uso",
+          "title": "Uso do solo e território",
+          "objective": "Relacionar mapas e relatos aos usos e disputas pelo espaço.",
+          "prerequisites": [
+            "geo-chuva"
+          ],
+          "steps": [
+            "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+            "A legenda informa categorias, mas os interesses dos grupos precisam de outras fontes."
+          ],
+          "example": "Lote antes agrícola aparece como bairro → mudança de uso; atas e entrevistas ajudam a entender decisões.",
+          "questions": [
+            {
+              "id": "geo-uso.1",
+              "concept_id": "geo-uso",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Qual documento ajuda a identificar zonas destinadas à moradia?",
+              "difficulty": 1,
+              "validator": "Mapa de zoneamento com legenda",
+              "options": [
+                "Mapa de zoneamento com legenda",
+                "Calendário lunar",
+                "Tabela de marés sem localização"
+              ],
+              "feedback": "O zoneamento espacializa categorias de uso previstas.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "O zoneamento espacializa categorias de uso previstas."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.2",
+              "concept_id": "geo-uso",
+              "role": "practice",
+              "format": "match",
+              "prompt": "Associe “território” ao aspecto que o conceito destaca.",
+              "difficulty": 2,
+              "validator": "Relações de poder e apropriação do espaço",
+              "options": [
+                "Somente quantidade de chuva",
+                "Somente altitude",
+                "Relações de poder e apropriação do espaço"
+              ],
+              "feedback": "Disputas e controle do espaço são centrais na análise territorial.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "Disputas e controle do espaço são centrais na análise territorial."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.3",
+              "concept_id": "geo-uso",
+              "role": "practice",
+              "format": "choice",
+              "prompt": "Dois mapas mostram expansão urbana. O que é necessário para investigar quem foi afetado?",
+              "difficulty": 3,
+              "validator": "Dados locais e relatos dos moradores",
+              "options": [
+                "Dados locais e relatos dos moradores",
+                "Trocar as cores do mapa",
+                "Ignorar a data das imagens"
+              ],
+              "feedback": "A experiência social precisa de evidências adicionais.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "A experiência social precisa de evidências adicionais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.4",
+              "concept_id": "geo-uso",
+              "role": "diagnostic",
+              "format": "boolean",
+              "prompt": "Uma mesma praça pode ter usos diferentes conforme o horário e o grupo.",
+              "difficulty": 2,
+              "validator": "Verdadeiro",
+              "options": [
+                "Verdadeiro",
+                "Falso"
+              ],
+              "feedback": "Usos e relações sociais variam no tempo.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "Usos e relações sociais variam no tempo."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.5",
+              "concept_id": "geo-uso",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Para comparar cobertura vegetal em duas datas, que cuidado tomar?",
+              "difficulty": 2,
+              "validator": "Conferir legenda, escala e método de classificação",
+              "options": [
+                "Escolher só mapas com mais cores",
+                "Comparar apenas o tamanho do papel",
+                "Conferir legenda, escala e método de classificação"
+              ],
+              "feedback": "Diferenças cartográficas podem imitar mudanças reais.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "Diferenças cartográficas podem imitar mudanças reais."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.6",
+              "concept_id": "geo-uso",
+              "role": "checkpoint",
+              "format": "choice",
+              "prompt": "O mapa mostra um parque novo, mas moradores relatam dificuldade para chegar. Qual investigação combina as fontes?",
+              "difficulty": 3,
+              "validator": "Mapear entradas, rotas e tempos de acesso",
+              "options": [
+                "Descartar os relatos por serem locais",
+                "Mapear entradas, rotas e tempos de acesso",
+                "Concluir que todo o bairro tem acesso igual"
+              ],
+              "feedback": "A localização do parque e os deslocamentos ajudam a explicar a acessibilidade.",
+              "hints": [
+                "Localize o que mudou no mapa. Investigue quem utiliza, controla ou reivindica aquele espaço.",
+                "A localização do parque e os deslocamentos ajudam a explicar a acessibilidade."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            },
+            {
+              "id": "geo-uso.r2",
+              "concept_id": "geo-uso",
+              "role": "review",
+              "format": "choice",
+              "prompt": "Que par de dados ajuda a investigar acesso desigual a áreas verdes?",
+              "difficulty": 3,
+              "validator": "Localização dos parques e distribuição da população",
+              "options": [
+                "Número das páginas e cor da capa",
+                "Nome do arquivo e fonte tipográfica",
+                "Localização dos parques e distribuição da população"
+              ],
+              "feedback": "A relação espacial entre pessoas e parques ajuda a investigar o acesso.",
+              "hints": [
+                "A legenda informa categorias, mas os interesses dos grupos precisam de outras fontes.",
+                "A relação espacial entre pessoas e parques ajuda a investigar o acesso."
+              ],
+              "source_or_author": "Lacuna • material autoral",
+              "accessibility": "Texto e teclado",
+              "version": 1
+            }
+          ],
+          "mini": {
+            "prompt": "Mudar a cor da legenda entre dois mapas pode…",
+            "options": [
+              "Alterar fisicamente o terreno",
+              "Alterar a leitura da comparação"
+            ],
+            "solution": "Alterar a leitura da comparação",
+            "explanation": "A representação deve ser interpretada a partir da respectiva legenda."
+          },
+          "accessibility": [
+            "texto",
+            "teclado"
+          ],
+          "difficulty_range": [
+            1,
+            3
+          ]
+        }
+      ]
+    }
+  ]
+}

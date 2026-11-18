@@ -15,7 +15,7 @@ export function validateState(value) {
 }
 export class ProgressStore {
   constructor(storage) {
-    this.storage=storage; this.notice=''; this.locked=false; this.original=null;this.savedRaw=null;
+    this.storage=storage; this.notice=''; this.locked=false; this.original=null;this.savedRaw=null;this.dirty=false;
     this.state=emptyState();
     try {
       const raw=storage.getItem(STORAGE_KEY);
@@ -27,19 +27,19 @@ export class ProgressStore {
     }
   }
   save() {
-    if(this.locked) return false;
+    if(this.locked){this.dirty=true;return false;}
     try {
       if(this.storage.getItem(STORAGE_KEY)!==this.savedRaw){
         this.notice='Outra aba alterou o histórico. Recarregue para usar a versão salva. Esta aba mantém sua sessão disponível para exportação.';
-        this.locked=true;return false;
+        this.locked=true;this.dirty=true;return false;
       }
-      const next=JSON.stringify(this.state);this.storage.setItem(STORAGE_KEY,next);this.savedRaw=next; this.notice='';return true;}
-    catch {this.notice='O navegador não conseguiu salvar o progresso (armazenamento bloqueado ou cheio). Exporte seus dados antes de fechar esta página.';return false;}
+      const next=JSON.stringify(this.state);this.storage.setItem(STORAGE_KEY,next);this.savedRaw=next;this.dirty=false; this.notice='';return true;}
+    catch {this.dirty=true;this.notice='O navegador não conseguiu salvar o progresso (armazenamento bloqueado ou cheio). Exporte seus dados antes de fechar esta página.';return false;}
   }
   reset() {
     try {this.storage.removeItem(STORAGE_KEY);}
     catch {this.notice='O navegador impediu a exclusão. Apague os dados deste site pelas configurações do navegador.';return false;}
-    this.locked=false;this.original=null;this.savedRaw=null;this.state=emptyState();this.notice='';return true;
+    this.locked=false;this.original=null;this.savedRaw=null;this.dirty=false;this.state=emptyState();this.notice='';return true;
   }
   exportText() {return JSON.stringify({...this.state,exported_at:new Date().toISOString(),notice:'Dados locais de aprendizagem; não são uma avaliação científica.'},null,2);}
 }

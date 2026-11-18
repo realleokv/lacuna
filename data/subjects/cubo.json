@@ -126,7 +126,7 @@
               "concept_id": "cub-pecas",
               "role": "review",
               "format": "numeric",
-              "prompt": "Quantos centros visíveis de uma cor há ao todo em um cubo 3×3 de seis faces, contando um centro por face?",
+              "prompt": "Quantas peças centrais visíveis há ao todo em um cubo 3×3 de seis faces?",
               "difficulty": 3,
               "validator": "6",
               "options": [],

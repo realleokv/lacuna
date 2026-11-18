@@ -1,1 +1,11 @@
-{"name":"lacuna-mvp","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"python3 preview.py","test:storage":"node --test tests/storage.test.mjs"}}
+{
+  "name": "lacuna",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 preview.py",
+    "test:storage": "node --test tests/storage.test.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

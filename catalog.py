@@ -1,13 +1,21 @@
 """Versioned, authored subject packs. Only the checker can see answer keys."""
+
 import json
 from pathlib import Path
 from flask import Blueprint, jsonify, request
 from diagnostic import InputError, bounded_int, parse_answer
 
 PACKS = Path(__file__).parent / "data" / "subjects"
-AREAS = [json.loads(path.read_text(encoding="utf8")) for path in sorted(PACKS.glob("*.json"))]
-QUESTIONS = {q["id"]: q for area in AREAS for track in area["tracks"]
-             for lesson in track["lessons"] for q in lesson["questions"]}
+AREAS = [
+    json.loads(path.read_text(encoding="utf8")) for path in sorted(PACKS.glob("*.json"))
+]
+QUESTIONS = {
+    q["id"]: q
+    for area in AREAS
+    for track in area["tracks"]
+    for lesson in track["lessons"]
+    for q in lesson["questions"]
+}
 PRIVATE = {"validator", "feedback", "hints"}
 hub = Blueprint("hub", __name__, url_prefix="/api/hub")
 
@@ -27,7 +35,11 @@ def catalog():
 
 def question_payload():
     data = request.get_json()
-    if not isinstance(data, dict) or not isinstance(data.get("id"), str) or data["id"] not in QUESTIONS:
+    if (
+        not isinstance(data, dict)
+        or not isinstance(data.get("id"), str)
+        or data["id"] not in QUESTIONS
+    ):
         raise InputError("Escolha uma questão disponível.")
     return QUESTIONS[data["id"]], data
 
@@ -42,8 +54,12 @@ def hint():
 def matches(q, answer):
     expected = q["validator"]
     if q["format"] == "order":
-        if (not isinstance(answer, list) or len(answer) != len(expected)
-                or not all(isinstance(v, str) for v in answer) or sorted(answer) != sorted(expected)):
+        if (
+            not isinstance(answer, list)
+            or len(answer) != len(expected)
+            or not all(isinstance(v, str) for v in answer)
+            or sorted(answer) != sorted(expected)
+        ):
             raise InputError("Use todos os elementos uma vez.")
         return answer == expected
     if not isinstance(answer, str) or not 1 <= len(answer.strip()) <= 220:
